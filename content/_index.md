@@ -480,7 +480,7 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        image: images/logo-6.svg
+        image: /images/hero-background.jpg
         image_alt: Next.js logo
         image_align: center
         title: ''
