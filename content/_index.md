@@ -5,7 +5,7 @@ sections:
   template: hero_section
   title: Lorem
   subtitle: Optional hero section subtitle
-  content: "    conse elit 2021 / 2022"
+  content: "`conse elit 2021 / 2022`"
   actions:
   - type: action
     template: action
