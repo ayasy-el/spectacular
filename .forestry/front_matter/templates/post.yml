@@ -91,7 +91,7 @@ fields:
   hidden: true
   default: post
   config:
-    required: true
+    required: false
 pages:
 - content/blog/post-1.md
 - content/blog/post-2.md
