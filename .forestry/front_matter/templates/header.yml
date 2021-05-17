@@ -94,4 +94,4 @@ fields:
   hidden: true
   default: header
   config:
-    required: true
+    required: false
