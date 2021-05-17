@@ -5,8 +5,7 @@ sections:
   template: hero_section
   title: Lorem
   subtitle: Optional hero section subtitle
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
-    cursus id molestie vel.
+  content: "    conse elit 2021 / 2022"
   actions:
   - type: action
     template: action
@@ -29,9 +28,9 @@ sections:
   video_embed_html: ''
   has_border: false
   background_image: "/images/hero-background.jpg"
-  background_image_opacity: 
-  background_image_size: ''
-  background_image_position: ''
+  background_image_opacity: '20'
+  background_image_size: cover
+  background_image_position: center center
   background_image_repeat: ''
 - type: grid_section
   template: grid_section
