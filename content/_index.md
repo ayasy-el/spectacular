@@ -219,7 +219,7 @@ sections:
         image_width: ''
       - type: grid_item
         template: grid_item
-        title: Section Item 2
+        title: Section Item 5
         title_align: left
         content: |
           Ac felis donec et odio pellentesque
