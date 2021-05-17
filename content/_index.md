@@ -159,10 +159,8 @@ sections:
         template: grid_item
         title: Section Item 3
         title_align: left
-        content: >-
-          Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut
-          diam quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio
-          euismod lacinia.
+        content: |
+          Ullamcorper a lacus vestibulum
         content_align: left
         actions:
           - type: action
