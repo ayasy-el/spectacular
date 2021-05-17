@@ -212,4 +212,4 @@ fields:
   hidden: true
   default: blog_feed_section
   config:
-    required: true
+    required: false
