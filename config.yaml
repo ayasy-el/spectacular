@@ -5,8 +5,8 @@ params:
   layout_type: full-width
   style: classic
   palette: blue
-  mode: light
-  base_font: serif
+  mode: dark
+  base_font: sans-serif
   header:
     type: header
     template: header
