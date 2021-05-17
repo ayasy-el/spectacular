@@ -1,5 +1,5 @@
 ---
-title: Stackbit DIY Theme
+title: Lorem Ipsum Web
 baseURL: "/"
 params:
   layout_type: boxed
@@ -67,7 +67,7 @@ params:
       icon_position: ''
       new_window: false
       no_follow: false
-    - style: secondary
+    - style: primary
       label: Donate
       url: "#"
       has_icon: false
