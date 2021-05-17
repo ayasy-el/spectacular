@@ -560,12 +560,9 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        content: >-
+        content: >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
           ligula, cursus id molestie vel, maximus aliquet risus.
-
-
-          **Eleanor Carr,** *CTO, Studio*
         image: images/eleanor-carr.png
         image_alt: Eleanor Carr
         image_position: left
