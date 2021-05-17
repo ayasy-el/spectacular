@@ -59,4 +59,4 @@ fields:
   hidden: true
   default: stackbit_page_meta
   config:
-    required: true
+    required: false
