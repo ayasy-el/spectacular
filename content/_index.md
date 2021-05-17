@@ -355,6 +355,43 @@ sections:
   has_border: false
   background_image: ''
   background_image_opacity: 
+- type: blog_feed_section
+  template: blog_feed_section
+  title: What's New
+  subtitle: News, Event, & etc.
+  actions:
+  - type: action
+    template: action
+    label: View All
+    url: "/blog"
+    style: primary
+    has_icon: false
+    icon: ''
+    icon_position: ''
+    new_window: false
+    no_follow: false
+  blog_feed_cols: three
+  enable_cards: true
+  show_recent: true
+  recent_count: 6
+  show_date: true
+  show_categories: true
+  show_author: true
+  show_excerpt: false
+  show_image: true
+  align: center
+  padding_top: medium
+  padding_bottom: medium
+  has_border: false
+  background_color: none
+  author: ''
+  category: ''
+  tag: ''
+  background_image: ''
+  background_image_size: ''
+  background_image_position: ''
+  background_image_repeat: ''
+  background_image_opacity: 
 - type: grid_section
   template: grid_section
   title: Image Grid
@@ -716,43 +753,6 @@ sections:
   padding_top: ''
   padding_bottom: ''
   has_border: false
-  background_image: ''
-  background_image_size: ''
-  background_image_position: ''
-  background_image_repeat: ''
-  background_image_opacity: 
-- type: blog_feed_section
-  template: blog_feed_section
-  title: What's New
-  subtitle: Blog Feed Section Example
-  actions:
-  - type: action
-    template: action
-    label: View All
-    url: "/blog"
-    style: primary
-    has_icon: false
-    icon: ''
-    icon_position: ''
-    new_window: false
-    no_follow: false
-  blog_feed_cols: three
-  enable_cards: true
-  show_recent: true
-  recent_count: 3
-  show_date: true
-  show_categories: true
-  show_author: true
-  show_excerpt: false
-  show_image: true
-  align: center
-  padding_top: medium
-  padding_bottom: medium
-  has_border: false
-  background_color: none
-  author: ''
-  category: ''
-  tag: ''
   background_image: ''
   background_image_size: ''
   background_image_position: ''
