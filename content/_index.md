@@ -97,6 +97,7 @@ sections:
         type: ''
     has_border: false
     background_image: ''
+    
   - type: grid_section
     template: grid_section
     title: Lorem Departement
