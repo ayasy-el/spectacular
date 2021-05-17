@@ -416,7 +416,7 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        image: images/logo-2.svg
+        image: /images/about-4.jpg
         image_alt: Netlify logo
         image_align: center
         title: ''
