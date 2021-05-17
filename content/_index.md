@@ -68,7 +68,25 @@ sections:
       url: https://www.facebook.com/
       has_icon: true
       icon: facebook
-      icon_position: ''
+      icon_position: left
+      new_window: false
+      no_follow: false
+      type: ''
+    - style: link
+      label: telegram
+      url: #
+      has_icon: true
+      icon: telegram
+      icon_position: center
+      new_window: false
+      no_follow: false
+      type: ''
+    - style: link
+      label: email
+      url: #
+      has_icon: true
+      icon: email
+      icon_position: center
       new_window: false
       no_follow: false
       type: ''
