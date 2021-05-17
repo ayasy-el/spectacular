@@ -106,7 +106,7 @@ sections:
         title: Section Item 1
         title_align: left
         content: |
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet
         content_align: left
         actions:
           - type: action
