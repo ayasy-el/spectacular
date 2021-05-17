@@ -496,7 +496,6 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        image: images/logo-7.svg
         image_alt: Gridsome logo
         image_align: center
         title: ''
