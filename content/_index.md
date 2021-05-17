@@ -359,7 +359,7 @@ sections:
     actions_width: ''
     image_position: ''
     image_width: ''
-    image_has_padding: true
+    image_has_padding: false
   - type: grid_item
     template: grid_item
     image: images/logo-5.svg
