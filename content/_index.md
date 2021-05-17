@@ -186,7 +186,7 @@ sections:
         actions_width: ''
         image_width: ''
         
-    - type: grid_item
+      - type: grid_item
         template: grid_item
         title: Section Item 1
         title_align: left
