@@ -246,7 +246,7 @@ sections:
         image_width: ''
       - type: grid_item
         template: grid_item
-        title: Section Item 3
+        title: Section Item 6
         title_align: left
         content: |
           Ullamcorper a lacus vestibulum
