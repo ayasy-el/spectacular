@@ -16,7 +16,7 @@ params:
     primary_nav_links:
       - type: action
         template: action
-        label: Features
+        label: Departement
         url: /features
         style: link
       - type: action
