@@ -8,15 +8,6 @@ sections:
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
     cursus id molestie vel.
   actions:
-  - style: link
-    label: " blog"
-    url: "/blog"
-    has_icon: false
-    icon: ''
-    icon_position: ''
-    new_window: false
-    no_follow: false
-    type: ''
   - type: action
     template: action
     label: " "
