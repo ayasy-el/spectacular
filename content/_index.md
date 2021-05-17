@@ -216,9 +216,7 @@ sections:
     template: grid_item
     title: Section Item 5
     title_align: left
-    content: 'Ac felis donec et odio pellentesque
-
-'
+    content: 'Ac felis donec et odio pellentesque'
     content_align: left
     actions:
     - type: action
