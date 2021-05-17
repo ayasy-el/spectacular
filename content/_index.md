@@ -236,7 +236,7 @@ sections:
             new_window: false
             no_follow: false
         actions_align: left
-        image: images/classic/icon-2.svg
+        image: /images/logo-1.svg
         image_alt: Section item 2 icon
         image_position: top
         image_align: left
