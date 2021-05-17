@@ -41,5 +41,5 @@ fields:
 - type: text
   name: layout
   label: layout
-  default: gallery
+  default: page
   hidden: true
