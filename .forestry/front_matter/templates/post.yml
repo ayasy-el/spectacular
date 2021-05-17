@@ -67,8 +67,7 @@ fields:
 - type: select
   name: image_position
   label: Image position (single post)
-  description: >-
-    The featured image position in the blog post relative to the post header
+  description: The featured image position in the blog post relative to the post header
     content
   default: top
   config:
@@ -94,8 +93,8 @@ fields:
   config:
     required: true
 pages:
-- blog/post-1.md
-- blog/post-2.md
-- blog/post-3.md
-- blog/post-4.md
-- blog/post-5.md
+- content/blog/post-1.md
+- content/blog/post-2.md
+- content/blog/post-3.md
+- content/blog/post-4.md
+- content/blog/post-5.md
