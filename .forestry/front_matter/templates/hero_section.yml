@@ -179,4 +179,4 @@ fields:
   hidden: true
   default: hero_section
   config:
-    required: true
+    required: false
