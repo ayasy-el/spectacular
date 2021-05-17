@@ -497,7 +497,16 @@ sections:
   grid_gap_vert: small
   grid_gap_horiz: small
   align: center
-  actions: []
+  actions:
+  - style: secondary
+    label: View All
+    url: "#"
+    has_icon: false
+    icon: ''
+    icon_position: ''
+    new_window: false
+    no_follow: false
+    type: ''
   enable_cards: false
   padding_top: ''
   padding_bottom: ''
