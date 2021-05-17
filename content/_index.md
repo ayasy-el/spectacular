@@ -347,7 +347,7 @@ sections:
     image_alt: ''
     video_embed_html: ''
     media_position: right
-    media_width: ''
+    media_width: fourty
     align: ''
     type: ''
   title: ''
