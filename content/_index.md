@@ -578,12 +578,9 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        content: >-
+        content: >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
           ligula, cursus id molestie vel, maximus aliquet risus.
-
-
-          **Gordon Norman,** *Web Designer, Studio*
         image: images/gordon-norman.png
         image_alt: Gordon Norman
         image_position: left
