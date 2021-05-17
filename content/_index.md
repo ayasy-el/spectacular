@@ -343,7 +343,7 @@ sections:
       new_window: false
       no_follow: false
       type: ''
-    image: ''
+    image: "/images/classic/feature-3.png"
     image_alt: ''
     video_embed_html: ''
     media_position: ''
