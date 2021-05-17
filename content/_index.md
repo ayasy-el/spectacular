@@ -281,8 +281,8 @@ sections:
   background_image_opacity: 
 - type: features_section
   template: features_section
-  title: Features Section
-  subtitle: Features Section Example
+  title: Information
+  subtitle: Lorem Information Section
   features:
   - type: feature
     template: feature
@@ -307,57 +307,11 @@ sections:
     media_width: fifty
     video_embed_html: ''
     align: ''
-  - type: feature
-    template: feature
-    title: The Big Title For the Feature
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: primary
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-    image: images/classic/feature-2.png
-    image_alt: Feature 2 placeholder image
-    media_position: left
-    media_width: fifty
-    subtitle: ''
-    video_embed_html: ''
-    align: ''
-  - type: feature
-    template: feature
-    title: The Big Title For the Feature
-    subtitle: Sed sed commodo turpis, eget rutrum dui.
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: primary
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-    image: images/classic/feature-3.png
-    image_alt: Feature 3 placeholder image
-    media_position: right
-    media_width: fifty
-    video_embed_html: ''
-    align: ''
-  feature_padding_vert: large
+  feature_padding_vert: small
   align: center
   background_color: secondary
-  padding_top: ''
-  padding_bottom: ''
+  padding_top: small
+  padding_bottom: none
   has_border: false
   background_image: ''
   background_image_size: ''
