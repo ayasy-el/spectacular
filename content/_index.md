@@ -303,7 +303,7 @@ sections:
       no_follow: false
     image: images/classic/feature-1.png
     image_alt: Feature 1 placeholder image
-    media_position: right
+    media_position: left
     media_width: fifty
     video_embed_html: ''
     align: ''
@@ -348,7 +348,7 @@ sections:
     video_embed_html: ''
     media_position: ''
     media_width: ''
-    align: ''
+    align: right
     type: ''
   title: ''
   subtitle: ''
