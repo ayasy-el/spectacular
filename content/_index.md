@@ -84,7 +84,7 @@ sections:
         title: Heading
       - actions:
           - style: secondary
-            label: Learn More
+            label: Show More
             url: '#'
             has_icon: false
             icon: ''
