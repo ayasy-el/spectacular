@@ -187,4 +187,4 @@ fields:
   hidden: true
   default: grid_section
   config:
-    required: true
+    required: false
