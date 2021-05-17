@@ -87,4 +87,4 @@ fields:
   hidden: true
   default: feature
   config:
-    required: true
+    required: false
