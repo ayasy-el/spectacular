@@ -21,7 +21,7 @@ sections:
     template: action
     label: " "
     url: "#"
-    style: primary
+    style: link
     has_icon: false
     icon: ''
     icon_position: ''
