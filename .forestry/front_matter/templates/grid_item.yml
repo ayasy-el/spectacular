@@ -137,4 +137,4 @@ fields:
   hidden: true
   default: grid_item
   config:
-    required: true
+    required: false
