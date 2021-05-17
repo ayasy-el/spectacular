@@ -3,9 +3,9 @@ title: Stackbit DIY Theme
 baseURL: "/"
 params:
   layout_type: boxed
-  style: bold
+  style: minimal
   palette: blue
-  mode: dark
+  mode: light
   base_font: serif
   header:
     type: header
