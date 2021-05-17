@@ -524,12 +524,9 @@ sections:
     grid_items:
       - type: grid_item
         template: grid_item
-        content: >-
+        content: >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
           ligula, cursus id molestie vel, maximus aliquet risus.
-
-
-          **Hanson Deck,** *App Developer, Studio*
         image: images/hanson-deck.png
         image_alt: Hanson Deck
         image_position: left
