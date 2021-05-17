@@ -263,7 +263,7 @@ sections:
             new_window: false
             no_follow: false
         actions_align: left
-        image: images/classic/icon-3.svg
+        image: /images/logo-3.svg
         image_alt: Section item 3 icon
         image_position: top
         image_align: left
