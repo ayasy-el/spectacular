@@ -323,7 +323,7 @@ sections:
   align: center
   padding_top: medium
   padding_bottom: medium
-  background_color: none
+  background_color: primary
   background_image_size: cover
   background_image_position: center center
   background_image_repeat: no-repeat
@@ -334,7 +334,7 @@ sections:
     content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
       quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
     actions:
-    - style: link
+    - style: primary
       label: Read More
       url: "#"
       has_icon: false
@@ -347,7 +347,7 @@ sections:
     image_alt: ''
     video_embed_html: ''
     media_position: right
-    media_width: fourty
+    media_width: fifty
     align: ''
     type: ''
   title: ''
