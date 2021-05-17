@@ -226,4 +226,4 @@ fields:
   hidden: true
   default: form_section
   config:
-    required: true
+    required: false
