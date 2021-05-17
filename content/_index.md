@@ -112,7 +112,7 @@ sections:
     template: grid_item
     title: Section Item 1
     title_align: left
-    content: 'Lorem ipsum dolor sit amet'
+    content: Lorem ipsum dolor sit amet
     content_align: left
     actions:
     - type: action
@@ -138,7 +138,7 @@ sections:
     template: grid_item
     title: Section Item 2
     title_align: left
-    content: 'Ac felis donec et odio pellentesque'
+    content: Ac felis donec et odio pellentesque
     content_align: left
     actions:
     - type: action
@@ -164,7 +164,7 @@ sections:
     template: grid_item
     title: Section Item 3
     title_align: left
-    content: 'Ullamcorper a lacus vestibulum'
+    content: Ullamcorper a lacus vestibulum
     content_align: left
     actions:
     - type: action
@@ -190,7 +190,7 @@ sections:
     template: grid_item
     title: Section Item 4
     title_align: left
-    content: 'Lorem ipsum dolor sit amet'
+    content: Lorem ipsum dolor sit amet
     content_align: left
     actions:
     - type: action
@@ -216,7 +216,7 @@ sections:
     template: grid_item
     title: Section Item 5
     title_align: left
-    content: 'Ac felis donec et odio pellentesque'
+    content: Ac felis donec et odio pellentesque
     content_align: left
     actions:
     - type: action
@@ -242,7 +242,7 @@ sections:
     template: grid_item
     title: Section Item 6
     title_align: left
-    content: 'Ullamcorper a lacus vestibulum'
+    content: Ullamcorper a lacus vestibulum
     content_align: left
     actions:
     - type: action
@@ -271,6 +271,91 @@ sections:
   align: center
   background_color: none
   actions: []
+  padding_top: ''
+  padding_bottom: ''
+  has_border: false
+  background_image: ''
+  background_image_size: ''
+  background_image_position: ''
+  background_image_repeat: ''
+  background_image_opacity: 
+- type: features_section
+  template: features_section
+  title: Features Section
+  subtitle: Features Section Example
+  features:
+  - type: feature
+    template: feature
+    title: The Big Title For the Feature
+    subtitle: 'In fermentum odio et tortor laoreet, sed interdum augue ornare. '
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
+      cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla.
+    actions:
+    - type: action
+      template: action
+      label: Learn More
+      url: "/style-guide"
+      style: primary
+      has_icon: true
+      icon: arrow-right
+      icon_position: right
+      new_window: false
+      no_follow: false
+    image: images/classic/feature-1.png
+    image_alt: Feature 1 placeholder image
+    media_position: right
+    media_width: fifty
+    video_embed_html: ''
+    align: ''
+  - type: feature
+    template: feature
+    title: The Big Title For the Feature
+    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
+      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
+    actions:
+    - type: action
+      template: action
+      label: Learn More
+      url: "/style-guide"
+      style: primary
+      has_icon: true
+      icon: arrow-right
+      icon_position: right
+      new_window: false
+      no_follow: false
+    image: images/classic/feature-2.png
+    image_alt: Feature 2 placeholder image
+    media_position: left
+    media_width: fifty
+    subtitle: ''
+    video_embed_html: ''
+    align: ''
+  - type: feature
+    template: feature
+    title: The Big Title For the Feature
+    subtitle: Sed sed commodo turpis, eget rutrum dui.
+    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
+      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
+    actions:
+    - type: action
+      template: action
+      label: Learn More
+      url: "/style-guide"
+      style: primary
+      has_icon: true
+      icon: arrow-right
+      icon_position: right
+      new_window: false
+      no_follow: false
+    image: images/classic/feature-3.png
+    image_alt: Feature 3 placeholder image
+    media_position: right
+    media_width: fifty
+    video_embed_html: ''
+    align: ''
+  feature_padding_vert: large
+  align: center
+  background_color: secondary
   padding_top: ''
   padding_bottom: ''
   has_border: false
@@ -422,91 +507,6 @@ sections:
   padding_bottom: ''
   has_border: false
   background_color: ''
-  background_image: ''
-  background_image_size: ''
-  background_image_position: ''
-  background_image_repeat: ''
-  background_image_opacity: 
-- type: features_section
-  template: features_section
-  title: Features Section
-  subtitle: Features Section Example
-  features:
-  - type: feature
-    template: feature
-    title: The Big Title For the Feature
-    subtitle: 'In fermentum odio et tortor laoreet, sed interdum augue ornare. '
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
-      cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla.
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: primary
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-    image: images/classic/feature-1.png
-    image_alt: Feature 1 placeholder image
-    media_position: right
-    media_width: fifty
-    video_embed_html: ''
-    align: ''
-  - type: feature
-    template: feature
-    title: The Big Title For the Feature
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: primary
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-    image: images/classic/feature-2.png
-    image_alt: Feature 2 placeholder image
-    media_position: left
-    media_width: fifty
-    subtitle: ''
-    video_embed_html: ''
-    align: ''
-  - type: feature
-    template: feature
-    title: The Big Title For the Feature
-    subtitle: Sed sed commodo turpis, eget rutrum dui.
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: primary
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-    image: images/classic/feature-3.png
-    image_alt: Feature 3 placeholder image
-    media_position: right
-    media_width: fifty
-    video_embed_html: ''
-    align: ''
-  feature_padding_vert: large
-  align: center
-  background_color: secondary
-  padding_top: ''
-  padding_bottom: ''
-  has_border: false
   background_image: ''
   background_image_size: ''
   background_image_position: ''
