@@ -2,7 +2,7 @@
 title: Lorem Ipsum Web
 baseURL: "/"
 params:
-  layout_type: boxed
+  layout_type: full-width
   style: classic
   palette: blue
   mode: light
