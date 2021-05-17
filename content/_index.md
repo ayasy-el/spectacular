@@ -105,6 +105,107 @@ sections:
   background_image_opacity: 
 - type: grid_section
   template: grid_section
+  title: Lorem Departement
+  subtitle: Grid Section Example
+  grid_items:
+  - type: grid_item
+    template: grid_item
+    title: Section Item 1
+    title_align: left
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
+      cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla.
+    content_align: left
+    actions:
+    - type: action
+      template: action
+      label: Learn More
+      url: "/style-guide"
+      style: link
+      has_icon: true
+      icon: arrow-right
+      icon_position: center
+      new_window: false
+      no_follow: false
+    actions_align: left
+    image: images/classic/icon-1.svg
+    image_alt: Section item 1 icon
+    image_position: top
+    image_align: left
+    image_has_padding: true
+    subtitle: ''
+    actions_width: ''
+    image_width: ''
+  - type: grid_item
+    template: grid_item
+    title: Section Item 2
+    title_align: left
+    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
+      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
+    content_align: left
+    actions:
+    - type: action
+      template: action
+      label: Learn More
+      url: "/style-guide"
+      style: link
+      has_icon: true
+      icon: arrow-right
+      icon_position: center
+      new_window: false
+      no_follow: false
+    actions_align: left
+    image: images/classic/icon-2.svg
+    image_alt: Section item 2 icon
+    image_position: top
+    image_align: left
+    image_has_padding: true
+    subtitle: ''
+    actions_width: ''
+    image_width: ''
+  - type: grid_item
+    template: grid_item
+    title: Section Item 3
+    title_align: left
+    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
+      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
+    content_align: left
+    actions:
+    - type: action
+      template: action
+      label: Learn More
+      url: "/style-guide"
+      style: link
+      has_icon: true
+      icon: arrow-right
+      icon_position: center
+      new_window: false
+      no_follow: false
+    actions_align: left
+    image: images/classic/icon-3.svg
+    image_alt: Section item 3 icon
+    image_position: top
+    image_align: left
+    image_has_padding: true
+    subtitle: ''
+    actions_width: ''
+    image_width: ''
+  grid_cols: three
+  grid_gap_vert: small
+  grid_gap_horiz: medium
+  enable_cards: true
+  align: center
+  background_color: none
+  actions: []
+  padding_top: ''
+  padding_bottom: ''
+  has_border: false
+  background_image: ''
+  background_image_size: ''
+  background_image_position: ''
+  background_image_repeat: ''
+  background_image_opacity: 
+- type: grid_section
+  template: grid_section
   title: Image Grid
   subtitle: Grid Section Example
   grid_items:
@@ -357,107 +458,6 @@ sections:
   title: ''
   subtitle: ''
   align: ''
-  padding_top: ''
-  padding_bottom: ''
-  has_border: false
-  background_image: ''
-  background_image_size: ''
-  background_image_position: ''
-  background_image_repeat: ''
-  background_image_opacity: 
-- type: grid_section
-  template: grid_section
-  title: Cards Grid Section
-  subtitle: Grid Section Example
-  grid_items:
-  - type: grid_item
-    template: grid_item
-    title: Section Item 1
-    title_align: left
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
-      cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla.
-    content_align: left
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: link
-      has_icon: true
-      icon: arrow-right
-      icon_position: center
-      new_window: false
-      no_follow: false
-    actions_align: left
-    image: images/classic/icon-1.svg
-    image_alt: Section item 1 icon
-    image_position: top
-    image_align: left
-    image_has_padding: true
-    subtitle: ''
-    actions_width: ''
-    image_width: ''
-  - type: grid_item
-    template: grid_item
-    title: Section Item 2
-    title_align: left
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    content_align: left
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: link
-      has_icon: true
-      icon: arrow-right
-      icon_position: center
-      new_window: false
-      no_follow: false
-    actions_align: left
-    image: images/classic/icon-2.svg
-    image_alt: Section item 2 icon
-    image_position: top
-    image_align: left
-    image_has_padding: true
-    subtitle: ''
-    actions_width: ''
-    image_width: ''
-  - type: grid_item
-    template: grid_item
-    title: Section Item 3
-    title_align: left
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    content_align: left
-    actions:
-    - type: action
-      template: action
-      label: Learn More
-      url: "/style-guide"
-      style: link
-      has_icon: true
-      icon: arrow-right
-      icon_position: center
-      new_window: false
-      no_follow: false
-    actions_align: left
-    image: images/classic/icon-3.svg
-    image_alt: Section item 3 icon
-    image_position: top
-    image_align: left
-    image_has_padding: true
-    subtitle: ''
-    actions_width: ''
-    image_width: ''
-  grid_cols: three
-  grid_gap_vert: small
-  grid_gap_horiz: medium
-  enable_cards: true
-  align: center
-  background_color: none
-  actions: []
   padding_top: ''
   padding_bottom: ''
   has_border: false
