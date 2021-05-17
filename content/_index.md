@@ -80,6 +80,26 @@ sections:
     align: ''
     type: ''
     title: Heading
+  - actions:
+    - style: link
+      label: Learn More
+      url: "#"
+      has_icon: false
+      icon: ''
+      icon_position: ''
+      new_window: false
+      no_follow: false
+      type: ''
+    title: ''
+    subtitle: ''
+    content: ''
+    image: ''
+    image_alt: ''
+    video_embed_html: ''
+    media_position: ''
+    media_width: ''
+    align: ''
+    type: ''
   has_border: false
   background_image: ''
   background_image_opacity: 
