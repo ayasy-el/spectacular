@@ -81,7 +81,7 @@ sections:
     type: ''
     title: Heading
   - actions:
-    - style: link
+    - style: secondary
       label: Learn More
       url: "#"
       has_icon: false
@@ -98,7 +98,7 @@ sections:
     video_embed_html: ''
     media_position: ''
     media_width: ''
-    align: ''
+    align: right
     type: ''
   has_border: false
   background_image: ''
