@@ -145,4 +145,4 @@ fields:
   hidden: true
   default: features_section
   config:
-    required: true
+    required: false
