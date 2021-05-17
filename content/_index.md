@@ -31,7 +31,7 @@ sections:
     background_image_size: ''
     background_image_position: ''
     background_image_repeat: ''
-    background_image_opacity: 25
+    background_image_opacity: 20
   - type: grid_section
     template: grid_section
     title: Image Grid
