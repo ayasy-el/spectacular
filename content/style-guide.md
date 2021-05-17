@@ -4,30 +4,43 @@ seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
   title: Theme Style Guide
-  description: A reference for suggested typographic treatment and styles for your content
+  description: A reference for suggested typographic treatment and styles for your
+    content
   extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: Theme Style Guide
-      keyName: property
-    - name: 'og:description'
-      value: >-
-        A reference for suggested typographic treatment and styles for your
-        content
-      keyName: property
-    - name: 'twitter:card'
-      value: summary
-    - name: 'twitter:title'
-      value: Theme Style Guide
-    - name: 'twitter:description'
-      value: >-
-        A reference for suggested typographic treatment and styles for your
-        content
+  - name: og:type
+    value: website
+    keyName: property
+    relativeUrl: false
+  - name: og:title
+    value: Theme Style Guide
+    keyName: property
+    relativeUrl: false
+  - name: og:description
+    value: A reference for suggested typographic treatment and styles for your content
+    keyName: property
+    relativeUrl: false
+  - name: twitter:card
+    value: summary
+    keyName: ''
+    relativeUrl: false
+  - name: twitter:title
+    value: Theme Style Guide
+    keyName: ''
+    relativeUrl: false
+  - name: twitter:description
+    value: A reference for suggested typographic treatment and styles for your content
+    keyName: ''
+    relativeUrl: false
+  robots: []
 layout: page
----
+gallery:
+- "/images/about-1.jpg"
+- "/images/about-2.jpg"
+- "/images/about-3.jpg"
+- "/images/about-4.jpg"
+- "/images/about-5.jpg"
 
+---
 This is a paragraph. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Fringilla urna porttitor rhoncus dolor purus. Consectetur purus ut faucibus pulvinar. Nullam non nisi est sit. Tellus in metus vulputate eu scelerisque felis. Nunc congue nisi vitae suscipit tellus mauris. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Fermentum iaculis eu non diam phasellus vestibulum. Faucibus turpis in eu mi bibendum neque egestas congue.
 
 # This is an H1
