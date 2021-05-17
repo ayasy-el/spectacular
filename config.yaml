@@ -4,8 +4,8 @@ baseURL: "/"
 params:
   layout_type: boxed
   style: classic
-  palette: green
-  mode: light
+  palette: blue
+  mode: dark
   base_font: serif
   header:
     type: header
