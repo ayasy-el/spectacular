@@ -25,7 +25,7 @@ fields:
   hidden: true
   default: category
   config:
-    required: true
+    required: false
 pages:
 - data/categories/general.json
 - data/categories/news.json
