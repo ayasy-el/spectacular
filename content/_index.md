@@ -55,20 +55,20 @@ sections:
       Lorem Ipsum passages recently with"
     actions:
     - style: link
-      label: facebook
-      url: https://www.facebook.com/
-      has_icon: true
-      icon: facebook
-      icon_position: ''
-      new_window: false
-      no_follow: false
-      type: ''
-    - style: link
       label: ayasy.el_
       url: https://www.instagram.com/ayasy.el_/
       has_icon: true
       icon: instagram
       icon_position: left
+      new_window: false
+      no_follow: false
+      type: ''
+    - style: link
+      label: facebook
+      url: https://www.facebook.com/
+      has_icon: true
+      icon: facebook
+      icon_position: ''
       new_window: false
       no_follow: false
       type: ''
