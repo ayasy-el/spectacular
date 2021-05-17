@@ -28,7 +28,7 @@ sections:
   video_embed_html: ''
   has_border: false
   background_image: "/images/hero-background.jpg"
-  background_image_opacity: '0'
+  background_image_opacity: '100'
   background_image_size: ''
   background_image_position: ''
   background_image_repeat: ''
