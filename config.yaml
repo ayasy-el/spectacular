@@ -22,7 +22,7 @@ params:
       - type: action
         template: action
         label: Gallery
-        url: /pricing
+        url: '#'
         style: link
       - type: action
         template: action
