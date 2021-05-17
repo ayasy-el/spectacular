@@ -2,11 +2,11 @@
 title: Stackbit DIY Theme
 baseURL: "/"
 params:
-  layout_type: full-width
+  layout_type: boxed
   style: classic
   palette: blue
   mode: dark
-  base_font: sans-serif
+  base_font: serif
   header:
     type: header
     template: header
