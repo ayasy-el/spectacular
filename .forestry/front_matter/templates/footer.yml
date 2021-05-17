@@ -109,4 +109,4 @@ fields:
   hidden: true
   default: footer
   config:
-    required: true
+    required: false
