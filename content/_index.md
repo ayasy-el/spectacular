@@ -319,10 +319,10 @@ sections:
   background_image_repeat: ''
   background_image_opacity: 
 - template: features_section
-  feature_padding_vert: medium
+  feature_padding_vert: small
   align: center
-  padding_top: medium
-  padding_bottom: medium
+  padding_top: none
+  padding_bottom: none
   background_color: primary
   background_image_size: cover
   background_image_position: center center
