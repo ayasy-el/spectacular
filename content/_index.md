@@ -185,6 +185,7 @@ sections:
         subtitle: ''
         actions_width: ''
         image_width: ''
+        
     grid_cols: three
     grid_gap_vert: small
     grid_gap_horiz: medium
