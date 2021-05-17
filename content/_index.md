@@ -527,7 +527,7 @@ sections:
         content: >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
           ligula, cursus id molestie vel, maximus aliquet risus.
-        image: images/hanson-deck.png
+        image: /images/classic/icon-3.svg
         image_alt: Hanson Deck
         image_position: left
         image_width: twenty-five
