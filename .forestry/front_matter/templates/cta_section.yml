@@ -163,4 +163,4 @@ fields:
   hidden: true
   default: cta_section
   config:
-    required: true
+    required: false
