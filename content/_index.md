@@ -264,7 +264,7 @@ sections:
     image_alt: Section item 3 icon
     image_position: top
     image_align: left
-    image_has_padding: true
+    image_has_padding: false
     subtitle: ''
     actions_width: ''
     image_width: ''
