@@ -244,9 +244,7 @@ sections:
     template: grid_item
     title: Section Item 6
     title_align: left
-    content: 'Ullamcorper a lacus vestibulum
-
-'
+    content: 'Ullamcorper a lacus vestibulum'
     content_align: left
     actions:
     - type: action
