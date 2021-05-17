@@ -2,8 +2,8 @@
 title: Stackbit DIY Theme
 baseURL: "/"
 params:
-  layout_type: boxed
-  style: minimal
+  layout_type: full-width
+  style: classic
   palette: blue
   mode: light
   base_font: serif
