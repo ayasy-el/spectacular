@@ -25,7 +25,7 @@ fields:
   hidden: true
   default: tag
   config:
-    required: true
+    required: false
 pages:
 - data/tags/jamstack.json
 - data/tags/netlify.json
