@@ -33,7 +33,7 @@ fields:
   hidden: true
   default: advanced
   config:
-    required: true
+    required: false
 pages:
 - content/_index.md
 - content/about.md
