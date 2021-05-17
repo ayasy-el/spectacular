@@ -510,7 +510,7 @@ sections:
   enable_cards: false
   padding_top: ''
   padding_bottom: ''
-  has_border: false
+  has_border: true
   background_color: ''
   background_image: ''
   background_image_size: ''
