@@ -464,7 +464,7 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        image: images/logo-5.svg
+        image: /images/about-1.jpg
         image_alt: DatoCMS logo
         image_align: center
         title: ''
