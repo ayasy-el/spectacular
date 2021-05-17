@@ -17,7 +17,7 @@ params:
       - type: action
         template: action
         label: Departement
-        url: /features
+        url: '#'
         style: link
       - type: action
         template: action
