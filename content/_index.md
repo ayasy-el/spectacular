@@ -190,9 +190,7 @@ sections:
     template: grid_item
     title: Section Item 4
     title_align: left
-    content: 'Lorem ipsum dolor sit amet
-
-'
+    content: 'Lorem ipsum dolor sit amet'
     content_align: left
     actions:
     - type: action
