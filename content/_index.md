@@ -318,6 +318,43 @@ sections:
   background_image_position: ''
   background_image_repeat: ''
   background_image_opacity: 
+- template: features_section
+  feature_padding_vert: medium
+  align: center
+  padding_top: medium
+  padding_bottom: medium
+  background_color: none
+  background_image_size: cover
+  background_image_position: center center
+  background_image_repeat: no-repeat
+  type: features_section
+  features:
+  - title: The Big Title For the Feature
+    subtitle: Sed sed commodo turpis, eget rutrum dui.
+    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
+      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
+    actions:
+    - style: link
+      label: Read More
+      url: "#"
+      has_icon: false
+      icon: ''
+      icon_position: ''
+      new_window: false
+      no_follow: false
+      type: ''
+    image: ''
+    image_alt: ''
+    video_embed_html: ''
+    media_position: ''
+    media_width: ''
+    align: ''
+    type: ''
+  title: ''
+  subtitle: ''
+  has_border: false
+  background_image: ''
+  background_image_opacity: 
 - type: grid_section
   template: grid_section
   title: Image Grid
@@ -461,35 +498,6 @@ sections:
   padding_bottom: ''
   has_border: false
   background_color: ''
-  background_image: ''
-  background_image_size: ''
-  background_image_position: ''
-  background_image_repeat: ''
-  background_image_opacity: 
-- type: features_section
-  template: features_section
-  features:
-  - type: feature
-    template: feature
-    title: "“Stackbit is fast! Themes are always up to date. It’s easy to use across
-      the organization, and collaboration is easy.”"
-    subtitle: Brandon Guidelines, Sr. Design Manager at Company
-    image: images/brandon-guidelines.png
-    image_alt: Brandon Guidelines
-    media_position: right
-    media_width: thirty-three
-    content: ''
-    actions: []
-    video_embed_html: ''
-    align: ''
-  feature_padding_vert: small
-  background_color: primary
-  title: ''
-  subtitle: ''
-  align: ''
-  padding_top: ''
-  padding_bottom: ''
-  has_border: false
   background_image: ''
   background_image_size: ''
   background_image_position: ''
