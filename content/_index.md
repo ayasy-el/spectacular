@@ -448,7 +448,7 @@ sections:
         image_has_padding: false
       - type: grid_item
         template: grid_item
-        image: images/logo-4.svg
+        image: /images/about-2.jpg
         image_alt: Sanity logo
         image_align: center
         title: ''
