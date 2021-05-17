@@ -11,4 +11,21 @@
 	</div>
 </article>
 
-{{ end }}
+{{ if .Params.gallery }}
+<div class="container">
+	<!--<div class="grid grid-gap-small">
+		{{ range $item := .Params.gallery }}
+		<div class="item card--highlight p-1 grid grid-gap-none">
+			<img src=" {{ . | relURL }}">
+		</div>
+		{{ end }}
+	</div>-->
+	<div class="flexbox grid grid-gap-small">
+		{{ range $item := .Params.gallery }}
+		<div class="g-item card--highlight p-1 grid grid-gap-none">
+			<img src=" {{ . | relURL }}">
+		</div>
+		{{ end }}
+	</div>
+	{{ end }}
+	{{ end }}
