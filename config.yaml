@@ -3,8 +3,8 @@ title: Stackbit DIY Theme
 baseURL: "/"
 params:
   layout_type: boxed
-  style: classic
-  palette: gray
+  style: bold
+  palette: blue
   mode: dark
   base_font: serif
   header:
