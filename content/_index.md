@@ -3,7 +3,7 @@ title: Home
 sections:
 - type: hero_section
   template: hero_section
-  title: This Is A Big Hero Headline
+  title: Lorem
   subtitle: Optional hero section subtitle
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
     cursus id molestie vel.
@@ -18,17 +18,17 @@ sections:
     icon_position: ''
     new_window: false
     no_follow: false
-  image: images/classic/hero.png
+  image: "/images/logo-1.svg"
   image_alt: Hero section placeholder image
-  media_position: left
+  media_position: top
   media_width: fifty
-  align: left
+  align: center
   padding_top: large
   padding_bottom: large
   background_color: primary
   video_embed_html: ''
   has_border: false
-  background_image: ''
+  background_image: "/images/hero-background.jpg"
   background_image_opacity: 
   background_image_size: ''
   background_image_position: ''
