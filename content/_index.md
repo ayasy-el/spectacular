@@ -47,8 +47,14 @@ sections:
     features:
       - subtitle: ''
         content: >-
-            **Lorem Ipsum** is simply dummy text of the   printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, `but also the leap into electronic typesetting, remaining  essentially unchanged`. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages recently with
-        
+          **Lorem Ipsum** is simply dummy text of the   printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,  when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, `but also the leap into electronic typesetting,
+          remaining  essentially unchanged`. It was popularised in the 1960s
+          with the release of Letraset sheets containing Lorem Ipsum passages
+          recently with
         actions:
           - style: link
             label: ayasy.el_
@@ -98,7 +104,6 @@ sections:
         type: ''
     has_border: false
     background_image: ''
-
   - type: grid_section
     template: grid_section
     title: Lorem Departement
@@ -185,10 +190,9 @@ sections:
         subtitle: ''
         actions_width: ''
         image_width: ''
-        
       - type: grid_item
         template: grid_item
-        title: Section Item 1
+        title: Section Item 4
         title_align: left
         content: |
           Lorem ipsum dolor sit amet
@@ -267,7 +271,6 @@ sections:
         subtitle: ''
         actions_width: ''
         image_width: ''
-
     grid_cols: three
     grid_gap_vert: small
     grid_gap_horiz: medium
