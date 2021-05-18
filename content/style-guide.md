@@ -50,7 +50,7 @@ gallery:
   - /images/hero-background.jpg
   - /images/about-1.jpg
   - /images/logo-4.svg
-  - /images/hugh-saturation.jpg
+  - /images/logo-3.svg
   - /images/diy-preview.png
   - /images/classic/icon-3.svg
   - /images/classic/icon-2.svg
