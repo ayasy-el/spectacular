@@ -10,6 +10,15 @@ fields:
   name: subtitle
   label: Subtitle
   description: The subtitle of the section displayed above the title
+- type: boolean
+  name: show_date
+  label: Show date
+  description: Show the publish date of the post
+  default: true
+- type: datetime
+  name: date
+  label: Date
+  description: Date of the event
 - type: select
   name: feature_padding_vert
   label: Feature padding vertical
