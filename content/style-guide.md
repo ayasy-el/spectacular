@@ -53,7 +53,7 @@ gallery:
   - /images/hugh-saturation.jpg
   - /images/diy-preview.png
   - /images/classic/icon-3.svg
-  - /images/russell-sprout.jpg
+  - /images/classic/icon-2.svg
   - /images/about-2.jpg
   - /images/about-3.jpg
   - /images/about-4.jpg
