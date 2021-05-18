@@ -64,7 +64,7 @@ sections:
   - "/images/russell-sprout.jpg"
   - "/images/ursula-gurnmeister.jpg"
   - "/images/hero-background.jpg"
-  has_border: false
+  has_border: true
   background_color: ''
   padding_top: large
   padding_bottom: ''
