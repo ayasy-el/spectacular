@@ -1,0 +1,17 @@
+{{ $section := .section }}
+
+<section class="section">
+
+	{{ if $section.gallery }}
+	<div class="container">
+		<div class="masonry">
+			{{ range $item := $section.gallery }}
+			<div class="grid">
+				<img src=" {{ . | relURL }}" class="card--highlight">
+			</div>
+			{{ end }}
+		</div>
+	</div>
+	{{ end }}
+
+</section>

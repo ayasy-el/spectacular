@@ -19,6 +19,7 @@ fields:
   - blog_feed_section
   - cta_section
   - form_section
+  - gallery_section
 - type: field_group
   name: seo
   label: Seo

@@ -36,29 +36,6 @@ seo:
       relativeUrl: false
   robots: []
 layout: page
-gallery:
-  - /images/about-1.jpg
-  - /images/hero-background.jpg
-  - /images/hugh-saturation.jpg
-  - /images/classic/feature-3.png
-  - /images/logo-1.svg
-  - /images/russell-sprout.jpg
-  - /images/about-2.jpg
-  - /images/about-3.jpg
-  - /images/about-4.jpg
-  - /images/about-5.jpg
-  - /images/hero-background.jpg
-  - /images/about-1.jpg
-  - /images/logo-4.svg
-  - /images/logo-3.svg
-  - /images/diy-preview.png
-  - /images/classic/icon-3.svg
-  - /images/classic/icon-2.svg
-  - /images/about-2.jpg
-  - /images/about-3.jpg
-  - /images/about-4.jpg
-  - /images/classic/post-4.png
-  - /images/hero-background.jpg
 ---
 This is a paragraph. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Fringilla urna porttitor rhoncus dolor purus. Consectetur purus ut faucibus pulvinar. Nullam non nisi est sit. Tellus in metus vulputate eu scelerisque felis. Nunc congue nisi vitae suscipit tellus mauris. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Fermentum iaculis eu non diam phasellus vestibulum. Faucibus turpis in eu mi bibendum neque egestas congue.
 
