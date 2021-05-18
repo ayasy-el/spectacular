@@ -51,7 +51,7 @@ gallery:
   - /images/about-1.jpg
   - /images/miles-tone.png
   - /images/hugh-saturation.jpg
-  - /images/russell-sprout.jpg
+  - /images/diy-preview.png
   - /images/logo-1.svg
   - /images/russell-sprout.jpg
   - /images/about-2.jpg
