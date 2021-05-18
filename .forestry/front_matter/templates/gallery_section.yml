@@ -6,3 +6,10 @@ fields:
   type: image_gallery
   config: {}
   label: gallery
+- name: type
+  type: text
+  config:
+    required: false
+  label: Object Type
+  hidden: true
+  default: gallery_section
