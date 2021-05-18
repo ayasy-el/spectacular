@@ -76,6 +76,8 @@ sections:
   title: Name Event
   subtitle: Some describtion for event
   feature_padding_vert: small
+  show_date: true
+  date: 2021-05-17T17:00:00+00:00
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
