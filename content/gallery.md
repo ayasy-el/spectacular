@@ -65,7 +65,7 @@ sections:
   - "/images/ursula-gurnmeister.jpg"
   - "/images/hero-background.jpg"
   has_border: true
-  background_color: secondary
+  background_color: none
   padding_top: large
   padding_bottom: ''
   background_image: ''
