@@ -1,7 +1,9 @@
 ---
 title: Gallery
 sections:
-  - title: lorem-ipsum
+  - type: hero_section
+    template: hero_section
+    title: lorem-ipsum
     subtitle: lorem-ipsum
     actions: []
     image_alt: lorem-ipsum
@@ -15,8 +17,6 @@ sections:
     background_image_size: cover
     background_image_position: center center
     background_image_repeat: no-repeat
-    type: hero_section
-    template: hero_section
     image: ''
     background_image: ''
   - type: gallery_section
