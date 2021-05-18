@@ -1,6 +1,23 @@
 {{ $section := .section }}
 
-<section class="section">
+{{ $padding_top := $section.padding_top | default "medium" }}
+{{ $padding_bottom := $section.padding_bottom | default "medium" }}
+
+{{ $bg_color := $section.background_color | default "none" }}
+{{ $bg_img_opacity_pct := $section.background_image_opacity | default 100 }}
+{{ $bg_img_opacity := mul $bg_img_opacity_pct 0.01 }}
+{{ $bg_img_size := $section.background_image_size | default "cover" }}
+{{ $bg_img_position := $section.background_image_position | default "center center" }}
+{{ $bg_img_repeat := $section.background_image_repeat | default "no-repeat" }}
+
+<section
+	class="section {{ if $section.has_border }} has-border{{ end }}{{ if $section.background_image }} has-cover{{ end }}{{ if eq $bg_color "none" }} bg-none{{ end }}{{ if eq $bg_color "primary" }} bg-primary{{ end }}{{ if eq $bg_color "secondary" }} bg-secondary{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
+
+	{{ if $section.background_image }}
+	<div class="cover-img"
+		style="background-image: url('{{ $section.background_image | relURL }}'); opacity: {{ $bg_img_opacity }}; background-size: {{ $bg_img_size }}; background-repeat: {{ $bg_img_repeat }}; background-position: {{ $bg_img_position }}">
+	</div>
+	{{ end }}
 
 	{{ if $section.gallery }}
 	<div class="container">

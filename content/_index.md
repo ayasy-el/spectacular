@@ -518,7 +518,7 @@ sections:
   actions:
   - style: secondary
     label: View All
-    url: "#"
+    url: "/gallery"
     has_icon: false
     icon: ''
     icon_position: ''

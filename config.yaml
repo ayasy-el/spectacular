@@ -28,7 +28,7 @@ params:
     - type: action
       template: action
       label: Gallery
-      url: "#"
+      url: "/gallery"
       style: link
       has_icon: false
       icon: ''
