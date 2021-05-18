@@ -75,7 +75,7 @@ sections:
   background_image_repeat: ''
   title: Name Event
   subtitle: Some describtion for event
-  feature_padding_vert: large
+  feature_padding_vert: small
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
