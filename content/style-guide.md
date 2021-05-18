@@ -40,7 +40,7 @@ gallery:
   - /images/about-1.jpg
   - /images/hero-background.jpg
   - /images/hugh-saturation.jpg
-  - /images/russell-sprout.jpg
+  - /images/classic/feature-3.png
   - /images/logo-1.svg
   - /images/russell-sprout.jpg
   - /images/about-2.jpg
