@@ -49,7 +49,7 @@ gallery:
   - /images/about-5.jpg
   - /images/hero-background.jpg
   - /images/about-1.jpg
-  - /images/miles-tone.png
+  - /images/logo-4.svg
   - /images/hugh-saturation.jpg
   - /images/diy-preview.png
   - /images/logo-1.svg
