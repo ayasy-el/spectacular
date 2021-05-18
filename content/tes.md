@@ -1,5 +1,4 @@
 +++
-draft = true
 layout = "page"
 title = "Tes"
 [seo]

@@ -1,5 +1,4 @@
 +++
-draft = true
 layout = "advanced"
 title = "Gallery"
 [seo]
