@@ -16,8 +16,11 @@ body {
 @each $style in map-keys($theme-styles) {
 	$style-suffix: "#{$style}";
 	$fonts: map-deep-get($theme-styles, $style, "fonts");
-	@each $font, $stack in $fonts {
+
+	@each $font,
+	$stack in $fonts {
 		$font-suffix: "#{$font}";
+
 		.style-#{$style-suffix} {
 			&.font-#{$font-suffix} {
 				font-family: $stack;
@@ -43,7 +46,7 @@ h5,
 h6 {
 	font-weight: 700;
 	line-height: 1.2;
-	margin: 1.25em 0 0.5em;
+	margin: 0.25em 0 0.5em;
 
 	&:first-child {
 		margin-top: 0;
@@ -146,14 +149,15 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 }
 
 dt {
 	font-weight: 700;
 }
+
 dd {
 	margin-left: 0;
 }

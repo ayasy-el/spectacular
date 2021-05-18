@@ -19,6 +19,11 @@ fields:
   name: date
   label: Date
   description: Date of the event
+  config:
+    date_format: DD/MM/YYYY
+    time_format: h:mm A Z
+    display_utc: false
+    export_format: YYYY-MM-DD
 - type: select
   name: feature_padding_vert
   label: Feature padding vertical
