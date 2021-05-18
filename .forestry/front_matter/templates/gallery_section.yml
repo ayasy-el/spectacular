@@ -98,7 +98,7 @@ fields:
 - name: gallery
   type: image_gallery
   config: {}
-  label: gallery
+  label: images
 - name: type
   type: text
   config:
