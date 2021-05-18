@@ -72,7 +72,7 @@ sections:
   subtitle: Event Description
   feature_padding_vert: small
   show_date: true
-  date: 2021-05-18
+  date: 2021-05-20
 - template: gallery_section
   type: gallery_section
   gallery:
@@ -119,8 +119,8 @@ sections:
   background_color: none
   padding_top: small
   padding_bottom: small
-  title: 
-  subtitle: 
+  title: ''
+  subtitle: ''
   feature_padding_vert: small
   show_date: true
   date: 2021-05-17
