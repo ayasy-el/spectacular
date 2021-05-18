@@ -67,12 +67,15 @@ sections:
   has_border: true
   background_color: none
   padding_top: large
-  padding_bottom: ''
+  padding_bottom: medium
   background_image: ''
   background_image_opacity: 
   background_image_size: ''
   background_image_position: ''
   background_image_repeat: ''
+  title: Name Event
+  subtitle: Some describtion for event
+  feature_padding_vert: ''
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
