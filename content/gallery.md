@@ -64,10 +64,10 @@ sections:
   - "/images/russell-sprout.jpg"
   - "/images/ursula-gurnmeister.jpg"
   - "/images/hero-background.jpg"
-  has_border: true
-  background_color: primary
+  has_border: false
+  background_color: ''
   padding_top: large
-  padding_bottom: medium
+  padding_bottom: ''
   background_image: ''
   background_image_opacity: 
   background_image_size: ''
