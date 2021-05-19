@@ -140,3 +140,12 @@ This is [an example](http://example.com) link.
     </tfoot>
   </table>
 </div>
+<hr />
+
+## Support FontAwesome
+<i class="fab fa-facebook"></i>
+
+``` <i class="fab fa-facebook"></i> ```
+
+On the [FontAwesome](https://fontawesome.com) website, you can look up every
+free icon and also the information you need to put into this `icon` param.

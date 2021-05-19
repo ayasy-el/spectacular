@@ -185,7 +185,7 @@ params:
       url: https://github.com/
       style: link
       has_icon: true
-      icon: github
+      icon: tes
       icon_position: center
       new_window: true
       no_follow: false
