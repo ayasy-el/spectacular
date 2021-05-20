@@ -525,7 +525,7 @@ sections:
     new_window: false
     no_follow: false
     type: ''
-  enable_cards: false
+  enable_cards: true
   padding_top: ''
   padding_bottom: ''
   has_border: true

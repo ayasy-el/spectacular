@@ -1,21 +1,15 @@
 {{ $section := .section }}
-
 {{ $padding_top := $section.padding_top | default "medium" }}
 {{ $padding_bottom := $section.padding_bottom | default "medium" }}
-
 {{ $align_x := $section.align | default "center" }}
 {{ $feature_padding_y := $section.feature_padding_vert | default "medium" }}
 
-<section
-	class="section {{ if $section.has_border }} has-border{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
+<section class="section {{ if $section.has_border }} has-border{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	<div
-		class="container container--medium{{ if or (eq $feature_padding_y "small") (eq $feature_padding_y "medium") }} mb-5{{ end }}{{ if eq $feature_padding_y "large" }} mb-4{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
-
-
+	<div class="container container--medium{{ if or (eq $feature_padding_y "small") (eq $feature_padding_y "medium") }} mb-5{{ end }}{{ if eq $feature_padding_y "large" }} mb-4{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
 		{{ if $section.title }}
 		<h1 class="section__title">{{ $section.title }}</h1>
 		{{ end }}
@@ -26,12 +20,11 @@
 
 		{{ if $section.show_date }}
 		<div class="item__meta">
-			<span class="item__date"><time
-					datetime="{{ $section.date }}">{{ $section.date | dateFormat "January 2, 2006" }}</time></span>
+			<i class="fas fa-calendar-alt fa-xs"></i>
+			<span class="item__date"><time datetime="{{ $section.date }}">{{ $section.date | dateFormat "January 2, 2006" }}</time></span>
 		</div>
 		{{ end }}
 	</div>
-
 
 	{{ if $section.gallery }}
 	<div class="container">
@@ -39,8 +32,7 @@
 			{{ range $item := $section.gallery }}
 			<div class="grid">
 				<!--<img src=" {{ . | relURL }}" class="card--highlight">-->
-				<a data-fancybox="gallery" href="{{ . | relURL }}"><img src="{{ . | relURL }}"
-						class="thumb card--highlight"></a>
+				<a data-fancybox="gallery" href="{{ . | relURL }}"><img src="{{ . | relURL }}" class="thumb card--highlight"></a>
 			</div>
 			{{ end }}
 		</div>
