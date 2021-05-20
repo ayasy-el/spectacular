@@ -140,3 +140,7 @@ This is [an example](http://example.com) link.
     </tfoot>
   </table>
 </div>
+
+## Use SVG Icon
+{{% svg github %}}
+{{% svg "brands/youtube" %}}
