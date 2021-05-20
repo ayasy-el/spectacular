@@ -75,8 +75,8 @@ sections:
     - style: link
       label: telegram
       has_icon: true
-      icon: ''
-      icon_position: center
+      icon: telegram
+      icon_position: left
       new_window: false
       no_follow: false
       type: ''
@@ -84,8 +84,8 @@ sections:
     - style: link
       label: email
       has_icon: true
-      icon: ''
-      icon_position: center
+      icon: email
+      icon_position: left
       new_window: false
       no_follow: false
       type: ''
@@ -525,7 +525,7 @@ sections:
     new_window: false
     no_follow: false
     type: ''
-  enable_cards: false
+  enable_cards: true
   padding_top: ''
   padding_bottom: ''
   has_border: true

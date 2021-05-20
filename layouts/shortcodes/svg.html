@@ -1,0 +1,6 @@
+<span>
+    {{- $fname:=print "svg/" ( .Get 0 ) ".svg" -}}
+    {{- $path:="<path" -}}
+    {{- $fill:="<path fill=\"currentColor\"" -}}
+    {{ replace ( replace (readFile $fname) "<svg" "<svg class=icon" ) $path $fill | safeHTML }}
+</span>
