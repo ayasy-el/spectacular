@@ -144,3 +144,13 @@ This is [an example](http://example.com) link.
 ## Use SVG Icon
 {{% svg github %}}
 {{% svg "brands/youtube" %}}
+<i class="fas fa-user"></i>
+
+<div class="fa-3x">
+  <i class="fas fa-spinner fa-spin"></i>
+  <i class="fas fa-circle-notch fa-spin"></i>
+  <i class="fas fa-sync fa-spin"></i>
+  <i class="fas fa-cog fa-spin"></i>
+  <i class="fas fa-spinner fa-pulse"></i>
+  <i class="fas fa-stroopwafel fa-spin"></i>
+</div>

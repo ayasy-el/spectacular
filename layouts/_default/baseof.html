@@ -25,6 +25,7 @@
         {{ end }}
         {{ $style := .Site.Params.style | default "classic" }}
         {{ $font := .Site.Params.base_font | default "sans-serif" }}
+        <link href="/css/all.css" rel="stylesheet">
         {{ if eq $style "bold" }}
           {{ if eq $font "serif" }}
           <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
