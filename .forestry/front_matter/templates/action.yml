@@ -39,6 +39,13 @@ fields:
     options:
     - arrow-left
     - arrow-right
+    - arrow-down
+    - double-arrow-down
+    - arrow-up
+    - double-arrow-up
+    - close
+    - menu
+    - whatsapp
     - facebook
     - github
     - instagram
@@ -46,6 +53,8 @@ fields:
     - twitter
     - vimeo
     - youtube
+    - email
+    - telegram
 - type: select
   name: icon_position
   label: Icon position
