@@ -17,6 +17,8 @@ sections:
     icon_position: ''
     new_window: false
     no_follow: false
+    costum_icon: false
+    path_to_svg_icon: ''
   image: "/images/logo-1.svg"
   image_alt: Hero section placeholder image
   media_position: top
@@ -63,6 +65,8 @@ sections:
       new_window: false
       no_follow: false
       type: ''
+      costum_icon: false
+      path_to_svg_icon: ''
     - style: link
       label: facebook
       url: https://www.facebook.com/
@@ -72,6 +76,8 @@ sections:
       new_window: false
       no_follow: false
       type: ''
+      costum_icon: false
+      path_to_svg_icon: ''
     - style: link
       label: telegram
       has_icon: true
@@ -81,6 +87,8 @@ sections:
       no_follow: false
       type: ''
       url: "#"
+      costum_icon: false
+      path_to_svg_icon: ''
     - style: link
       label: email
       has_icon: true
@@ -90,6 +98,8 @@ sections:
       no_follow: false
       type: ''
       url: "#"
+      costum_icon: false
+      path_to_svg_icon: ''
     image: ''
     image_alt: ''
     video_embed_html: ''
@@ -100,14 +110,16 @@ sections:
     title: Heading
   - actions:
     - style: secondary
-      label: Show More
-      url: "#"
-      has_icon: false
+      label: About Us
+      url: about/
+      has_icon: true
       icon: ''
-      icon_position: ''
+      icon_position: right
       new_window: false
       no_follow: false
       type: ''
+      costum_icon: true
+      path_to_svg_icon: regular/address-card
     title: ''
     subtitle: ''
     content: ''
@@ -143,6 +155,8 @@ sections:
       icon_position: center
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     actions_align: left
     image: images/classic/icon-1.svg
     image_alt: Section item 1 icon
@@ -169,6 +183,8 @@ sections:
       icon_position: center
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     actions_align: left
     image: images/classic/icon-2.svg
     image_alt: Section item 2 icon
@@ -195,6 +211,8 @@ sections:
       icon_position: center
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     actions_align: left
     image: images/classic/icon-3.svg
     image_alt: Section item 3 icon
@@ -221,6 +239,8 @@ sections:
       icon_position: center
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     actions_align: left
     image: "/images/logo-4.svg"
     image_alt: Section item 1 icon
@@ -247,6 +267,8 @@ sections:
       icon_position: center
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     actions_align: left
     image: "/images/logo-1.svg"
     image_alt: Section item 2 icon
@@ -273,6 +295,8 @@ sections:
       icon_position: center
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     actions_align: left
     image: "/images/logo-3.svg"
     image_alt: Section item 3 icon
@@ -297,6 +321,7 @@ sections:
   background_image_position: ''
   background_image_repeat: ''
   background_image_opacity: 
+  modal_image: false
 - type: features_section
   template: features_section
   title: Information
@@ -319,6 +344,8 @@ sections:
       icon_position: right
       new_window: false
       no_follow: false
+      costum_icon: false
+      path_to_svg_icon: ''
     image: images/classic/feature-1.png
     image_alt: Feature 1 placeholder image
     media_position: left
@@ -361,6 +388,8 @@ sections:
       new_window: false
       no_follow: false
       type: ''
+      costum_icon: false
+      path_to_svg_icon: ''
     image: "/images/classic/feature-3.png"
     image_alt: ''
     video_embed_html: ''
@@ -388,6 +417,8 @@ sections:
     icon_position: ''
     new_window: false
     no_follow: false
+    costum_icon: false
+    path_to_svg_icon: ''
   blog_feed_cols: three
   enable_cards: true
   show_recent: true
@@ -526,6 +557,8 @@ sections:
     new_window: false
     no_follow: false
     type: ''
+    costum_icon: false
+    path_to_svg_icon: ''
   enable_cards: true
   padding_top: ''
   padding_bottom: ''
@@ -632,6 +665,7 @@ sections:
   background_image_position: ''
   background_image_repeat: ''
   background_image_opacity: 
+  modal_image: false
 - type: cta_section
   template: cta_section
   title: This is Call To Action Section In DIY Theme!
@@ -648,6 +682,8 @@ sections:
     icon_position: ''
     new_window: false
     no_follow: false
+    costum_icon: false
+    path_to_svg_icon: ''
   actions_position: right
   actions_width: fourty
   align: left
