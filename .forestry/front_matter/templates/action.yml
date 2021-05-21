@@ -30,6 +30,10 @@ fields:
   name: has_icon
   label: Show icon
   default: false
+- name: costum_icon
+  type: boolean
+  label: Costum icon
+  default: false
 - type: select
   name: icon
   label: Icon
@@ -55,6 +59,17 @@ fields:
     - youtube
     - email
     - telegram
+  showOnly:
+    field: costum_icon
+- name: path_to_svg_icon
+  type: text
+  config:
+    required: false
+  label: Path to svg icon
+  description: relative path from <code>svg/</code> directory
+  showOnly:
+    field: costum_icon
+    value: true
 - type: select
   name: icon_position
   label: Icon position
