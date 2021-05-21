@@ -414,6 +414,7 @@ sections:
   template: grid_section
   title: Image Grid
   subtitle: Grid Section Example
+  modal_image: true
   grid_items:
   - type: grid_item
     template: grid_item

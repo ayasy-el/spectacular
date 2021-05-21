@@ -62,9 +62,15 @@
 		<div class="{{ if $is_horiz }}grid{{ end }}{{ if $is_horiz }} grid-gap-none{{ end }}{{ if $is_vert }} flex{{ end }}{{ if $is_vert }} flex-column{{ end }}">
 			{{ if $has_image }}
 			<div class="{{ if $is_horiz }}cell-12{{ end }}{{ if and $is_horiz (eq $image_width "twenty-five") }} cell-md-3{{ end }}{{ if and $is_horiz (eq $image_width "thirty-three") }} cell-md-4{{ end }}{{ if and $is_horiz (eq $image_width "fourty") }} cell-md-5{{ end }}{{ if and $is_horiz (eq $image_width "fifty") }} cell-md-6{{ end }}{{ if and $is_horiz (eq $image_width "sixty") }} cell-md-7{{ end }}">
+				{{ if $section.modal_image }}
+				<div class="item__media{{ if $is_card }} card__media{{ end }}{{ if $is_card_no_padding }} card__media--fill{{ end }}{{ if and $is_card (eq $image_pos "top") }} card__media--top{{ end }}{{ if and $is_card (eq $image_pos "bottom") }} card__media--bottom{{ end }}{{ if and $is_card (eq $image_pos "left") }} card__media--left{{ end }}{{ if and $is_card (eq $image_pos "right") }} card__media--right{{ end }}{{ if and (and (ne $image_pos "bottom") $has_text) (eq $is_card_no_padding false) }} mb-3{{ end }}{{ if and (and $is_horiz $has_text) (eq $is_card_no_padding false) }} mb-md-0{{ end }}{{ if and (and (eq $image_pos "right") $has_text) (eq $is_card_no_padding false) }} ml-md-3{{ end }}{{ if and (and (eq $image_pos "left") $has_text) (eq $is_card_no_padding false) }} mr-md-3{{ end }}{{ if and (and (eq $image_pos "bottom") $has_text) (eq $is_card_no_padding false) }} mt-3{{ end }}">
+					<a data-fancybox href="{{ $item.image | relURL }}"><img src="{{ $item.image | relURL }}" alt="{{ $item.image_alt }}" class="{{ if eq $image_align_x "center" }} mx-auto{{ end }}{{ if eq $image_align_x "right" }} ml-auto{{ end }}" /></a>
+				</div>
+				{{ else }}
 				<div class="item__media{{ if $is_card }} card__media{{ end }}{{ if $is_card_no_padding }} card__media--fill{{ end }}{{ if and $is_card (eq $image_pos "top") }} card__media--top{{ end }}{{ if and $is_card (eq $image_pos "bottom") }} card__media--bottom{{ end }}{{ if and $is_card (eq $image_pos "left") }} card__media--left{{ end }}{{ if and $is_card (eq $image_pos "right") }} card__media--right{{ end }}{{ if and (and (ne $image_pos "bottom") $has_text) (eq $is_card_no_padding false) }} mb-3{{ end }}{{ if and (and $is_horiz $has_text) (eq $is_card_no_padding false) }} mb-md-0{{ end }}{{ if and (and (eq $image_pos "right") $has_text) (eq $is_card_no_padding false) }} ml-md-3{{ end }}{{ if and (and (eq $image_pos "left") $has_text) (eq $is_card_no_padding false) }} mr-md-3{{ end }}{{ if and (and (eq $image_pos "bottom") $has_text) (eq $is_card_no_padding false) }} mt-3{{ end }}">
 					<img src="{{ $item.image | relURL }}" alt="{{ $item.image_alt }}" class="{{ if eq $image_align_x "center" }} mx-auto{{ end }}{{ if eq $image_align_x "right" }} ml-auto{{ end }}" />
 				</div>
+				{{ end }}
 			</div>
 			{{ end }}
 			{{ if $has_text }}

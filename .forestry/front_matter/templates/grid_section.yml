@@ -11,6 +11,11 @@ fields:
   name: subtitle
   label: Subtitle
   description: The subtitle of the section displayed above the title
+- type: boolean
+  name: modal_image
+  label: Modal Image
+  description: show popup image when click 
+  default: false
 - type: field_group_list
   name: actions
   label: Action buttons
