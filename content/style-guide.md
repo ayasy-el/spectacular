@@ -154,3 +154,8 @@ This is [an example](http://example.com) link.
   <i class="fas fa-spinner fa-pulse"></i>
   <i class="fas fa-stroopwafel fa-spin"></i>
 </div>
+
+## Use Shortcodes
+### Youtube
+
+{{< youtube 2xkNJL4gJ9E >}}
