@@ -134,7 +134,7 @@ sections:
     image: ''
     use_rel_link: false
     url: https://i.picsum.photos/id/9/1920/1080.jpg?hmac=U6DiXpOhZ60TGLvj08EBMO826ARC_wfdjzLbrZKJYYs
-    caption: random image from unsplash
+    caption: image from unsplash
   - use_link: true
     image: ''
     use_rel_link: true
