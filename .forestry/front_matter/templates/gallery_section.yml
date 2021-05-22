@@ -103,25 +103,17 @@ fields:
     showOnly:
       field: use_link
       value: true
-    description: turn off to use absolute link
+    description: 'turn on to use relative link, ex: <code>img/image1.jpg<br></code><br>turn
+      off to use absolute link, ex: <code>example.com/img/image1.jpg</code>'
     default: false
-  - name: rel_link
+  - name: url
     type: text
     config:
       required: false
-    label: relative link
+    label: url
     showOnly:
-      field: use_rel_link
       value: true
-    description: 'ex: <code>img/image1.jpg</code>'
-  - name: abs_link
-    type: text
-    config:
-      required: false
-    label: absolute link
-    showOnly:
-      field: use_rel_link
-    description: 'ex: <code>example.com/img/image1.jpg</code>'
+      field: use_link
   - name: caption
     type: text
     config:
