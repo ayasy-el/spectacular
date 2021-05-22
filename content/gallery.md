@@ -128,7 +128,7 @@ sections:
   show_date: true
   date: 2021-05-17
   id: event-1
-  caption: event-1 caption
+  caption: Event 1 caption
   single_image:
   - use_link: true
     image: ''
