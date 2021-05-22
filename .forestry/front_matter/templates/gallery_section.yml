@@ -77,7 +77,62 @@ fields:
 - name: gallery
   type: image_gallery
   config: {}
-  label: images
+  label: Multiple images uploud
+- name: caption
+  type: text
+  config:
+    required: false
+  label: caption
+  description: caption for all image above
+- name: single_image
+  type: field_group_list
+  fields:
+  - name: use_link
+    type: boolean
+    label: use link
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+    showOnly:
+      field: use_link
+  - name: use_rel_link
+    type: boolean
+    label: use relative link
+    showOnly:
+      field: use_link
+      value: true
+    description: turn off to use absolute link
+    default: true
+  - name: rel_link
+    type: text
+    config:
+      required: false
+    label: relative link
+    showOnly:
+      field: use_rel_link
+      value: true
+    description: 'ex: <code>img/image1.jpg</code>'
+  - name: abs_link
+    type: text
+    config:
+      required: false
+    label: absolute link
+    showOnly:
+      field: use_rel_link
+    description: 'ex: <code>example.com/img/image1.jpg</code>'
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: caption
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Single image uploud
+  description: other option for uploud image
 - name: type
   type: text
   config:
