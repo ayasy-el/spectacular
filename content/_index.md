@@ -3,7 +3,7 @@ title: Home
 sections:
 - type: hero_section
   template: hero_section
-  title: Lorem
+  title: Title
   subtitle: Optional hero section subtitle
   content: "`conse elit 2021 / 2022`"
   actions:
@@ -119,7 +119,7 @@ sections:
       no_follow: false
       type: ''
       costum_icon: true
-      path_to_svg_icon: 'contacts'
+      path_to_svg_icon: 'solid/users'
     title: ''
     subtitle: ''
     content: ''
@@ -135,7 +135,7 @@ sections:
   background_image_opacity: 
 - type: grid_section
   template: grid_section
-  title: Lorem Departement
+  title: Department
   subtitle: Grid Section Example
   grid_items:
   - type: grid_item
