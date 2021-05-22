@@ -114,12 +114,12 @@ sections:
       url: about/
       has_icon: true
       icon: ''
-      icon_position: right
+      icon_position: left
       new_window: false
       no_follow: false
       type: ''
       costum_icon: true
-      path_to_svg_icon: regular/address-card
+      path_to_svg_icon: 'contacts'
     title: ''
     subtitle: ''
     content: ''
@@ -571,7 +571,7 @@ sections:
   background_image_opacity: 
 - type: grid_section
   template: grid_section
-  title: Manfaat Donasi Anda
+  title: Benefits of Your Donation
   subtitle: Grid Section Example
   grid_items:
   - type: grid_item
@@ -677,13 +677,13 @@ sections:
     label: Donate
     url: "/features"
     style: secondary
-    has_icon: false
+    has_icon: true
     icon: ''
-    icon_position: ''
+    icon_position: left
     new_window: false
     no_follow: false
-    costum_icon: false
-    path_to_svg_icon: ''
+    costum_icon: true
+    path_to_svg_icon: 'solid/donate'
   actions_position: right
   actions_width: fourty
   align: left
