@@ -8,6 +8,7 @@ fields:
   config:
     required: true
   label: Id
+  description: must be without spaces
 - type: text
   name: title
   label: Title
