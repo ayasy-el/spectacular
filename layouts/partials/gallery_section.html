@@ -14,7 +14,7 @@
 		<div class="section__subtitle">{{ $section.subtitle }}</div>
 		{{ end }}
 
-		{{ if $section.show_date }}
+		{{ if and $section.show_date $section.date}}
 		<div class="item__meta">
 			<i class="fas fa-calendar-alt fa-xs"></i>
 			<span class="item__date"><time datetime="{{ $section.date }}">{{ $section.date | dateFormat "January 2, 2006" }}</time></span>
@@ -28,7 +28,7 @@
 			{{ range $item := $section.gallery }}
 			<div class="grid">
 				<!--<img src=" {{ . | relURL }}" class="card--highlight">-->
-				<a data-fancybox="gallery" href="{{ . | relURL }}"><img src="{{ . | relURL }}" class="thumb card--highlight"></a>
+				<a data-fancybox="{{$section.id}}" href="{{ . | relURL }}"><img src="{{ . | relURL }}" class="thumb card--highlight"></a>
 			</div>
 			{{ end }}
 		</div>
