@@ -73,6 +73,7 @@ sections:
   feature_padding_vert: small
   show_date: true
   date: 2021-05-20
+  id: event-1
 - template: gallery_section
   type: gallery_section
   gallery:
@@ -124,6 +125,26 @@ sections:
   feature_padding_vert: small
   show_date: true
   date: 2021-05-17
+  id: event-1
+- template: gallery_section
+  show_date: true
+  feature_padding_vert: medium
+  padding_top: medium
+  padding_bottom: medium
+  type: gallery_section
+  id: event-2
+  gallery:
+  - "/images/classic/hero.png"
+  - "/images/classic/post-1.png"
+  - "/images/classic/post-2.png"
+  - "/images/classic/post-3.png"
+  - "/images/classic/post-4.png"
+  - "/images/classic/post-5.png"
+  - "/images/diy-preview.png"
+  title: ''
+  subtitle: ''
+  date: 
+  has_border: false
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
