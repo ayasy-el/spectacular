@@ -132,7 +132,7 @@ fields:
     max: 
     labelField: 
   label: Single image uploud
-  description: other option for uploud image
+  description: another option is to upload a single image or use a link
 - name: type
   type: text
   config:
