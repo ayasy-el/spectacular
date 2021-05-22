@@ -133,8 +133,13 @@ sections:
   - use_link: true
     image: ''
     use_rel_link: false
-    url: https://unsplash.it/1920/1080
+    url: https://i.picsum.photos/id/9/1920/1080.jpg?hmac=U6DiXpOhZ60TGLvj08EBMO826ARC_wfdjzLbrZKJYYs
     caption: random image from unsplash
+  - use_link: true
+    image: ''
+    use_rel_link: true
+    url: images/desmond-eagle.jpg
+    caption: image with relative link
 - template: gallery_section
   show_date: true
   feature_padding_vert: medium
