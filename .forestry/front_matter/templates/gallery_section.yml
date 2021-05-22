@@ -79,9 +79,13 @@ fields:
   config: {}
   label: Multiple images uploud
 - name: caption
-  type: text
+  type: textarea
+  default: ''
   config:
     required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   label: caption
   description: caption for all image above
 - name: single_image
@@ -115,9 +119,13 @@ fields:
       value: true
       field: use_link
   - name: caption
-    type: text
+    type: textarea
+    default: ''
     config:
       required: false
+      wysiwyg: false
+      schema:
+        format: markdown
     label: caption
   config:
     min: 
