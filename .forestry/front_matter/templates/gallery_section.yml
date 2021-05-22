@@ -103,7 +103,7 @@ fields:
     showOnly:
       field: use_link
       value: true
-    description: 'turn on to use relative link, ex: <code>img/image1.jpg<br></code><br>turn
+    description: 'turn on to use relative link, ex: <code>img/image1.jpg</code><br>turn
       off to use absolute link, ex: <code>example.com/img/image1.jpg</code>'
     default: false
   - name: url
