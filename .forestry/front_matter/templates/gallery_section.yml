@@ -130,7 +130,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: caption
   label: Single image uploud
   description: another option is to upload a single image or use a link
 - name: type
