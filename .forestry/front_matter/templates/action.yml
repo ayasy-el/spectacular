@@ -66,7 +66,8 @@ fields:
   config:
     required: false
   label: Path to svg icon
-  description: relative path from <code>svg/</code> directory
+  description: relative path from <code>svg/</code> directory,<br><strong>must be
+    without extension</strong>
   showOnly:
     field: costum_icon
     value: true
