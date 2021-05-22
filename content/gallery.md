@@ -130,6 +130,11 @@ sections:
   id: event-1
   caption: Event 1 caption
   single_image:
+  - use_link: false
+    image: "/images/gustav-purpleson.jpg"
+    use_rel_link: false
+    url: ''
+    caption: image from single image uploud
   - use_link: true
     image: ''
     use_rel_link: false
