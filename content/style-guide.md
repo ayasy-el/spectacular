@@ -76,6 +76,17 @@ Vivamus tempus ornare urna, eget imperdiet quam venenatis ac. Donec fermentum ma
 4. Vivamus convallis urna id felis
 5. Nulla porta tempus sapien
 
+---
+
+- [ ] Donec non tortor in arcu mollis feugiat
+- [x] Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+  <li><span class="fa-li"><i class="fas fa-check-double"></i></span>be used to</li>
+  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+  <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+</ul>
+
 ## Code Blocks
 
 Blocks of code are either fenced by lines with three back-ticks, or are indented with four spaces.
