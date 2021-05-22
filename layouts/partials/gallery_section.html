@@ -37,6 +37,8 @@
 			<div class="grid">
 				{{ if $item.use_link}}
 				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="thumb card--highlight"></a>
+				{{ else }}
+				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img src="{{ $item.image | relURL }}" class="thumb card--highlight"></a>
 				{{end}}
 			</div>
 			{{ end }}
