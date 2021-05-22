@@ -74,6 +74,8 @@ sections:
   show_date: true
   date: 2021-05-20
   id: event-1
+  caption: ''
+  single_image: []
 - template: gallery_section
   type: gallery_section
   gallery:
@@ -126,6 +128,13 @@ sections:
   show_date: true
   date: 2021-05-17
   id: event-1
+  caption: event-1 caption
+  single_image:
+  - use_link: true
+    image: ''
+    use_rel_link: false
+    url: https://unsplash.it/1920/1080
+    caption: random image from unsplash
 - template: gallery_section
   show_date: true
   feature_padding_vert: medium
@@ -145,6 +154,8 @@ sections:
   subtitle: ''
   date: 
   has_border: false
+  caption: ''
+  single_image: []
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
