@@ -104,7 +104,7 @@ fields:
       field: use_link
       value: true
     description: turn off to use absolute link
-    default: true
+    default: false
   - name: rel_link
     type: text
     config:
