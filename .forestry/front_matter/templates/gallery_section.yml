@@ -1,7 +1,13 @@
 ---
 label: Gallery Section
 hide_body: true
+display_field: id
 fields:
+- name: id
+  type: text
+  config:
+    required: true
+  label: Id
 - type: text
   name: title
   label: Title
