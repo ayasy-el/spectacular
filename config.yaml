@@ -16,8 +16,18 @@ params:
     primary_nav_links:
       - type: action
         template: action
-        label: Departement
+        label: Events
         url: '#'
+        style: link
+        has_icon: false
+        icon: ''
+        icon_position: ''
+        new_window: false
+        no_follow: false
+      - type: action
+        template: action
+        label: Article
+        url: '/blog'
         style: link
         has_icon: false
         icon: ''
@@ -36,18 +46,8 @@ params:
         no_follow: false
       - type: action
         template: action
-        label: Blog
-        url: /blog
-        style: link
-        has_icon: false
-        icon: ''
-        icon_position: ''
-        new_window: false
-        no_follow: false
-      - type: action
-        template: action
-        label: About
-        url: /about
+        label: Grafiti
+        url: '#'
         style: link
         has_icon: false
         icon: ''
@@ -58,8 +58,18 @@ params:
     secondary_nav_links:
       - type: action
         template: action
-        label: Contact
-        url: /contact
+        label: QnA
+        url: '#'
+        style: link
+        has_icon: false
+        icon: ''
+        icon_position: ''
+        new_window: false
+        no_follow: false
+      - type: action
+        template: action
+        label: About Us
+        url: /about
         style: link
         has_icon: false
         icon: ''
