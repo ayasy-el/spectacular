@@ -46,8 +46,8 @@ params:
         no_follow: false
       - type: action
         template: action
-        label: Grafiti
-        url: '#'
+        label: Graviti
+        url: '/graviti'
         style: link
         has_icon: false
         icon: ''

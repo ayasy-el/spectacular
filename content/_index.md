@@ -38,14 +38,14 @@ sections:
   feature_padding_vert: medium
   align: center
   padding_top: medium
-  padding_bottom: medium
+  padding_bottom: none
   background_color: secondary
   background_image_size: cover
   background_image_position: center center
   background_image_repeat: no-repeat
   type: features_section
   title: Profile
-  subtitle: Profile Section
+  subtitle: 
   features:
   - subtitle: ''
     content: "**Lorem Ipsum** is simply dummy text of the  printing and typesetting
@@ -125,11 +125,11 @@ sections:
 - type: grid_section
   template: grid_section
   title: Qism
-  subtitle: '??????'
+  subtitle: 'Bidang Kepengurusan'
   grid_items:
   - type: grid_item
     template: grid_item
-    title: Section Item 1
+    title: Da'wah Wa Ruhiyyah
     title_align: left
     content: Lorem ipsum dolor sit amet
     content_align: left
@@ -157,7 +157,7 @@ sections:
     image_width: ''
   - type: grid_item
     template: grid_item
-    title: Section Item 2
+    title: Nadhofah
     title_align: left
     content: Ac felis donec et odio pellentesque
     content_align: left
@@ -185,7 +185,7 @@ sections:
     image_width: ''
   - type: grid_item
     template: grid_item
-    title: Section Item 3
+    title: Lughoh
     title_align: left
     content: Ullamcorper a lacus vestibulum
     content_align: left
@@ -213,7 +213,7 @@ sections:
     image_width: ''
   - type: grid_item
     template: grid_item
-    title: Section Item 4
+    title: Riyadhoh
     title_align: left
     content: Lorem ipsum dolor sit amet
     content_align: left
@@ -241,7 +241,7 @@ sections:
     image_width: ''
   - type: grid_item
     template: grid_item
-    title: Section Item 5
+    title: Ta'lim
     title_align: left
     content: Ac felis donec et odio pellentesque
     content_align: left
@@ -269,7 +269,7 @@ sections:
     image_width: ''
   - type: grid_item
     template: grid_item
-    title: Section Item 6
+    title: Amn
     title_align: left
     content: Ullamcorper a lacus vestibulum
     content_align: left
@@ -297,7 +297,7 @@ sections:
     image_width: ''
   - type: grid_item
     template: grid_item
-    title: Section Item 7
+    title: Shilah
     title_align: left
     content: Ac felis donec et odio pellentesque
     content_align: left
@@ -330,8 +330,8 @@ sections:
   align: center
   background_color: none
   actions: []
-  padding_top: ''
-  padding_bottom: ''
+  padding_top: medium
+  padding_bottom: large
   has_border: false
   background_image: ''
   background_image_size: ''
@@ -342,7 +342,7 @@ sections:
 - type: blog_feed_section
   template: blog_feed_section
   title: Events
-  subtitle: About Student Event
+  subtitle: Acara Kegiatan Santri
   actions:
   - type: action
     template: action
@@ -367,7 +367,7 @@ sections:
   show_image: true
   align: center
   padding_top: medium
-  padding_bottom: medium
+  padding_bottom: small
   has_border: true
   background_color: secondary
   author: ''
@@ -381,7 +381,7 @@ sections:
 - type: blog_feed_section
   template: blog_feed_section
   title: Article
-  subtitle: News, Opinions & etc.
+  subtitle: Berita, Opini, dll.
   actions:
   - type: action
     template: action
@@ -406,7 +406,7 @@ sections:
   show_image: true
   align: center
   padding_top: medium
-  padding_bottom: medium
+  padding_bottom: small
   has_border: true
   background_color: none
   author: ''
@@ -420,7 +420,7 @@ sections:
 - type: grid_section
   template: grid_section
   title: Gallery
-  subtitle: Student Gallery
+  subtitle: Galeri Santri
   modal_image: true
   grid_items:
   - type: grid_item
@@ -537,7 +537,7 @@ sections:
     path_to_svg_icon: ''
   enable_cards: true
   padding_top: ''
-  padding_bottom: ''
+  padding_bottom: small
   has_border: true
   background_color: secondary
   background_image: ''
@@ -547,7 +547,7 @@ sections:
   background_image_opacity: 
 - type: grid_section
   template: grid_section
-  title: Grafiti
+  title: Graviti
   subtitle: Garda Kreatifitas Santri
   modal_image: true
   grid_items:
@@ -665,7 +665,7 @@ sections:
     path_to_svg_icon: ''
   enable_cards: true
   padding_top: ''
-  padding_bottom: ''
+  padding_bottom: small
   has_border: true
   background_color: ''
   background_image: ''
@@ -676,12 +676,12 @@ sections:
 - type: features_section
   template: features_section
   title: QnA
-  subtitle: Question & Answer
+  subtitle: Tanya Jawab
   features:
   - type: feature
     template: feature
     title: 
-    subtitle: Question & Answer About Islam
+    subtitle: Seputar Islam
     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
       cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla.
     actions:
@@ -706,7 +706,7 @@ sections:
   feature_padding_vert: small
   align: center
   background_color: secondary
-  padding_top: small
+  padding_top: medium
   padding_bottom: none
   has_border: false
   background_image: ''
