@@ -80,7 +80,7 @@ sections:
       path_to_svg_icon: ''
     - style: link
       label: 087634545 (Usamah)
-      url: https://www.facebook.com/
+      url: '#'
       has_icon: true
       icon: whatsapp
       icon_position: left
@@ -125,7 +125,7 @@ sections:
 - type: grid_section
   template: grid_section
   title: Qism
-  subtitle: 'Bidang Kepengurusan'
+  subtitle: 'Bagian Kepengurusan'
   grid_items:
   - type: grid_item
     template: grid_item
@@ -137,7 +137,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right
@@ -165,7 +165,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right
@@ -193,7 +193,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right
@@ -221,7 +221,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right
@@ -249,7 +249,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right
@@ -277,7 +277,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right
@@ -305,7 +305,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/style-guide"
+      url: "/qism"
       style: link
       has_icon: true
       icon: arrow-right

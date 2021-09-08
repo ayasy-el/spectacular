@@ -69,7 +69,7 @@ sections:
   padding_top: large
   padding_bottom: small
   title: Karya Lukis
-  subtitle: Komik, Lettering, dll
+  subtitle: Komik, Kaligrafi, Lettering, dll
   feature_padding_vert: small
   show_date: true
   date: 
@@ -108,7 +108,7 @@ sections:
   has_border: true
   background_color: none
   author: ''
-  category: ''
+  category: 'data/categories/literasi.json'
   tag: ''
   background_image: ''
   background_image_size: ''

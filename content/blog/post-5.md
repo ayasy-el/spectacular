@@ -6,7 +6,7 @@ subtitle: >-
 date: '2020-06-02'
 author: data/team/gustav-purpleson.json
 categories:
-  - data/categories/tutorials.json
+  - data/categories/literasi.json
 tags:
   - data/tags/stackbit.json
   - data/tags/netlify.json

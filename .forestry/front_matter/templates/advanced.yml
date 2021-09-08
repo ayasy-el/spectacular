@@ -42,9 +42,9 @@ pages:
 - content/blog/author/dianne-ameter.md
 - content/blog/author/gustav-purpleson.md
 - content/blog/author/hilary-ouse.md
-- content/blog/category/general.md
-- content/blog/category/news.md
-- content/blog/category/tutorials.md
+- content/blog/category/berita-acara.md
+- content/blog/category/kata-ustadz.md
+- content/blog/category/literasi.md
 - content/blog/tag/jamstack.md
 - content/blog/tag/netlify.md
 - content/blog/tag/sourcebit.md

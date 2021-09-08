@@ -126,8 +126,8 @@ params:
     secondary_nav_links:
       - type: action
         template: action
-        label: News
-        url: /blog/category/news
+        label: Berita Acara
+        url: /blog/category/berita-acara
         style: link
         has_icon: false
         icon: ''
@@ -136,8 +136,8 @@ params:
         no_follow: false
       - type: action
         template: action
-        label: General
-        url: /blog/category/general
+        label: Kata Ustadz
+        url: /blog/category/kata-ustadz
         style: link
         has_icon: false
         icon: ''
@@ -146,8 +146,8 @@ params:
         no_follow: false
       - type: action
         template: action
-        label: Tutorials
-        url: /blog/category/tutorials
+        label: Literasi
+        url: /blog/category/literasi
         style: link
         has_icon: false
         icon: ''

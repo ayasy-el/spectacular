@@ -6,8 +6,8 @@ subtitle: >-
 date: '2020-04-16'
 author: data/team/dianne-ameter.json
 categories:
-  - data/categories/tutorials.json
-  - data/categories/general.json
+  - data/categories/literasi.json
+  - data/categories/berita-acara.json
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ea mala virtuti
   magnitudine obruebantur. Duo Reges: constructio interrete.

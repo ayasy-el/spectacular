@@ -1,9 +1,9 @@
 ---
-title: Tutorials
+title: Literasi
 sections:
   - type: hero_section
     template: hero_section
-    title: Tutorials
+    title: Literasi
     subtitle: The optional subtitle
     align: center
     padding_top: medium
@@ -14,7 +14,7 @@ sections:
     blog_feed_cols: three
     enable_cards: true
     show_recent: false
-    category: data/categories/tutorials.json
+    category: data/categories/literasi.json
     show_date: true
     show_categories: true
     show_author: true
@@ -49,14 +49,14 @@ sections:
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
-  title: Posts in Tutorials
+  title: Posts in Literasi
   description: This is the author archive page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Posts in Tutorials
+      value: Posts in Literasi
       keyName: property
     - name: 'og:description'
       value: This is the author archive page
@@ -68,7 +68,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Posts in Tutorials
+      value: Posts in Literasi
     - name: 'twitter:description'
       value: This is the author archive page
     - name: 'twitter:image'

@@ -6,8 +6,8 @@ subtitle: >-
 date: '2020-05-25'
 author: data/team/hilary-ouse.json
 categories:
-  - data/categories/news.json
-  - data/categories/general.json
+  - data/categories/kata-ustadz.json
+  - data/categories/berita-acara.json
 tags:
   - data/tags/jamstack.json
   - data/tags/netlify.json

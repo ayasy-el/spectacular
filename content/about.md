@@ -5,7 +5,7 @@ sections:
     template: features_section
     title: Profile
     has_border: true
-    padding_bottom: small
+    feature_padding_vert: small
     features:
       - type: feature
         template: feature
@@ -24,7 +24,6 @@ sections:
         image: images/about-2.jpg
         image_alt: People in a conference room
         media_position: left
-        media_width: fourty
         media_width: fourty
       - type: feature
         template: feature
@@ -65,7 +64,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -93,7 +92,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -121,7 +120,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -149,7 +148,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -177,7 +176,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -205,7 +204,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -233,7 +232,7 @@ sections:
       - type: action
         template: action
         label: Learn More
-        url: "/style-guide"
+        url: "/qism"
         style: link
         has_icon: true
         icon: arrow-right
@@ -259,7 +258,7 @@ sections:
     background_color: secondary
     actions: []
     padding_top: medium
-    padding_bottom: large
+    padding_bottom: small
     has_border: false
     background_image: ''
     background_image_size: ''
@@ -267,6 +266,45 @@ sections:
     background_image_repeat: ''
     background_image_opacity: 
     modal_image: false
+  - type: features_section
+    template: features_section
+    padding_top: none
+    padding_bottom: none
+    features:
+    - actions:
+      - style: primary
+        label: osis.ibaska
+        url: 
+        has_icon: true
+        icon: instagram
+        icon_position: left
+        new_window: false
+        no_follow: false
+        type: ''
+        costum_icon: false
+        path_to_svg_icon: ''
+      - style: primary
+        label: osis.ibaska@gmail.com
+        has_icon: true
+        icon: email
+        icon_position: left
+        new_window: false
+        no_follow: false
+        type: ''
+        url: "#"
+        costum_icon: false
+        path_to_svg_icon: ''
+      - style: primary
+        label: 087634545 (Usamah)
+        url: '#'
+        has_icon: true
+        icon: whatsapp
+        icon_position: left
+        new_window: false
+        no_follow: false
+        type: ''
+        costum_icon: false
+        path_to_svg_icon: ''
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
