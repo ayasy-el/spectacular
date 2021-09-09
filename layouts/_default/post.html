@@ -18,7 +18,7 @@
 				<div class="post__meta mb-2">
 					{{ if .Params.categories }}
 						{{ $include_dict := dict "categories" $.Params.categories "container_class" "post__cat" }}
-						{{ partial "blog_post_categories.html" $include_dict }}
+						{{ partial "article_post_categories.html" $include_dict }}
 						<span class="post__meta-sep"> &middot; </span>
 					{{ end }}
 					<span class="post__date"><time datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time></span>
@@ -29,21 +29,22 @@
 				{{ end }}
 				{{ if .Params.author }}
 					{{ $include_dict := dict "author" $.Params.author "container_class" "post__byline" "avatar_size" "medium" }}
-					{{ partial "blog_post_author.html" $include_dict }}
-				{{ end }}
+					{{ partial "article_post_author.html" $include_dict }}
+				{{ end }}			
 			</header>
 		</div>
 	</div>
 
 	<div class="container container--medium">
 		<div class="post__body text-block">
+			<br />
 			{{ .Content }}
 		</div>
 	
 		{{ if .Params.tags }}
 		<footer class="post__footer mt-4 mt-md-5">
 			{{ $include_dict := dict "tags" $.Params.tags }}
-			{{ partial "blog_post_tags.html" $include_dict }}
+			{{ partial "article_post_tags.html" $include_dict }}
 		</footer>
 		{{ end }}
 	</div>

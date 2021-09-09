@@ -4,7 +4,7 @@ sections:
 - type: hero_section
   template: hero_section
   title: OSIA
-  subtitle: 'Organisasi Santri Ibnu Abbas'
+  subtitle: 'Organisasi Santri Ibnu Abbas <br> ( Putra )'
   content: "`Masa Jihad 2021 / 2022`"
   actions:
   - type: action
@@ -339,15 +339,15 @@ sections:
   background_image_repeat: ''
   background_image_opacity: 
   modal_image: false
-- type: blog_feed_section
-  template: blog_feed_section
+- type: article_feed_section
+  template: article_feed_section
   title: Events
   subtitle: Acara Kegiatan Santri
   actions:
   - type: action
     template: action
     label: View All
-    url: "/blog"
+    url: "/article"
     style: primary
     has_icon: false
     icon: ''
@@ -356,7 +356,7 @@ sections:
     no_follow: false
     costum_icon: false
     path_to_svg_icon: ''
-  blog_feed_cols: three
+  article_feed_cols: three
   enable_cards: true
   show_recent: true
   recent_count: 6
@@ -378,15 +378,15 @@ sections:
   background_image_position: ''
   background_image_repeat: ''
   background_image_opacity: 
-- type: blog_feed_section
-  template: blog_feed_section
+- type: article_feed_section
+  template: article_feed_section
   title: Article
   subtitle: Berita, Opini, dll.
   actions:
   - type: action
     template: action
     label: View All
-    url: "/blog"
+    url: "/article"
     style: primary
     has_icon: false
     icon: ''
@@ -395,7 +395,7 @@ sections:
     no_follow: false
     costum_icon: false
     path_to_svg_icon: ''
-  blog_feed_cols: three
+  article_feed_cols: three
   enable_cards: true
   show_recent: true
   recent_count: 6
@@ -654,7 +654,7 @@ sections:
   actions:
   - style: secondary
     label: View All
-    url: "/gallery"
+    url: "/graviti"
     has_icon: false
     icon: ''
     icon_position: ''

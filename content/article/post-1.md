@@ -6,7 +6,7 @@ subtitle: >-
 date: '2020-04-16'
 author: data/team/dianne-ameter.json
 categories:
-  - data/categories/literasi.json
+  - data/categories/pena-santri.json
   - data/categories/berita-acara.json
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ea mala virtuti
@@ -15,7 +15,7 @@ thumb_image: images/classic/post-1.png
 thumb_image_alt: Post 1 placeholder image
 image: images/classic/post-1.png
 image_alt: Post 1 placeholder image
-image_position: right
+image_position: top
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta

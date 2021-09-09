@@ -1,19 +1,20 @@
 ---
-title: Blog
+title: Kata Ustadz
 sections:
   - type: hero_section
     template: hero_section
-    title: Blog
+    title: Kata Ustadz
     subtitle: The optional subtitle
     align: center
     padding_top: medium
     padding_bottom: none
     background_color: none
-  - type: blog_feed_section
-    template: blog_feed_section
-    blog_feed_cols: three
+  - type: article_feed_section
+    template: article_feed_section
+    article_feed_cols: three
     enable_cards: true
     show_recent: false
+    category: data/categories/kata-ustadz.json
     show_date: true
     show_categories: true
     show_author: true
@@ -48,17 +49,17 @@ sections:
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
-  title: Blog
-  description: This is the blog page
+  title: Posts in Kata Ustadz
+  description: This is the author archive page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Blog
+      value: Posts in Kata Ustadz
       keyName: property
     - name: 'og:description'
-      value: This is the blog page
+      value: This is the author archive page
       keyName: property
     - name: 'og:image'
       value: images/classic/post-5.png
@@ -67,9 +68,9 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Blog
+      value: Posts in Kata Ustadz
     - name: 'twitter:description'
-      value: This is the blog page
+      value: This is the author archive page
     - name: 'twitter:image'
       value: images/classic/post-5.png
       relativeUrl: true

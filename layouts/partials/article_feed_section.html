@@ -11,7 +11,7 @@
 {{ $bg_img_position := $section.background_image_position | default "center center" }}
 {{ $bg_img_repeat := $section.background_image_repeat | default "no-repeat" }}
 
-<section class="section blog-feed{{ if $section.has_border }} has-border{{ end }}{{ if $section.background_image }} has-cover{{ end }}{{ if eq $bg_color "none" }} bg-none{{ end }}{{ if eq $bg_color "primary" }} bg-primary{{ end }}{{ if eq $bg_color "secondary" }} bg-secondary{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
+<section class="section article-feed{{ if $section.has_border }} has-border{{ end }}{{ if $section.background_image }} has-cover{{ end }}{{ if eq $bg_color "none" }} bg-none{{ end }}{{ if eq $bg_color "primary" }} bg-primary{{ end }}{{ if eq $bg_color "secondary" }} bg-secondary{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
 
 	{{ if $section.background_image }}
 	<div class="cover-img" style="background-image: url('{{ $section.background_image | relURL }}'); opacity: {{ $bg_img_opacity }}; background-size: {{ $bg_img_size }}; background-repeat: {{ $bg_img_repeat }}; background-position: {{ $bg_img_position }}"></div>
@@ -45,7 +45,7 @@
 				{{ $section_tag = getJSON $section.tag }}
 			{{ end }}
 
-			{{ $posts_all := (.Site.GetPage "section" "/blog").Pages }}
+			{{ $posts_all := (.Site.GetPage "section" "/article").Pages }}
 			{{ $posts_sorted := $posts_all.ByDate.Reverse }}
 
 			{{ $show_recent := $section.show_recent }}
@@ -59,8 +59,8 @@
 				{{ end }}
 				{{ if and $is_post (or (eq $show_recent false) (lt $post_count $recent_count)) }}
 				{{ $post_count = add $post_count 1 }}
-				{{ $include_dict := dict "blog_feed_section" $section "post_page" $post "section_author" $section_author "section_category" $section_category "section_tag" $section_tag }}
-				{{ partial "blog_feed_item_filter.html" $include_dict }}
+				{{ $include_dict := dict "article_feed_section" $section "post_page" $post "section_author" $section_author "section_category" $section_category "section_tag" $section_tag }}
+				{{ partial "article_feed_item_filter.html" $include_dict }}
 				{{ end }}
 			{{ end }}
 		</div>

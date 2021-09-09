@@ -59,7 +59,7 @@
 				<h1 class="hero__title">{{ $section.title }}</h1>
 				{{ end }}
 				{{ if $section.subtitle }}
-				<p class="hero__subtitle">{{ $section.subtitle }}</p>
+				<p class="hero__subtitle">{{ partial "markdownify-block" $section.subtitle }}</p>
 				{{ end }}
 				{{ if $section.content }}
 				<div class="hero__copy">

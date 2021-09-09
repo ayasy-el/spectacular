@@ -11,7 +11,7 @@ fields:
 - type: text
   name: link
   label: Link
-  description: The link to the category page, e.g. "blog/category/kata-ustadz"
+  description: The link to the category page, e.g. "article/category/kata-ustadz"
 - type: text
   name: title
   label: Title
@@ -29,4 +29,4 @@ fields:
 pages:
 - data/categories/berita-acara.json
 - data/categories/kata-ustadz.json
-- data/categories/literasi.json
+- data/categories/pena-santri.json

@@ -1,5 +1,5 @@
 ---
-label: Blog feed section
+label: Article feed section
 hide_body: true
 display_field: title
 fields:
@@ -14,7 +14,7 @@ fields:
 - type: field_group_list
   name: actions
   label: Action buttons
-  description: Action buttons displayed below blog posts
+  description: Action buttons displayed below article posts
   fields:
   - type: include
     name: include_action
@@ -23,9 +23,9 @@ fields:
   config:
     labelField: label
 - type: select
-  name: blog_feed_cols
-  label: Blog feed columns
-  description: Show the specified number of posts in a blog feed grid row
+  name: article_feed_cols
+  label: Article feed columns
+  description: Show the specified number of posts in a article feed grid row
   default: three
   config:
     source:
@@ -210,6 +210,6 @@ fields:
   label: Object Type
   description: The type of the object
   hidden: true
-  default: blog_feed_section
+  default: article_feed_section
   config:
     required: false

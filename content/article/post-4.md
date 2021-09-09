@@ -6,7 +6,7 @@ subtitle: >-
 date: '2020-05-30'
 author: data/team/dianne-ameter.json
 categories:
-  - data/categories/literasi.json
+  - data/categories/pena-santri.json
   - data/categories/kata-ustadz.json
 tags:
   - data/tags/jamstack.json

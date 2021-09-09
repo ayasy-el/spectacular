@@ -9,8 +9,8 @@ dataDir: data
 pagesDir: content
 pageLayoutKey: layout
 logicFields:
-  - blog_feed_section.recent_count
-  - blog_feed_section.background_image_opacity
+  - article_feed_section.recent_count
+  - article_feed_section.background_image_opacity
   - features_section.background_image_opacity
   - hero_section.background_image_opacity
   - grid_section.background_image_opacity
@@ -285,7 +285,7 @@ models:
       - type: string
         name: link
         label: Link
-        description: 'The link to the author page, e.g. "blog/author/john-doe"'
+        description: 'The link to the author page, e.g. "article/author/john-doe"'
       - type: string
         name: first_name
         label: First name
@@ -312,7 +312,7 @@ models:
       - type: string
         name: link
         label: Link
-        description: 'The link to the category page, e.g. "blog/category/kata-ustadz"'
+        description: 'The link to the category page, e.g. "article/category/kata-ustadz"'
       - type: string
         name: title
         label: Title
@@ -331,7 +331,7 @@ models:
       - type: string
         name: link
         label: Link
-        description: 'The link to the tag page, e.g. "blog/tag/jamstack"'
+        description: 'The link to the tag page, e.g. "article/tag/jamstack"'
       - type: string
         name: title
         label: Title
@@ -341,7 +341,7 @@ models:
     type: page
     label: Page
     layout: page
-    exclude: blog/**/*
+    exclude: article/**/*
     fields:
       - type: string
         name: title
@@ -354,10 +354,10 @@ models:
           - stackbit_page_meta
   post:
     type: page
-    urlPath: '/blog/{slug}'
+    urlPath: '/article/{slug}'
     label: Post
     layout: post
-    folder: blog
+    folder: article
     exclude:
       - _index.md
       - category/**
@@ -403,15 +403,15 @@ models:
       - type: string
         name: excerpt
         label: Excerpt
-        description: The excerpt of the post displayed in the blog feed
+        description: The excerpt of the post displayed in the article feed
       - type: image
         name: thumb_image
-        label: Image (blog feed)
-        description: The image displayed in the blog feed
+        label: Image (article feed)
+        description: The image displayed in the article feed
       - type: string
         name: thumb_image_alt
-        label: Image alt text (blog feed)
-        description: The alt text of the blog feed image
+        label: Image alt text (article feed)
+        description: The alt text of the article feed image
       - type: image
         name: image
         label: Image (single post)
@@ -429,7 +429,7 @@ models:
           - top
         default: top
         description: >-
-          The featured image position in the blog post relative to the post
+          The featured image position in the article post relative to the post
           header content
       - type: model
         name: seo
@@ -456,7 +456,7 @@ models:
             - hero_section
             - features_section
             - grid_section
-            - blog_feed_section
+            - article_feed_section
             - cta_section
             - form_section
       - type: model
@@ -875,9 +875,9 @@ models:
           - no-repeat
         default: no-repeat
         description: Repeat the image to cover the whole area
-  blog_feed_section:
+  article_feed_section:
     type: object
-    label: Blog feed section
+    label: Article feed section
     labelField: title
     fields:
       - type: string
@@ -895,15 +895,15 @@ models:
           type: model
           models:
             - action
-        description: Action buttons displayed below blog posts
+        description: Action buttons displayed below article posts
       - type: enum
-        name: blog_feed_cols
-        label: Blog feed columns
+        name: article_feed_cols
+        label: Article feed columns
         options:
           - two
           - three
         default: three
-        description: Show the specified number of posts in a blog feed grid row
+        description: Show the specified number of posts in a article feed grid row
       - type: boolean
         name: enable_cards
         label: Enable cards

@@ -1,20 +1,20 @@
 ---
-title: Literasi
+title: Pena Santri
 sections:
   - type: hero_section
     template: hero_section
-    title: Literasi
+    title: Pena Santri
     subtitle: The optional subtitle
     align: center
     padding_top: medium
     padding_bottom: none
     background_color: none
-  - type: blog_feed_section
-    template: blog_feed_section
-    blog_feed_cols: three
+  - type: article_feed_section
+    template: article_feed_section
+    article_feed_cols: three
     enable_cards: true
     show_recent: false
-    category: data/categories/literasi.json
+    category: data/categories/pena-santri.json
     show_date: true
     show_categories: true
     show_author: true
@@ -49,14 +49,14 @@ sections:
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
-  title: Posts in Literasi
+  title: Posts in Pena Santri
   description: This is the author archive page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Posts in Literasi
+      value: Posts in Pena Santri
       keyName: property
     - name: 'og:description'
       value: This is the author archive page
@@ -68,7 +68,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Posts in Literasi
+      value: Posts in Pena Santri
     - name: 'twitter:description'
       value: This is the author archive page
     - name: 'twitter:image'

@@ -76,15 +76,15 @@ sections:
   id: event-1
   caption: ''
   single_image: []
-- type: blog_feed_section
-  template: blog_feed_section
+- type: article_feed_section
+  template: article_feed_section
   title: Karya Tulis
   subtitle: Opini, Cerpen, Puisi, dll.
   actions:
   - type: action
     template: action
     label: View All
-    url: "/blog"
+    url: "/article"
     style: primary
     has_icon: false
     icon: ''
@@ -93,7 +93,7 @@ sections:
     no_follow: false
     costum_icon: false
     path_to_svg_icon: ''
-  blog_feed_cols: three
+  article_feed_cols: three
   enable_cards: true
   show_recent: true
   recent_count: 6
@@ -108,7 +108,7 @@ sections:
   has_border: true
   background_color: none
   author: ''
-  category: 'data/categories/literasi.json'
+  category: 'data/categories/pena-santri.json'
   tag: ''
   background_image: ''
   background_image_size: ''

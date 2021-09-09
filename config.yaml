@@ -27,7 +27,7 @@ params:
       - type: action
         template: action
         label: Article
-        url: '/blog'
+        url: '/article'
         style: link
         has_icon: false
         icon: ''
@@ -122,12 +122,12 @@ params:
         new_window: false
         no_follow: false
     has_secondary_nav: true
-    secondary_nav_title: Blog
+    secondary_nav_title: Article
     secondary_nav_links:
       - type: action
         template: action
         label: Berita Acara
-        url: /blog/category/berita-acara
+        url: /article/category/berita-acara
         style: link
         has_icon: false
         icon: ''
@@ -137,7 +137,7 @@ params:
       - type: action
         template: action
         label: Kata Ustadz
-        url: /blog/category/kata-ustadz
+        url: /article/category/kata-ustadz
         style: link
         has_icon: false
         icon: ''
@@ -146,8 +146,8 @@ params:
         no_follow: false
       - type: action
         template: action
-        label: Literasi
-        url: /blog/category/literasi
+        label: Pena Santri
+        url: /article/category/pena-santri
         style: link
         has_icon: false
         icon: ''

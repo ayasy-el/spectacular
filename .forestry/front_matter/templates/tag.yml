@@ -11,7 +11,7 @@ fields:
 - type: text
   name: link
   label: Link
-  description: The link to the tag page, e.g. "blog/tag/jamstack"
+  description: The link to the tag page, e.g. "article/tag/jamstack"
 - type: text
   name: title
   label: Title

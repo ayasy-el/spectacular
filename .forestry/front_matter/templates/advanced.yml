@@ -16,7 +16,7 @@ fields:
   - hero_section
   - features_section
   - grid_section
-  - blog_feed_section
+  - article_feed_section
   - cta_section
   - form_section
   - gallery_section
@@ -38,17 +38,17 @@ fields:
 pages:
 - content/_index.md
 - content/about.md
-- content/blog/_index.md
-- content/blog/author/dianne-ameter.md
-- content/blog/author/gustav-purpleson.md
-- content/blog/author/hilary-ouse.md
-- content/blog/category/berita-acara.md
-- content/blog/category/kata-ustadz.md
-- content/blog/category/literasi.md
-- content/blog/tag/jamstack.md
-- content/blog/tag/netlify.md
-- content/blog/tag/sourcebit.md
-- content/blog/tag/stackbit.md
+- content/article/_index.md
+- content/article/author/dianne-ameter.md
+- content/article/author/gustav-purpleson.md
+- content/article/author/hilary-ouse.md
+- content/article/category/berita-acara.md
+- content/article/category/kata-ustadz.md
+- content/article/category/pena-santri.md
+- content/article/tag/jamstack.md
+- content/article/tag/netlify.md
+- content/article/tag/sourcebit.md
+- content/article/tag/stackbit.md
 - content/contact.md
 - content/features.md
 - content/gallery.md
