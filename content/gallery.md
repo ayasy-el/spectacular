@@ -1,8 +1,8 @@
 ---
 title: Gallery
 sections:
-- title: lorem-ipsum
-  subtitle: lorem-ipsum
+- title: Gallery
+  subtitle: Galeri Santri
   actions: []
   image_alt: lorem-ipsum
   media_position: top

@@ -52,19 +52,19 @@ sections:
   - type: grid_section
     template: grid_section
     title: Qism
-    subtitle: 'Bidang Kepengurusan'
+    subtitle: 'Bagian Kepengurusan'
     grid_items:
     - type: grid_item
       template: grid_item
-      title: Da'wah Wa Ruhiyyah
+      title: Da'wah Ruhiyyah
       title_align: left
-      content: Lorem ipsum dolor sit amet
+      content: Bagian Ibadah
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/daru"
         style: link
         has_icon: true
         icon: arrow-right
@@ -86,13 +86,13 @@ sections:
       template: grid_item
       title: Nadhofah
       title_align: left
-      content: Ac felis donec et odio pellentesque
+      content: Bagian Kebersihan & Kesehatan
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/nadhofah"
         style: link
         has_icon: true
         icon: arrow-right
@@ -114,13 +114,13 @@ sections:
       template: grid_item
       title: Lughoh
       title_align: left
-      content: Ullamcorper a lacus vestibulum
+      content: Bagian Kebahasaan
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/lughoh"
         style: link
         has_icon: true
         icon: arrow-right
@@ -142,13 +142,13 @@ sections:
       template: grid_item
       title: Riyadhoh
       title_align: left
-      content: Lorem ipsum dolor sit amet
+      content: Bagian Keolahragaan
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/riyadhoh"
         style: link
         has_icon: true
         icon: arrow-right
@@ -170,13 +170,13 @@ sections:
       template: grid_item
       title: Ta'lim
       title_align: left
-      content: Ac felis donec et odio pellentesque
+      content: Bagian Pendidikan
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/talim"
         style: link
         has_icon: true
         icon: arrow-right
@@ -198,13 +198,13 @@ sections:
       template: grid_item
       title: Amn
       title_align: left
-      content: Ullamcorper a lacus vestibulum
+      content: Bagian Hukum & Keamanan
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/amn"
         style: link
         has_icon: true
         icon: arrow-right
@@ -226,13 +226,13 @@ sections:
       template: grid_item
       title: Shilah
       title_align: left
-      content: Ac felis donec et odio pellentesque
+      content: Bagian Hubungan Masyarakat
       content_align: left
       actions:
       - type: action
         template: action
         label: Learn More
-        url: "/qism"
+        url: "/qism/shilah"
         style: link
         has_icon: true
         icon: arrow-right
@@ -258,7 +258,7 @@ sections:
     background_color: secondary
     actions: []
     padding_top: medium
-    padding_bottom: small
+    padding_bottom: medium
     has_border: false
     background_image: ''
     background_image_size: ''

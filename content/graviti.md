@@ -1,8 +1,8 @@
 ---
 title: graviti
 sections:
-- title: lorem-ipsum
-  subtitle: lorem-ipsum
+- title: Graviti
+  subtitle: Garda Kreativitas Santri
   actions: []
   image_alt: lorem-ipsum
   media_position: top
@@ -84,7 +84,7 @@ sections:
   - type: action
     template: action
     label: View All
-    url: "/article"
+    url: "/article/category/pena-santri/"
     style: primary
     has_icon: false
     icon: ''
