@@ -339,15 +339,15 @@ sections:
   background_image_repeat: ''
   background_image_opacity: 
   modal_image: false
-- type: article_feed_section
-  template: article_feed_section
+- type: events_feed_section
+  template: events_feed_section
   title: Events
   subtitle: Acara Kegiatan Santri
   actions:
   - type: action
     template: action
     label: View All
-    url: "/article"
+    url: "/events"
     style: primary
     has_icon: false
     icon: ''
@@ -356,23 +356,17 @@ sections:
     no_follow: false
     costum_icon: false
     path_to_svg_icon: ''
-  article_feed_cols: three
   enable_cards: true
   show_recent: true
   recent_count: 6
-  show_date: true
-  show_categories: true
-  show_author: true
-  show_excerpt: false
+  show_date: false
+  show_item_date: true
   show_image: true
   align: center
   padding_top: medium
   padding_bottom: small
   has_border: true
   background_color: secondary
-  author: ''
-  category: ''
-  tag: ''
   background_image: ''
   background_image_size: ''
   background_image_position: ''

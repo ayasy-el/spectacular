@@ -1,0 +1,65 @@
+{{ define "content" }}
+
+{{ $params := .Params }}
+
+{{ $bg_color := $params.background_color | default "none" }}
+{{ $bg_img_opacity_pct := $params.background_image_opacity | default 100 }}
+{{ $bg_img_opacity := mul $bg_img_opacity_pct 0.01 }}
+{{ $bg_img_size := $params.background_image_size | default "cover" }}
+{{ $bg_img_position := $params.background_image_position | default "center center" }}
+{{ $bg_img_repeat := $params.background_image_repeat | default "no-repeat" }}
+
+{{ $has_text := false }}
+{{ if or $params.title $params.subtitle }}
+	{{ $has_text = true }}
+{{ end }}
+
+<section class="section hero{{ if $params.background_image }} has-cover{{ end }}{{ if eq $bg_color "none" }} bg-none{{ end }}{{ if eq $bg_color "primary" }} bg-primary{{ end }}{{ if eq $bg_color "secondary" }} bg-secondary{{ end }} pt-6 pt-md-7 pb-6 pb-md-7">
+	{{ if $params.background_image }}
+	<div class="cover-img" style="background-image: url('{{ $params.background_image | relURL }}'); opacity: {{ $bg_img_opacity }}; background-size: {{ $bg_img_size }}; background-repeat: {{ $bg_img_repeat }}; background-position: {{ $bg_img_position }}"></div>
+	{{ end }}
+
+	<div class="container">
+		<div class="hero__content grid items-center">
+			{{ if $has_text }}
+			<div class="hero__body my-2 cell-12 text-center">
+				{{ if $params.title }}
+				<h1 class="hero__title">{{ $params.title }}</h1>
+				{{ end }}
+				{{ if $params.subtitle }}
+				<p class="hero__subtitle">{{ partial "markdownify-block" $params.subtitle }}</p>
+				{{ end }}
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<article class="post py-5 py-sm-6 py-md-7">
+	<div class="post__hero container container--medium">
+		<header class="post__header">
+			<div class="post__meta mb-2">
+				<span class="post__date"><time datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time></span>
+			</div>			
+		</header>
+	</div>
+	<div class="container container--medium">
+		<div class="post__body text-block">
+			<br />
+			{{ .Content }}
+		</div>
+	</div>
+</article>
+
+{{ if $params.gallery }}
+<div class="container">
+	<div class="masonry">
+		{{ range $item := $params.gallery }}
+		<div class="grid">
+			<!--<img src=" {{ . | relURL }}" class="card--highlight">-->
+			<a data-fancybox="gambar" href="{{ . | relURL }}" ><img src="{{ . | relURL }}" class="thumb card--highlight"></a>
+		</div>
+		{{ end }}
+{{ end }}
+
+{{ end }}

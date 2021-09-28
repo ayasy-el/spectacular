@@ -69,6 +69,7 @@ sections:
   padding_top: large
   padding_bottom: small
   title: Event Name
+  link: "/events"
   subtitle: Event Description
   feature_padding_vert: small
   show_date: true

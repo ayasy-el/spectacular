@@ -17,7 +17,7 @@ params:
       - type: action
         template: action
         label: Events
-        url: '#'
+        url: /events
         style: link
         has_icon: false
         icon: ''
@@ -104,7 +104,7 @@ params:
       - type: action
         template: action
         label: Events
-        url: '#'
+        url: /events
         style: link
         has_icon: false
         icon: ''

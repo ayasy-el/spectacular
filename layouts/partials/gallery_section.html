@@ -7,7 +7,7 @@
 <section class="section {{ if $section.has_border }} has-border{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
 	<div class="container container--medium{{ if or (eq $feature_padding_y "small") (eq $feature_padding_y "medium") }} mb-5{{ end }}{{ if eq $feature_padding_y "large" }} mb-4{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
 		{{ if $section.title }}
-		<h1 class="section__title">{{ $section.title }}</h1>
+		<h1 class="section__title"><a href="{{$section.link}}" class="link">{{ $section.title }}</a></h1>
 		{{ end }}
 
 		{{ if $section.subtitle }}
