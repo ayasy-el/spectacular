@@ -10,7 +10,7 @@ params:
     type: header
     template: header
     title: Home
-    logo: /images/logo-1.svg
+    logo: /images/osia.png
     logo_alt: DIY logo
     has_primary_nav: true
     primary_nav_links:
@@ -58,16 +58,6 @@ params:
     secondary_nav_links:
       - type: action
         template: action
-        label: QnA
-        url: '#'
-        style: link
-        has_icon: false
-        icon: ''
-        icon_position: ''
-        new_window: false
-        no_follow: false
-      - type: action
-        template: action
         label: About Us
         url: /about
         style: link
@@ -96,7 +86,7 @@ params:
   footer:
     type: footer
     template: footer
-    logo: /images/logo-1.svg
+    logo: /images/osia.png
     logo_alt: DIY logo
     has_primary_nav: true
     primary_nav_title: Osia
@@ -167,16 +157,6 @@ params:
     has_tertiary_nav: true
     tertiary_nav_title: Us
     tertiary_nav_links:
-      - type: action
-        template: action
-        label: QnA
-        url: '#'
-        style: link
-        has_icon: false
-        icon: ''
-        icon_position: ''
-        new_window: false
-        no_follow: false
       - type: action
         template: action
         label: About Us

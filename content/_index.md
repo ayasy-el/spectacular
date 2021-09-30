@@ -19,13 +19,13 @@ sections:
     no_follow: false
     costum_icon: false
     path_to_svg_icon: ''
-  image: "/images/logo-1.svg"
+  image: "/images/osia.png"
   image_alt: Hero section placeholder image
   media_position: top
   media_width: fifty
   align: center
   padding_top: large
-  padding_bottom: large
+  padding_bottom: small
   background_color: primary
   video_embed_html: ''
   has_border: false
@@ -667,86 +667,6 @@ sections:
   background_image_position: ''
   background_image_repeat: ''
   background_image_opacity: 
-- type: features_section
-  template: features_section
-  title: QnA
-  subtitle: Tanya Jawab
-  features:
-  - type: feature
-    template: feature
-    title: 
-    subtitle: Seputar Islam
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl ligula,
-      cursus id molestie vel, maximus aliquet risus. Vivamus in nibh fringilla, fringilla.
-    actions:
-    - type: action
-      template: action
-      label: Read More
-      url: "/style-guide"
-      style: primary
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-      costum_icon: false
-      path_to_svg_icon: ''
-    image: images/classic/feature-1.png
-    image_alt: Feature 1 placeholder image
-    media_position: left
-    media_width: fifty
-    video_embed_html: ''
-    align: ''
-  feature_padding_vert: small
-  align: center
-  background_color: secondary
-  padding_top: medium
-  padding_bottom: none
-  has_border: false
-  background_image: ''
-  background_image_size: ''
-  background_image_position: ''
-  background_image_repeat: ''
-  background_image_opacity: 
-- template: features_section
-  feature_padding_vert: small
-  align: center
-  padding_top: none
-  padding_bottom: none
-  background_color: primary
-  background_image_size: cover
-  background_image_position: center center
-  background_image_repeat: no-repeat
-  type: features_section
-  features:
-  - title: E-Sarapan
-    subtitle: Saran, Kritik, & Harapan
-    content: Ac felis donec et odio pellentesque. Sagittis vitae et leo duis ut diam
-      quam nulla. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.
-    actions:
-    - style: primary
-      label: Read More
-      url: "#"
-      has_icon: true
-      icon: arrow-right
-      icon_position: right
-      new_window: false
-      no_follow: false
-      type: ''
-      costum_icon: false
-      path_to_svg_icon: ''
-    image: "/images/classic/feature-3.png"
-    image_alt: ''
-    video_embed_html: ''
-    media_position: right
-    media_width: fifty
-    align: ''
-    type: ''
-  title: ''
-  subtitle: ''
-  has_border: false
-  background_image: ''
-  background_image_opacity: 
 - type: grid_section
   template: grid_section
   title: Benefits of Your Donation
@@ -754,10 +674,7 @@ sections:
   grid_items:
   - type: grid_item
     template: grid_item
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-      ligula, cursus id molestie vel, maximus aliquet risus.
-
-'
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nislligula, cursus id molestie vel, maximus aliquet risus.'
     image: "/images/classic/icon-3.svg"
     image_alt: Hanson Deck
     image_position: left
