@@ -24,7 +24,4 @@ fields:
   config:
     required: false
 pages:
-- content/privacy-policy.md
 - content/style-guide.md
-- content/terms-conditions.md
-- content/tes.md

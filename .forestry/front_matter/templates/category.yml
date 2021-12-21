@@ -26,7 +26,3 @@ fields:
   default: category
   config:
     required: false
-pages:
-- data/categories/berita-acara.json
-- data/categories/kata-ustadz.json
-- data/categories/pena-santri.json

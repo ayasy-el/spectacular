@@ -67,8 +67,8 @@ fields:
 - type: select
   name: image_position
   label: Image position (single post)
-  description: The featured image position in the article post relative to the post header
-    content
+  description: The featured image position in the article post relative to the post
+    header content
   default: top
   config:
     source:

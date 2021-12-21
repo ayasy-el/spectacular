@@ -26,8 +26,3 @@ fields:
   default: tag
   config:
     required: false
-pages:
-- data/tags/jamstack.json
-- data/tags/netlify.json
-- data/tags/sourcebit.json
-- data/tags/stackbit.json

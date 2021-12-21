@@ -34,8 +34,3 @@ fields:
   default: person
   config:
     required: false
-pages:
-- data/team/dianne-ameter.json
-- data/team/gustav-purpleson.json
-- data/team/hilary-ouse.json
-- data/team/hugh-saturation.json
