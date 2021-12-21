@@ -4,6 +4,6 @@
 	{{ $category_len := len $categories }}
 	{{ range $category_idx, $category := $categories }}
 		{{ $category_data := $category }}
-			<a href="/categories/{{ $category_data | relURL }}">{{ $category_data }}</a>{{ if not (eq $category_idx (sub $category_len 1)) }}, {{ end }}
+			<a href="/categories{{ $category_data | relURL }}">{{$category_data}}</a>{{ if not (eq $category_idx (sub $category_len 1)) }}, {{ end }}
 	{{ end }}
 </span>

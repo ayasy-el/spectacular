@@ -4,7 +4,7 @@ subtitle: >-
   Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique
   senectus.
 date: '2020-06-02'
-author: data/team/gustav-purpleson.json
+author: gustav-purpleson
 categories:
   - pena-santri
 tags:

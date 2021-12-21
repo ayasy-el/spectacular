@@ -17,6 +17,7 @@
 			<header class="post__header{{ if ne $image_pos "top" }} cell-12{{ end }}{{ if ne $image_pos "top" }} cell-lg-5{{ end }}{{ if and $has_image (eq $image_pos "right") }} order-lg-first{{ end }}">
 				<div class="post__meta mb-2">
 					{{ if .Params.categories }}
+						<a href="/categories">categories</a>/
 						{{ $include_dict := dict "categories" $.Params.categories "container_class" "post__cat" }}
 						{{ partial "article_post_categories.html" $include_dict }}
 						<span class="post__meta-sep"> &middot; </span>

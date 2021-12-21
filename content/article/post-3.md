@@ -14,11 +14,6 @@ excerpt: >-
   Quis est, qui non oderit libidinosam, protervam adolescentiam? Innumerabilia
   dici possunt in hanc sententiam, sed non necesse est. Putabam equidem satis,
   inquit, me dixisse.
-thumb_image: images/classic/post-3.png
-thumb_image_alt: Post 3 placeholder image
-image: images/classic/post-3.png
-image_alt: Post 3 placeholder image
-image_position: top
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta

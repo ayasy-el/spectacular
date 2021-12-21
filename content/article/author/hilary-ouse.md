@@ -14,7 +14,7 @@ sections:
     article_feed_cols: three
     enable_cards: true
     show_recent: false
-    author: data/team/hilary-ouse.json
+    author: hilary-ouse
     show_date: true
     show_categories: true
     show_author: true

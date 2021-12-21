@@ -1,12 +1,62 @@
 {{ define "content"}}
+
+<section class="section hero bg-secondary pt-6 pt-md-7 pb-6 pb-md-7">
     <div class="container">
-        <h1>All {{ .Type }}</h1>
-        <ul>
-            {{ range .Data.Pages }}
-            <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </li>
-            {{ end }}
-        </ul>
+        <div class="hero__content grid items-center">
+            <div class="hero__body my-2 cell-12 text-center">
+                <h1 class="hero__title">All {{ replace .Type "-" " " | title }}</h1>
+                {{ if .Params.subtitle }}
+                <p class="hero__subtitle">{{ partial "markdownify-block" .Params.subtitle }}</p>
+                {{ end }}
+            </div>
+        </div>
     </div>
+</section>
+
+
+<section class="section article-feed has-border bg-none pt-6 pt-md-7 pb-6 pb-md-7">
+<div class="container">
+{{ range .Data.Pages }}
+<div class="text-center">
+<h2 class="section__title"><a href="{{ .Permalink }}" class="link">{{ replace .Title "-" " " | title }}</a></h2>
+</div>
+<div class="grid">
+    {{ range .Data.Pages }}
+    <article class="cell-12 cell-md-6 my-2 cell-lg-4">
+        <div class="item card card--highlight card--vert">
+            <div class="flex flex-column">
+                {{ if .Params.image }}
+                <div class="item__media mb-3 card__media card__media--fill card__media--top">
+                    <a href="{{ .URL }}"><img src="{{ .Params.thumb_image | relURL }}" alt="{{ .Params.thumb_image_alt }}" /></a>
+                </div>
+                {{ end }}
+                <div class="item__body px- pb-3{{ if not .Params.image }} pt-3{{ end }} px-sm-4 pb-sm-4{{ if not .Params.image }} pt-4{{ end }}">
+                    <div class="item__meta mb-1">
+                        {{ $include_dict := dict "categories" .Params.categories "container_class" "item__cat" }}
+                        {{ partial "article_post_categories.html" $include_dict }}
+                        <span class="item__meta-sep"> &middot; </span>
+                        <span class="item__date"><time datetime="{{ .Params.Date | dateFormat "2006-01-02 15:04" }}">{{ .Params.Date | dateFormat "January 02, 2006" }}</time></span>
+                    </div>
+                    <h3 class="item__title mt-0 h4"><a href="{{ .URL }}">{{ .Params.title }}</a></h3>
+                    {{ if  .Params.excerpt }}
+                    <div class="item__copy">
+                        <p>{{ .Params.excerpt }}</p>
+                    </div>
+                    {{ end }}
+                    {{ if  .Params.author }}
+                    {{ $include_dict := dict "author" .Params.author "container_class" "item__byline" "avatar_size" "small" }}
+                    {{ partial "article_post_author.html" $include_dict }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </article>
+    {{ end }}
+</div>
+<br>
+<br>
+{{ end }}
+</div>
+</section>
 {{end}}
+
