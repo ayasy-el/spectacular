@@ -1,15 +1,15 @@
 ---
-title: Amet Nulla Facilisi Morbi Tempus
+title: Event5
 subtitle: >-
   Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique
   senectus.
 date: '2020-06-02'
 author: data/team/gustav-purpleson.json
 categories:
-  - data/categories/pena-santri.json
+  - pena-santri
 tags:
-  - data/tags/stackbit.json
-  - data/tags/netlify.json
+  - stackbit
+  - netlify
 excerpt: >-
   Estne, quaeso, inquam, sitienti in bibendo voluptas? Iam in altera
   philosophiae parte. Quem Tiberina descensio festo illo die tanto gaudio

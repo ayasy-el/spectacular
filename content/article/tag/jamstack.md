@@ -14,7 +14,7 @@ sections:
     article_feed_cols: three
     enable_cards: true
     show_recent: false
-    tag: data/tags/jamstack.json
+    tag: jamstack
     show_date: true
     show_categories: true
     show_author: true

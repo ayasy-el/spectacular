@@ -108,7 +108,7 @@ sections:
   has_border: true
   background_color: none
   author: ''
-  category: 'data/categories/pena-santri.json'
+  category: 'pena-santri'
   tag: ''
   background_image: ''
   background_image_size: ''

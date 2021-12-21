@@ -32,17 +32,17 @@
 		<div class="grid">
 			{{ $section_author := false }}
 			{{ if $section.author }}
-				{{ $section_author = getJSON $section.author }}
+				{{ $section_author = $section.author }}
 			{{ end }}
 
 			{{ $section_category := false }}
 			{{ if $section.category }}
-				{{ $section_category = getJSON $section.category }}
+				{{ $section_category = $section.category }}
 			{{ end }}
 
 			{{ $section_tag := false }}
 			{{ if $section.tag }}
-				{{ $section_tag = getJSON $section.tag }}
+				{{ $section_tag = $section.tag }}
 			{{ end }}
 
 			{{ $posts_all := (.Site.GetPage "section" "/article").Pages }}

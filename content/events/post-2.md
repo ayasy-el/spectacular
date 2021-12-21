@@ -1,16 +1,16 @@
 ---
-title: 'Non Minor, Inquit, Voluptas Percipitur Ex Vilissimis'
+title: 'Event2'
 subtitle: >-
   Idemque diviserunt naturam hominis in animum et corpus. Si enim ad populum me
   vocas, eum.
 date: '2020-05-25'
 author: data/team/hilary-ouse.json
 categories:
-  - data/categories/kata-ustadz.json
-  - data/categories/berita-acara.json
+  - kata-ustadz
+  - berita-acara
 tags:
-  - data/tags/jamstack.json
-  - data/tags/netlify.json
+  - jamstack
+  - netlify
 excerpt: >-
   Quae diligentissime contra Aristonem dicuntur a Chryippo. Videamus igitur
   sententias eorum, tum ad verba redeamus. Levatio igitur vitiorum magna.

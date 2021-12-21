@@ -178,11 +178,11 @@ params:
   domain: 'https://spectacular-1c297.netlify.app'
   favicon: ''
 taxonomies:
-  stub: stub
+  tag: "tags"
+  category: "categories"
+  author: "author"
 disableKinds:
   - RSS
-  - taxonomy
-  - taxonomyTerm
 markup:
   goldmark:
     renderer:
