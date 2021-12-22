@@ -83,6 +83,9 @@ fields:
     - left
     - right
     - center
+  showOnly:
+    field: has_icon
+    value: true
 - type: boolean
   name: new_window
   label: Open in new tab/window

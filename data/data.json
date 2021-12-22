@@ -1,18 +1,19 @@
 {
-    "categories":[
-        "berita-acara",
-        "kata-ustadz",
-        "pena-santri"
-    ],
-    "tags":[
-        "jamstack",
-        "netlify",
-        "stackbit"
-    ],
-    "Authors":[
-        "dianne-ameter",
-        "gustav-purpleson",
-        "hilary-ouse",
-        "hugh-saturation"
-    ]
+  "categories": [
+    "berita-acara",
+    "kata-ustadz",
+    "pena-santri"
+  ],
+  "tags": [
+    "abc-def",
+    "jamstack",
+    "netlify",
+    "stackbit"
+  ],
+  "Authors": [
+    "dianne-ameter",
+    "gustav-purpleson",
+    "hilary-ouse",
+    "hugh-saturation"
+  ]
 }

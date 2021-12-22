@@ -4,34 +4,104 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  description: The title of the event
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
+  description: The subtitle of the event
 - type: datetime
   name: date
-  label: date
+  label: Date
+  description: The date of the event
 - type: file
   name: thumb_image
-  label: thumb_image
-- type: text
-  name: background_image_size
-  label: background_image_size
-- type: text
-  name: background_image_position
-  label: background_image_position
-- type: text
-  name: background_image_repeat
-  label: background_image_repeat
-- type: text
-  name: background_color
-  label: background_color
+  label: Thumbnail Image (event feed)
+  description: The image displayed in the event feed
 - type: file
   name: background_image
-  label: background_image
-- type: number
-  name: background_image_opacity
-  label: background_image_opacity
+  label: Title Background Image
+  description: The image displayed in the background of the Title section
+- name: background_color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - none
+    - primary
+    - secondary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  description: The background color of the title section
+  label: Title Background Color
+- name: background_image_size
+  type: select
+  default: cover
+  config:
+    required: false
+    options:
+    - cover
+    - auto
+    - contain
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: " Title Background Image Size"
+  description: The size of the title background image, <em>default cover</em>
+- name: title_background_image_position
+  type: select
+  default: center center
+  config:
+    required: false
+    options:
+    - left top
+    - left center
+    - left bottom
+    - center top
+    - center center
+    - center bottom
+    - right top
+    - right center
+    - right bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Title Background Image Position
+  description: The starting position of a background image. The first value is thehorizontal
+    position, and the second value is the vertical, <em>default center center</em>
+- name: background_image_repeat
+  type: select
+  default: no-repeat
+  config:
+    required: false
+    options:
+    - repeat
+    - no-repeat
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: 'Title Background Image Repeat '
+  description: Repeat the image to cover the whole area, <em>default no-repeat</em>
+- name: background_image_opacity
+  type: number
+  label: Title Background Image Opacity
+  description: An integer between 0 and 100. A lower value makes the image more transparent
+  default: 20
+  required: true
+  config:
+    min: 0
+    max: 100
+    step: 
 - type: image_gallery
   name: gallery
   label: gallery
@@ -70,4 +140,5 @@ fields:
   default: event
   hidden: true
 pages:
+- content/events/event6.md
 - content/events/post-5.md

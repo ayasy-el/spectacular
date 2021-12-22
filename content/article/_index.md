@@ -22,6 +22,60 @@ sections:
   background_image_size: ''
   background_image_position: ''
   background_image_repeat: ''
+- template: grid_section
+  grid_cols: three
+  grid_gap_vert: small
+  grid_gap_horiz: small
+  align: center
+  padding_top: none
+  padding_bottom: none
+  background_color: none
+  background_image_size: cover
+  background_image_position: center center
+  background_image_repeat: no-repeat
+  type: grid_section
+  title: ''
+  actions:
+  - style: secondary
+    label: Categories
+    url: "/categories"
+    has_icon: false
+    costum_icon: false
+    icon: ''
+    path_to_svg_icon: ''
+    icon_position: ''
+    new_window: false
+    no_follow: false
+    type: ''
+  - style: secondary
+    label: Tags
+    url: "/tags"
+    has_icon: false
+    costum_icon: false
+    icon: ''
+    path_to_svg_icon: ''
+    icon_position: ''
+    new_window: false
+    no_follow: false
+    type: ''
+  - style: secondary
+    label: Authors
+    url: "/author"
+    has_icon: false
+    costum_icon: false
+    icon: ''
+    path_to_svg_icon: ''
+    icon_position: ''
+    new_window: false
+    no_follow: false
+    type: ''
+  enable_cards: true
+  grid_items: []
+  subtitle: ''
+  modal_image: false
+  has_border: false
+  background_image: ''
+  background_image_opacity: 
 - type: article_feed_section
   template: article_feed_section
   article_feed_cols: three

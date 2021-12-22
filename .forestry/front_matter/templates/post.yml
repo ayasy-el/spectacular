@@ -75,7 +75,7 @@ fields:
   label: Image position (single post)
   description: The featured image position in the article post relative to the post
     header content
-  default: top
+  default: left
   config:
     source:
       type: custom
@@ -98,3 +98,5 @@ fields:
   default: post
   config:
     required: false
+pages:
+- content/article/test.md
