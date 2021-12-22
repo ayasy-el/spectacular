@@ -1,0 +1,56 @@
+---
+label: Penjelasan Depaterment
+hide_body: true
+display_field: title
+fields:
+- type: field_group_list
+  name: features
+  label: Features
+  fields:
+  - type: include
+    name: include_feature
+    label: Feature
+    template: feature
+  config:
+    labelField: title
+- type: select
+  name: feature_padding_vert
+  label: Feature padding vertical
+  description: The vertical spacing between section features
+  default: small
+  config:
+    source:
+      type: simple
+    options:
+    - small
+    - medium
+    - large
+  hidden: true
+- type: select
+  name: padding_top
+  label: Section top padding
+  description: The padding area (space) on the top of the section
+  default: large
+  config:
+    source:
+      type: simple
+    options:
+    - none
+    - small
+    - medium
+    - large
+  hidden: true
+- type: boolean
+  name: has_border
+  label: Section border
+  description: Add section bottom border
+  default: false
+  hidden: true
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: features_section
+  config:
+    required: false

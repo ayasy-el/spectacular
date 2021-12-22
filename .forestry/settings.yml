@@ -42,7 +42,7 @@ sections:
   match: "*"
   new_doc_ext: md
   templates:
-  - advanced
+  - departement
 - type: directory
   path: content
   label: Pages

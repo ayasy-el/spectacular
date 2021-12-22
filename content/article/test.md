@@ -2,14 +2,13 @@
 author = "hilary-ouse"
 categories = ["kata-ustadz"]
 date = 2021-12-08T17:00:00Z
-draft = true
 excerpt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec augue magna."
 image = "/images/hero-background.jpg"
 image_alt = ""
 image_position = "left"
 layout = "post"
 subtitle = "Idemque diviserunt naturam hominis in animum et corpus. Si enim ad populum me   vocas, eum."
-tags = ["jamstack"]
+tags = ["abc-def", "jamstack"]
 thumb_image = "/images/hero-background.jpg"
 thumb_image_alt = ""
 title = "Test"

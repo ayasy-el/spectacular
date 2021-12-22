@@ -1,0 +1,65 @@
+---
+label: Proker Item
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Nama Proker
+  description: The title of the item
+- type: text
+  name: subtitle
+  label: Penjelasan Proker
+  description: Penjelasan Singkat Proker (1 kalimat saja)
+- type: file
+  name: image
+  label: Gambar Proker
+  description: gambar berbentuk lingkaran
+- type: text
+  name: image_alt
+  label: Gambar Proker alt text
+  description: The alt text of the item image
+- type: select
+  name: image_position
+  label: Image position
+  description: The position of the image relative to the text content
+  default: left
+  hidden: true
+  config:
+    source:
+      type: custom
+    options:
+    - left
+    - right
+    - top
+    - bottom
+- type: select
+  name: image_width
+  label: Image container width
+  description: The image container width as a percentage of the item width. Used only
+    when the image position is set to "left" or "right"
+  default: twenty-five
+  config:
+    source:
+      type: custom
+    options:
+    - twenty-five
+    - thirty-three
+    - fourty
+    - fifty
+    - sixty
+- type: boolean
+  name: image_has_padding
+  label: Image padding
+  description: Add padding (space) around the image. Used only when "Enable cards"
+    is set to true
+  default: false
+  hidden: true
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: grid_item
+  config:
+    required: false
