@@ -1,8 +1,8 @@
 ---
-title: Qism
+title: Departement Shilah
 sections:
-- title: Qism Riyadhoh
-  subtitle: Bagian Keolahragaan
+- title: Departement Shilah
+  subtitle: Bagian Hubungan Masyarakat 
   actions: []
   image_alt: lorem-ipsum
   media_position: top
@@ -183,8 +183,8 @@ sections:
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
-  title: Qism
-  description: This is the qism page
+  title: Departement Shilah
+  description: This is the departement page
   extra:
     - name: 'og:type'
       value: website
@@ -193,7 +193,7 @@ seo:
       value: About
       keyName: property
     - name: 'og:description'
-      value: This is the qism page
+      value: This is the departement page
       keyName: property
     - name: 'og:image'
       value: images/about-1.jpg
@@ -204,7 +204,7 @@ seo:
     - name: 'twitter:title'
       value: About
     - name: 'twitter:description'
-      value: This is the qism page
+      value: This is the departement page
     - name: 'twitter:image'
       value: images/about-1.jpg
       relativeUrl: true

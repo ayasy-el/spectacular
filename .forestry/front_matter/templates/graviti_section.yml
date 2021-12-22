@@ -1,0 +1,142 @@
+---
+label: Graviti Section
+hide_body: true
+display_field: id
+fields:
+- name: id
+  type: text
+  config:
+    required: true
+  label: Id
+  description: must be without spaces
+- type: text
+  name: title
+  label: Title
+  description: The title of the section
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the section displayed above the title
+- type: boolean
+  name: show_date
+  label: Show date
+  description: Show the publish date of the post
+  default: true
+- type: datetime
+  name: date
+  label: Date
+  description: Date of the event
+  config:
+    date_format: DD/MM/YYYY
+    time_format: h:mm A Z
+    display_utc: false
+    export_format: YYYY-MM-DD
+- type: select
+  name: feature_padding_vert
+  label: Feature padding vertical
+  description: The vertical spacing between title and images gallery
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - small
+    - medium
+    - large
+- type: boolean
+  name: has_border
+  label: Section border
+  description: Add section bottom border
+  default: false
+- type: select
+  name: padding_top
+  label: Section top padding
+  description: The padding area (space) on the top of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- type: select
+  name: padding_bottom
+  label: Section bottom padding
+  description: The padding area (space) on the bottom of the section
+  default: medium
+  config:
+    source:
+      type: custom
+    options:
+    - none
+    - small
+    - medium
+    - large
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Multiple images uploud
+- name: caption
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: caption
+  description: caption for all image above
+- name: single_image
+  type: field_group_list
+  fields:
+  - name: use_link
+    type: boolean
+    label: use link
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: image
+    showOnly:
+      field: use_link
+  - name: use_rel_link
+    type: boolean
+    label: use relative link
+    showOnly:
+      field: use_link
+      value: true
+    description: 'turn on to use relative link, ex: <code>img/image1.jpg</code><br>turn
+      off to use absolute link, ex: <code>example.com/img/image1.jpg</code>'
+    default: false
+  - name: url
+    type: text
+    config:
+      required: false
+    label: url
+    showOnly:
+      value: true
+      field: use_link
+  - name: caption
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: caption
+  config:
+    min: 
+    max: 
+    labelField: caption
+  label: Single image uploud
+  description: another option is to upload a single image or use a link
+- name: type
+  type: text
+  config:
+    required: false
+  label: Object Type
+  hidden: true
+  default: gallery_section

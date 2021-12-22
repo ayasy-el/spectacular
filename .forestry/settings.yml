@@ -4,45 +4,65 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: https://api.stackbit.com/project/60a1c297d4881400175678ae/webhook/forestry
 sections:
+- type: heading
+  label: Index
 - type: document
-  path: config.yaml
-  label: Site configuration
-  templates:
-  - config
+  path: content/_index.md
+  label: HomePage
+- type: document
+  path: content/article/_index.md
+  label: ArticlePage
+- type: document
+  path: content/events/_index.md
+  label: EventsPage
+- type: heading
+  label: Content
 - type: directory
-  path: data/team
-  label: Person
-  create: all
-  match: "**/*"
-  new_doc_ext: yaml
+  path: content/article
+  label: Article
+  create: documents
+  match: "*"
+  exclude: _index.md
+  new_doc_ext: md
   templates:
-  - person
+  - post
 - type: directory
-  path: data/categories
-  label: Category
-  create: all
-  match: "**/*"
-  new_doc_ext: yaml
+  path: content/events
+  label: Events
+  create: documents
+  match: "*"
+  exclude: _index.md
+  new_doc_ext: md
   templates:
-  - category
+  - events
 - type: directory
-  path: data/tags
-  label: Tag
-  create: all
-  match: "**/*"
-  new_doc_ext: yaml
+  path: content/departement
+  label: Departement
+  create: documents
+  match: "*"
+  new_doc_ext: md
   templates:
-  - tag
+  - advanced
 - type: directory
   path: content
   label: Pages
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*"
+  exclude: _index.md
   new_doc_ext: md
   templates:
   - page
-  - post
   - advanced
+- type: heading
+  label: Authors, Categories, & Tags
+- type: document
+  path: data/data.json
+  label: Data
+- type: heading
+  label: Header Footer & Config
+- type: document
+  path: config.toml
+  label: Configuration Site
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
@@ -51,7 +71,7 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.47
+  - HUGO_VERSION=0.80.0
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"

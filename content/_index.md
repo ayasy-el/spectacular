@@ -124,7 +124,7 @@ sections:
   background_image_opacity: 
 - type: grid_section
   template: grid_section
-  title: Qism
+  title: Departement
   subtitle: 'Bagian Kepengurusan'
   grid_items:
   - type: grid_item
@@ -137,7 +137,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/daru"
+      url: "/departement/daru"
       style: link
       has_icon: true
       icon: arrow-right
@@ -165,7 +165,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/nadhofah"
+      url: "/departement/nadhofah"
       style: link
       has_icon: true
       icon: arrow-right
@@ -193,7 +193,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/lughoh"
+      url: "/departement/lughoh"
       style: link
       has_icon: true
       icon: arrow-right
@@ -221,7 +221,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/riyadhoh"
+      url: "/departement/riyadhoh"
       style: link
       has_icon: true
       icon: arrow-right
@@ -249,7 +249,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/talim"
+      url: "/departement/talim"
       style: link
       has_icon: true
       icon: arrow-right
@@ -277,7 +277,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/amn"
+      url: "/departement/amn"
       style: link
       has_icon: true
       icon: arrow-right
@@ -305,7 +305,7 @@ sections:
     - type: action
       template: action
       label: Learn More
-      url: "/qism/shilah"
+      url: "/departement/shilah"
       style: link
       has_icon: true
       icon: arrow-right

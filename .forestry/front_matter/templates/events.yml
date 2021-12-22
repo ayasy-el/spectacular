@@ -1,0 +1,73 @@
+---
+label: Events
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: thumb_image
+  label: thumb_image
+- type: text
+  name: background_image_size
+  label: background_image_size
+- type: text
+  name: background_image_position
+  label: background_image_position
+- type: text
+  name: background_image_repeat
+  label: background_image_repeat
+- type: text
+  name: background_color
+  label: background_color
+- type: file
+  name: background_image
+  label: background_image
+- type: number
+  name: background_image_opacity
+  label: background_image_opacity
+- type: image_gallery
+  name: gallery
+  label: gallery
+- type: field_group
+  name: seo
+  label: seo
+  fields:
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: template
+    label: template
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: field_group_list
+    name: extra
+    label: extra
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: value
+      label: value
+    - type: text
+      name: keyName
+      label: keyName
+- type: text
+  name: layout
+  label: layout
+  default: event
+  hidden: true
+pages:
+- content/events/post-5.md

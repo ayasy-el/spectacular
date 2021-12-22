@@ -50,30 +50,36 @@ fields:
 - type: number
   name: recent_count
   label: Number of recent posts to show
-- type: select
-  name: author
+- name: author
+  type: select
   label: Author filter
-  description: Filter posts by an author
+  description: Filter posts by a author
   config:
     source:
-      type: pages
-      section: Person
+      type: documents
+      section: data
+      file: data/data.json
+      path: Authors
 - type: select
   name: category
   label: Category filter
   description: Filter posts by a category
   config:
     source:
-      type: pages
-      section: Category
+      type: documents
+      section: data
+      file: data/data.json
+      path: categories
 - type: select
   name: tag
   label: Tag filter
   description: Filter posts by a tag
   config:
     source:
-      type: pages
-      section: Tag
+      type: documents
+      section: data
+      file: data/data.json
+      path: tags
 - type: boolean
   name: show_date
   label: Show date

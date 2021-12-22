@@ -1,0 +1,13 @@
+---
+label: Data
+hide_body: true
+fields:
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: Authors
+  label: Authors

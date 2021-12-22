@@ -23,5 +23,3 @@ fields:
   default: page
   config:
     required: false
-pages:
-- content/style-guide.md

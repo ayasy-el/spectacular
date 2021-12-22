@@ -107,4 +107,4 @@ fields:
       label: Footer configuration
       template: footer
 pages:
-- config.yaml
+- config.toml

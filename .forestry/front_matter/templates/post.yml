@@ -24,8 +24,10 @@ fields:
   description: The author of the post
   config:
     source:
-      type: pages
-      section: Person
+      type: documents
+      section: data
+      file: data/data.json
+      path: Authors
 - type: list
   name: categories
   label: Categories
@@ -33,8 +35,10 @@ fields:
   config:
     use_select: true
     source:
-      type: pages
-      section: Category
+      type: documents
+      section: data
+      file: data/data.json
+      path: categories
 - type: list
   name: tags
   label: Tags
@@ -42,19 +46,21 @@ fields:
   config:
     use_select: true
     source:
-      type: pages
-      section: Tag
+      type: documents
+      section: data
+      file: data/data.json
+      path: tags
 - type: text
   name: excerpt
   label: Excerpt
   description: The excerpt of the post displayed in the article feed
 - type: file
   name: thumb_image
-  label: Image (article feed)
+  label: Thumbnail Image (article feed)
   description: The image displayed in the article feed
 - type: text
   name: thumb_image_alt
-  label: Image alt text (article feed)
+  label: Thumbnail Image alt text (article feed)
   description: The alt text of the article feed image
 - type: file
   name: image
@@ -92,9 +98,3 @@ fields:
   default: post
   config:
     required: false
-pages:
-- content/article/post-1.md
-- content/article/post-2.md
-- content/article/post-3.md
-- content/article/post-4.md
-- content/article/post-5.md

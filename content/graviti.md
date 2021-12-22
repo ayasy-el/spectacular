@@ -1,5 +1,5 @@
 ---
-title: graviti
+title: Graviti
 sections:
 - title: Graviti
   subtitle: Garda Kreativitas Santri
@@ -108,7 +108,7 @@ sections:
   has_border: true
   background_color: none
   author: ''
-  category: 'pena-santri'
+  category: pena-santri
   tag: ''
   background_image: ''
   background_image_size: ''
@@ -118,7 +118,7 @@ sections:
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
-  title: Gallery
+  title: Graviti
   description: A reference for suggested typographic treatment and styles for your
     content
   extra:
