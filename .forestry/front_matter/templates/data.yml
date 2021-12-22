@@ -11,3 +11,5 @@ fields:
 - type: list
   name: Authors
   label: Authors
+  description: Gambar Author nama filenya harus sama dengan ini<br><em>WARNING!!!
+    change the space to "-", </em>e.g. "john-doe"
