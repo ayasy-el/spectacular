@@ -43,6 +43,7 @@ sections:
   template: grid_section
   title: Progam Kerja
   subtitle: Tugas dan Tanggung Jawab
+  modal_text: true 
   grid_items:
   - type: grid_item
     template: grid_item
@@ -59,6 +60,8 @@ sections:
     actions_width: ''
     image_align: ''
     image_has_padding: false
+    modal_id: 1
+    modal_content: "konten ke-1"
   - type: grid_item
     template: grid_item
     image: "/images/classic/icon-2.svg"
@@ -74,6 +77,8 @@ sections:
     actions_width: ''
     image_align: ''
     image_has_padding: false
+    modal_id: 2
+    modal_content: "content ke-2"
   - type: grid_item
     template: grid_item
     image: "/images/classic/icon-1.svg"
