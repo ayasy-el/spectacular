@@ -5,8 +5,8 @@ sections:
   subtitle: Bagian Kebahasaan
   actions: []
   image_alt: lorem-ipsum
-  media_position: top
-  media_width: fifty
+  media_position: right
+  media_width: fourty
   align: left
   padding_top: large
   padding_bottom: large
@@ -17,7 +17,7 @@ sections:
   background_image_repeat: no-repeat
   type: hero_section
   template: hero_section
-  image: ''
+  image: 'images/classic/icon-1.svg'
   background_image: ''
   content: ''
   video_embed_html: ''

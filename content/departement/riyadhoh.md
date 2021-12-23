@@ -5,19 +5,19 @@ sections:
   subtitle: Bagian Keolahragaan
   actions: []
   image_alt: lorem-ipsum
-  media_position: top
-  media_width: fifty
+  media_position: right
+  media_width: fourty
   align: left
   padding_top: large
   padding_bottom: large
   has_border: false
-  background_color: primary
+  background_color: secondary
   background_image_size: cover
   background_image_position: center center
   background_image_repeat: no-repeat
   type: hero_section
   template: hero_section
-  image: ''
+  image: '/images/logo-3.svg'
   background_image: ''
   content: ''
   video_embed_html: ''

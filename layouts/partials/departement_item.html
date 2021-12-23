@@ -1,0 +1,22 @@
+<div class="cell-12 cell-md-6 cell-lg-4 cell-xl-3 my-1">
+    <div class="item card card--highlight card--vert p-3 p-sm-4"><div class="flex flex-column">
+    {{ if .section.image }}
+        <div class="item__media card__media card__media--fill card__media--top mb-1">
+            <a href="{{ .site.URL }}"><img src="{{ .section.image | relURL }}" alt="{{ .section.image_alt }}" class="link mx-auto" /></a>
+        </div>
+    {{ end }}
+    <div class="item__body px-0 pb-4{{ if not .section.image }} pt-3{{ end }} px-sm-2 pb-sm-2{{ if not .section.image }} pt-4{{ end }}">
+        <div class="item__meta">
+        </div>
+        <h3 class="item__title mt-0 h4"><a href="{{ .site.URL }}" class="link">{{replace .section.title "Departement" ""}}</a></h3>
+        {{ if .section.subtitle  }}
+        <div class="item__copy">
+            <a href="{{ .site.URL }}">
+                <p class="link">{{ .section.subtitle }}</p>
+            </a>
+        </div>
+        {{ end }}
+        <a href="{{ .site.URL }}"><i class="link fas fa-arrow-right"></i></a>
+    </div>
+</div></div>
+</div>

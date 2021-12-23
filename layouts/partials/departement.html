@@ -1,0 +1,25 @@
+{{ $bg_color := .section.background_color | default "none" }}
+<section class="section {{ if eq $bg_color "none" }} bg-none{{ end }}{{ if eq $bg_color "primary" }} bg-primary{{ end }}{{ if eq $bg_color "secondary" }} bg-secondary{{ end }} pt-6 pb-7 pb-md-7">
+    {{ if or .section.title .section.subtitle }}
+    <div class="container container--medium mb-5 text-center">
+        {{ if .section.subtitle }}
+        <div class="section__subtitle">{{ .section.subtitle }}</div>
+        {{ end }}
+        {{ if .section.title }}
+        <h2 class="section__title mt-0">{{ .section.title }}</h2>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="container"><div class="grid">
+        {{ $departements := (.Site.GetPage "section" "/departement").Pages }}
+        {{ range  $departement := $departements}}
+            {{range $section := .Params.sections}}
+                {{if eq $section.type "hero_section"}}
+                {{ $include_dict := dict "section" $section "site" $departement}}
+                {{ partial "departement_item.html" $include_dict }}
+                {{end}}
+            {{end}}
+        {{ end }}
+    </div></div>
+</section>
