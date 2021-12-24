@@ -37,6 +37,7 @@ fields:
   config:
     required: false
 pages:
+- content/404.md
 - content/_index.md
 - content/about.md
 - content/article/_index.md
