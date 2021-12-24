@@ -161,6 +161,7 @@ sections:
   - "/images/classic/post-4.png"
   - "/images/classic/post-5.png"
   - "/images/diy-preview.png"
+  - "https://picsum.photos/1920/1080"
   title: ''
   subtitle: ''
   date: 

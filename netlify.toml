@@ -4,3 +4,8 @@ command = "hugo"
 
   [build.environment]
   HUGO_VERSION = "0.80.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 404

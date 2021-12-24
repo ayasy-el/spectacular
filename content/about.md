@@ -70,8 +70,8 @@ sections:
   background_image_size: ''
   background_image_position: ''
   background_image_repeat: ''
-- type: departement
-  template: departement
+- type: departement_feed_section
+  template: departement_feed_section
   title: Departement
   subtitle: 'Bagian Kepengurusan'
   background_color: secondary

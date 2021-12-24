@@ -7,7 +7,7 @@
 <section class="section {{ if $section.has_border }} has-border{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
 	<div class="container container--medium{{ if or (eq $feature_padding_y "small") (eq $feature_padding_y "medium") }} mb-5{{ end }}{{ if eq $feature_padding_y "large" }} mb-4{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
 		{{ if $section.title }}
-		<h1 class="section__title"><a href="{{$section.link}}" class="link">{{ $section.title }}</a></h1>
+		<h1 class="section__title"><a href="{{$section.link}}" class="highlight">{{ $section.title }}</a></h1>
 		{{ end }}
 
 		{{ if $section.subtitle }}
@@ -27,8 +27,8 @@
 		<div class="masonry">
 			{{ range $item := $section.gallery }}
 			<div class="grid">
-				<!--<img src=" {{ . | relURL }}" class="card--highlight">-->
-				<a data-fancybox="{{$section.id}}" href="{{ . | relURL }}" {{ if $section.caption }}data-caption="{{ $section.caption }}"{{ end }}><img src="{{ . | relURL }}" class="thumb card--highlight"></a>
+				<!--<img data-src=" {{ . | relURL }}" class="card--highlight">-->
+				<a data-fancybox="{{$section.id}}" href="{{ . | relURL }}" {{ if $section.caption }}data-caption="{{ $section.caption }}" {{ end }}><img data-src="{{ . | relURL }}" class="highlight lazy" ></a>
 			</div>
 			{{ end }}
 	{{ end }}
@@ -36,9 +36,9 @@
 			{{ range $item := $section.single_image }}
 			<div class="grid">
 				{{ if $item.use_link}}
-				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="thumb card--highlight"></a>
+				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img data-src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="highlight lazy" ></a>
 				{{ else }}
-				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img src="{{ $item.image | relURL }}" class="thumb card--highlight"></a>
+				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img data-src="{{ $item.image | relURL }}" class="highlight lazy" ></a>
 				{{end}}
 			</div>
 			{{ end }}
@@ -46,4 +46,5 @@
 	</div>
 	{{ end }}
 
+	<script src="/js/lazyload.js"></script>
 </section>

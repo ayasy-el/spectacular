@@ -31,8 +31,8 @@
 		<div class="masonry">
 			{{ range $item := $section.gallery }}
 			<div class="grid">
-				<!--<img src=" {{ . | relURL }}" class="card--highlight">-->
-				<a data-fancybox="{{$section.id}}" href="{{ . | relURL }}" {{ if $section.caption }}data-caption="{{ $section.caption }}"{{ end }}><img src="{{ . | relURL }}" class="thumb card--highlight"></a>
+				<!--<img data-src=" {{ . | relURL }}" class="card--highlight">-->
+				<a data-fancybox="{{$section.id}}" href="{{ . | relURL }}" {{ if $section.caption }}data-caption="{{ $section.caption }}"{{ end }}><img data-src="{{ . | relURL }}" class="highlight lazy"></a>
 			</div>
 			{{ end }}
 	{{ end }}
@@ -40,9 +40,9 @@
 			{{ range $item := $section.single_image }}
 			<div class="grid">
 				{{ if $item.use_link}}
-				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="thumb card--highlight"></a>
+				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img data-src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="highlight lazy"></a>
 				{{ else }}
-				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img src="{{ $item.image | relURL }}" class="thumb card--highlight"></a>
+				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img data-src="{{ $item.image | relURL }}" class="highlight lazy"></a>
 				{{end}}
 			</div>
 			{{ end }}
@@ -50,4 +50,5 @@
 	</div>
 	{{ end }}
 
+<script src="/js/lazyload.js"></script>
 </section>

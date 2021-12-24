@@ -1,0 +1,21 @@
+---
+label: Departement Feed Section
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the section
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The subtitle of the section displayed below the title
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: departement_feed_section
+  config:
+    required: false

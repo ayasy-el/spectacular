@@ -78,7 +78,13 @@ sections:
     image_align: ''
     image_has_padding: false
     modal_id: 2
-    modal_content: "content ke-2"
+    modal_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donecnisl ligula, cursus id molestie vel, maximus aliquet risus. Vivamus innibh fringilla, fringilla. 
+
+
+    ![foto](https://picsum.photos/1920/1080)
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donecnisl ligula, cursus id molestie vel, maximus aliquet risus. Vivamus innibh fringilla, fringilla.Lorem ipsum dolor sit amet, consecteturadipiscing elit."
   - type: grid_item
     template: grid_item
     image: "/images/classic/icon-1.svg"

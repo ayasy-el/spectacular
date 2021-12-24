@@ -34,6 +34,19 @@
 
 }
 
+.highlight{
+	display: inline-block;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 2px 30px $color-classic-card-shadow;
+	}
+}
+
 .no-link{
 	display: inline-block;
 	transition-duration: 0.3s;

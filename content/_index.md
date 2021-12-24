@@ -122,8 +122,8 @@ sections:
   has_border: false
   background_image: ''
   background_image_opacity: 
-- type: departement
-  template: departement
+- type: departement_feed_section
+  template: departement_feed_section
   title: Departement
   subtitle: 'Bagian Kepengurusan'
 - type: events_feed_section
