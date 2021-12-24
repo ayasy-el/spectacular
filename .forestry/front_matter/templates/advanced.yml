@@ -14,6 +14,7 @@ fields:
   description: Page sections
   template_types:
   - hero_section
+  - departement_feed_section
   - features_section
   - grid_section
   - article_feed_section
