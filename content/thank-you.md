@@ -39,7 +39,9 @@ layout: advanced
 seo:
   title: ''
   description: ''
-  robots: []
+  robots:
+  - noimageindex
+  - none
   extra: []
   type: ''
 

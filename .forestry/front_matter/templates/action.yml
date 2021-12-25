@@ -39,24 +39,21 @@ fields:
   label: Icon
   config:
     source:
-      type: custom
+      type: simple
     options:
     - arrow-left
     - arrow-right
-    - arrow-down
-    - double-arrow-down
     - arrow-up
-    - double-arrow-up
     - close
-    - menu
-    - whatsapp
     - facebook
     - github
     - instagram
     - linkedin
+    - menu
     - twitter
-    - vimeo
     - youtube
+    - vimeo
+    - whatsapp
     - email
     - telegram
   showOnly:

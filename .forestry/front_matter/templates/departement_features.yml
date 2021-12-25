@@ -7,12 +7,22 @@ fields:
   name: features
   label: Features
   fields:
-  - type: include
-    name: include_feature
-    label: Feature
-    template: feature
-  config:
-    labelField: title
+  - type: text
+    name: title
+    label: Title
+    description: The title of the feature
+  - type: text
+    name: subtitle
+    label: Subtitle
+    description: The subtitle of the feature displayed below the title
+  - type: textarea
+    name: content
+    label: Content
+    description: The text content of the feature
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 - type: select
   name: feature_padding_vert
   label: Feature padding vertical

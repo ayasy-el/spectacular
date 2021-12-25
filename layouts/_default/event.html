@@ -4,7 +4,7 @@
 
 {{ $bg_color := $params.background_color | default "none" }}
 {{ $bg_img_opacity_pct := $params.background_image_opacity | default 100 }}
-{{ $bg_img_opacity := mul $bg_img_opacity_pct 0.01 }}
+{{ $bg_img_opacity := mul (int $bg_img_opacity_pct) 0.01 }}
 {{ $bg_img_size := $params.background_image_size | default "cover" }}
 {{ $bg_img_position := $params.background_image_position | default "center center" }}
 {{ $bg_img_repeat := $params.background_image_repeat | default "no-repeat" }}

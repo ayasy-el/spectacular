@@ -7,10 +7,12 @@ fields:
   name: title
   label: Title
   description: The title of the section
+  default: Departement
 - type: text
   name: subtitle
   label: Subtitle
   description: The subtitle of the section displayed below the title
+  default: Bagian Kepengurusan
 - type: text
   name: type
   label: Object Type

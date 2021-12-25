@@ -44,9 +44,9 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-    label: Modal Content
-    description: The text content of the modal dialog, used only when the "Modal Dialog"
-      is true
+    label: Modal Dialog Content
+    description: Penjelasan panjang proker yang akan tampil pada popup, used only
+      when the "Modal Dialog" is true
   - type: file
     name: image
     label: Gambar Proker
