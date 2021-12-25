@@ -5,7 +5,7 @@
 {{ $post := .post_page }}
 
 {{ if $section_author }}
-	{{ if $post.Params.authors }}
+	{{ if $post.Params.author }}
 		{{ $post_author := $post.Params.author }}
 		{{ if eq $post_author $section_author }}
 			{{ $include_dict := dict "article_feed_section" $section "post_page" $post }}

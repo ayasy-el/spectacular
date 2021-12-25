@@ -108,7 +108,7 @@ fields:
   config:
     min: 0
     max: 100
-    step: 
+    step: 1
 - type: image_gallery
   name: gallery
   label: gallery

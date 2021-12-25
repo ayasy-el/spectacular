@@ -92,10 +92,16 @@ fields:
   name: background_image
   label: Background image
   description: The image displayed in the background of the section
-- type: number
-  name: background_image_opacity
-  label: Background image opacity
+- name: background_image_opacity
+  type: number
+  label: Title Background Image Opacity
   description: An integer between 0 and 100. A lower value makes the image more transparent
+  default: 20
+  required: true
+  config:
+    min: 0
+    max: 100
+    step: 1
 - type: select
   name: background_image_size
   label: Background image size
