@@ -4,6 +4,7 @@
 {{ $section_tag := .section_tag }}
 {{ $post := .post_page }}
 
+{{ if or (or $section_author $section_category) $section_tag }}
 {{ if $section_author }}
 	{{ if $post.Params.author }}
 		{{ $post_author := $post.Params.author }}
@@ -12,7 +13,8 @@
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
 	{{ end }}
-{{ else if $section_category }}
+{{end}}
+{{ if $section_category }}
 	{{ range $category := $post.Params.categories }}
 		{{ $post_category := $category }}
 		{{ if eq $post_category $section_category }}
@@ -20,7 +22,8 @@
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
 	{{ end }}
-{{ else if $section_tag }}
+{{end}}
+{{ if $section_tag }}
 	{{ range $tag := $post.Params.tags }}
 		{{ $post_tag := $tag }}
 		{{ if eq $post_tag $section_tag }}
@@ -28,6 +31,7 @@
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
 	{{ end }}
+{{end}}
 {{ else }}
 	{{ $include_dict := dict "article_feed_section" $section "post_page" $post }}
 	{{ partial "article_post_feed_item.html" $include_dict }}

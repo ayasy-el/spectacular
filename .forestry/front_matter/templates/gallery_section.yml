@@ -80,7 +80,7 @@ fields:
   label: Multiple images uploud
 - type: text
   name: img_alt
-  label: Gambar Proker alt text
+  label: Images alt text
   description: The alt text for all images above
 - name: caption
   type: textarea
@@ -107,7 +107,7 @@ fields:
       field: use_link
   - type: text
     name: img_alt
-    label: Gambar Proker alt text
+    label: Item image alt text
     description: The alt text of the item image
   - name: use_rel_link
     type: boolean
