@@ -1,27 +1,27 @@
 ---
-label: Post
+label: article
 hide_body: false
 fields:
 - type: text
   name: title
   label: Title
-  description: The title of the post
+  description: The title of the article
   config:
     required: true
 - type: text
   name: subtitle
   label: Subtitle
-  description: The subtitle of the post
+  description: The subtitle of the article
 - type: datetime
   name: date
   label: Date
-  description: The publish date of the post
+  description: The publish date of the article
   config:
     required: true
 - type: select
   name: author
   label: Author
-  description: The author of the post
+  description: The author of the article
   config:
     source:
       type: documents
@@ -31,7 +31,7 @@ fields:
 - type: list
   name: categories
   label: Categories
-  description: The categories of the post
+  description: The categories of the article
   config:
     use_select: true
     source:
@@ -42,7 +42,7 @@ fields:
 - type: list
   name: tags
   label: Tags
-  description: The tags of the post
+  description: The tags of the article
   config:
     use_select: true
     source:
@@ -53,7 +53,7 @@ fields:
 - type: text
   name: excerpt
   label: Excerpt
-  description: The excerpt of the post displayed in the article feed
+  description: The excerpt of the article displayed in the article feed
 - type: file
   name: thumb_image
   label: Thumbnail Image (article feed)
@@ -64,16 +64,16 @@ fields:
   description: The alt text of the article feed image
 - type: file
   name: image
-  label: Image (single post)
-  description: The image displayed in the single post
+  label: Image (single article)
+  description: The image displayed in the single article
 - type: text
   name: image_alt
-  label: Image alt text (single post)
-  description: The alt text of the single post image
+  label: Image alt text (single article)
+  description: The alt text of the single article image
 - type: select
   name: image_position
-  label: Image position (single post)
-  description: The featured image position in the article post relative to the post
+  label: Image position (single article)
+  description: The featured image position in the article article relative to the article
     header content
   default: left
   config:

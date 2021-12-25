@@ -76,6 +76,7 @@ sections:
   date: 2021-05-20
   id: event-1
   caption: ''
+  img_alt: "tes_alt"
   single_image: []
 - template: gallery_section
   type: gallery_section
@@ -129,6 +130,7 @@ sections:
   show_date: true
   date: 2021-05-17
   id: event-1
+  img_alt: "event-1 images"
   caption: Event 1 caption
   single_image:
   - use_link: false
@@ -136,11 +138,13 @@ sections:
     use_rel_link: false
     url: ''
     caption: image from single image uploud
+    img_alt: "image from single image uploud"
   - use_link: true
     image: ''
     use_rel_link: false
     url: https://i.picsum.photos/id/9/1920/1080.jpg?hmac=U6DiXpOhZ60TGLvj08EBMO826ARC_wfdjzLbrZKJYYs
     caption: image from unsplash
+    img_alt: image from unsplash
   - use_link: true
     image: ''
     use_rel_link: true
@@ -167,6 +171,7 @@ sections:
   date: 
   has_border: false
   caption: ''
+  img_alt: event 2
   single_image: []
 seo:
   type: stackbit_page_meta

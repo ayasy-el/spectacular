@@ -71,10 +71,11 @@ sections:
   title: Karya Lukis
   subtitle: Komik, Kaligrafi, Lettering, dll
   feature_padding_vert: small
-  show_date: true
+  show_date: false
   date: 
   id: event-1
   caption: ''
+  img_alt: karya santri
   single_image: []
 - type: article_feed_section
   template: article_feed_section

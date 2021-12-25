@@ -25,7 +25,7 @@ sections:
   exclude: _index.md
   new_doc_ext: md
   templates:
-  - post
+  - article
 - type: directory
   path: content/events
   label: Events

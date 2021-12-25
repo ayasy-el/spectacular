@@ -5,7 +5,7 @@ fields:
 - type: text
   name: id
   label: ID
-  description: A unique identifier used when filtering posts, e.g. "kata-ustadz"
+  description: A unique identifier used when filtering articles, e.g. "kata-ustadz"
   config:
     required: true
 - type: text

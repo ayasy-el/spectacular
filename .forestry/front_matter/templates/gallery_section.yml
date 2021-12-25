@@ -20,12 +20,12 @@ fields:
 - type: boolean
   name: show_date
   label: Show date
-  description: Show the publish date of the post
+  description: Show the publish date of the images
   default: true
 - type: datetime
   name: date
   label: Date
-  description: Date of the event
+  description: Date of the images
   config:
     date_format: DD/MM/YYYY
     time_format: h:mm A Z
@@ -78,6 +78,10 @@ fields:
   type: image_gallery
   config: {}
   label: Multiple images uploud
+- type: text
+  name: img_alt
+  label: Gambar Proker alt text
+  description: The alt text for all images above
 - name: caption
   type: textarea
   default: ''
@@ -87,7 +91,7 @@ fields:
     schema:
       format: markdown
   label: caption
-  description: caption for all image above
+  description: caption for all images above
 - name: single_image
   type: field_group_list
   fields:
@@ -101,6 +105,10 @@ fields:
     label: image
     showOnly:
       field: use_link
+  - type: text
+    name: img_alt
+    label: Gambar Proker alt text
+    description: The alt text of the item image
   - name: use_rel_link
     type: boolean
     label: use relative link
