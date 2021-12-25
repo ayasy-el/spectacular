@@ -12,9 +12,14 @@ fields:
   label: Subtitle
   description: The subtitle of the section displayed above the title
 - type: boolean
+  name: modal_dialog
+  label: Modal Dialog
+  description: show popup dialog when title is clicked
+  default: false
+- type: boolean
   name: modal_image
   label: Modal Image
-  description: show popup image when click
+  description: show popup image when image is clicked
   default: false
 - type: field_group_list
   name: actions

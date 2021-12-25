@@ -43,7 +43,7 @@ sections:
   template: grid_section
   title: Progam Kerja
   subtitle: Tugas dan Tanggung Jawab
-  modal_text: true 
+  modal_dialog: true 
   grid_items:
   - type: grid_item
     template: grid_item

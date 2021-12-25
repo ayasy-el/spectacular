@@ -16,8 +16,13 @@ fields:
   name: date
   label: Date
   description: The publish date of the article
+  hidden: false
   config:
     required: true
+    date_format: MM/DD/YYYY
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
 - type: select
   name: author
   label: Author

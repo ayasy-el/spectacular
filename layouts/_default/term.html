@@ -31,7 +31,7 @@
                     {{ $include_dict := dict "categories" .Params.categories "container_class" "item__cat" }}
                     {{ partial "article_post_categories.html" $include_dict }}
                     <span class="item__meta-sep"> &middot; </span>
-                    <span class="item__date"><time datetime="{{ .Params.Date | dateFormat "2006-01-02 15:04" }}">{{ .Params.Date | dateFormat "January 02, 2006" }}</time></span>
+                    <span class="item__date"><time datetime="{{ .Date }}">{{ .Date.Format "January 02, 2006" }}</time></span>
                 </div>
                 <h3 class="item__title mt-0 h4"><a href="{{ .URL }}">{{ .Params.title }}</a></h3>
                 {{ if  .Params.excerpt }}
