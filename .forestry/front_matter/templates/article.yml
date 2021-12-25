@@ -99,4 +99,5 @@ fields:
   config:
     required: false
 pages:
+- content/article/test-2.md
 - content/article/test.md
