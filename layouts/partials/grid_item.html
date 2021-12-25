@@ -83,6 +83,9 @@
 						<h2 class="{{if and $section.modal_dialog $item.modal_id}}link{{end}} item__title{{ if eq $columns "two" }} h3{{ end }}{{ if eq $columns "three" }} h4{{ end }}{{ if eq $columns "four" }} h5{{ end }}{{ if eq $title_align_x "center" }} text-center{{ end }}{{ if eq $title_align_x "right" }} text-right{{ end }}">{{ $item.title }}</h2>
 						{{ end }}
 					{{ end }}
+					{{if and $section.modal_dialog $item.modal_id}}
+					<br>
+					{{end}}
 					{{ if $item.subtitle }}
 					<p class="{{if and $section.modal_dialog $item.modal_id}}no-link{{end}} item__subtitle{{ if eq $title_align_x "center" }} text-center{{ end }}{{ if eq $title_align_x "right" }} text-right{{ end }}">
 						{{ $item.subtitle }}
