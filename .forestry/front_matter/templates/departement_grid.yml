@@ -13,6 +13,10 @@ fields:
   label: Subtitle
   description: The subtitle of the section displayed above the title
   default: Tugas dan Tanggung Jawab
+- name: modal_dialog
+  type: boolean
+  label: Modal Dialog
+  description: show popup dialog when title is clicked
 - type: field_group_list
   name: grid_items
   label: Grid items
@@ -25,6 +29,24 @@ fields:
     name: subtitle
     label: Penjelasan Proker
     description: Penjelasan Singkat Proker (1 kalimat saja)
+  - name: modal_id
+    type: text
+    config:
+      required: false
+    label: Modal Dialog Id
+    description: A unique identifier used to differentiate from other modal dialogs,
+      used only when the "Modal Dialog" is true
+  - name: modal_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Modal Content
+    description: The text content of the modal dialog, used only when the "Modal Dialog"
+      is true
   - type: file
     name: image
     label: Gambar Proker

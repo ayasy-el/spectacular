@@ -59,7 +59,8 @@ fields:
     schema:
       format: markdown
   label: Modal Dialog Content
-  description: used only when the "Modal Dialog" is true
+  description: The text content of the modal dialog, used only when the "Modal Dialog"
+    is true
 - type: field_group_list
   name: actions
   label: Action buttons
