@@ -44,14 +44,10 @@ fields:
     - right
     - center
 - name: modal_id
-  type: number
-  label: Modal Dialog Id
-  default: 0
-  required: true
+  type: text
   config:
-    min: 
-    max: 
-    step: 
+    required: false
+  label: Modal Dialog Id
   description: A unique identifier used to differentiate from other modal dialogs,
     used only when the "Modal Dialog" is true
 - name: modal_content
