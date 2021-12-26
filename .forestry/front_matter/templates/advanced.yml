@@ -21,6 +21,7 @@ fields:
   - cta_section
   - form_section
   - gallery_section
+  - graviti_section
 - type: field_group
   name: seo
   label: Seo

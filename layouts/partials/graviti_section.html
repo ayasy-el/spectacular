@@ -39,11 +39,7 @@
 	{{ if $section.single_image }}
 			{{ range $item := $section.single_image }}
 			<div class="grid">
-				{{ if $item.use_link}}
-				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img {{if $item.img_alt}}data-alt="{{$item.img_alt}}"{{end}} data-src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="highlight lazy"></a>
-				{{ else }}
-				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img {{if $item.img_alt}}data-alt="{{$item.img_alt}}"{{end}} data-src="{{ $item.image | relURL }}" class="highlight lazy"></a>
-				{{end}}
+				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_link}}{{ $item.url | relURL }}{{else}}{{ $item.image | relURL }}{{end}}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img {{if $item.img_alt}}data-alt="{{$item.img_alt}}" {{end}} data-src="{{ if $item.use_link}}{{ $item.url | relURL }}{{else}}{{ $item.image | relURL }}{{end}}" class="highlight lazy"></a>
 			</div>
 			{{ end }}
 		</div>

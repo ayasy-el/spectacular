@@ -23,6 +23,7 @@ fields:
     time_format: 
     display_utc: false
     export_format: YYYY-MM-DD
+  default: now
 - type: select
   name: author
   label: Author

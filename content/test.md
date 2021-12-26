@@ -97,7 +97,7 @@ grid_cols = "three"
 grid_gap_horiz = "small"
 grid_gap_vert = "small"
 has_border = true
-modal_dialog = false
+modal_dialog = true
 modal_image = true
 padding_bottom = "medium"
 padding_top = "medium"
@@ -150,7 +150,7 @@ url = "#"
 actions = []
 actions_align = ""
 actions_width = ""
-content = ""
+content = "![](/images/about-3.jpg)"
 content_align = ""
 image = "/images/logo-8.svg"
 image_align = ""
@@ -203,5 +203,27 @@ path_to_svg_icon = ""
 style = "secondary"
 type = ""
 url = "#"
+[[sections]]
+caption = ""
+date = "2021-12-25"
+feature_padding_vert = "medium"
+gallery = ["/images/classic/feature-1.png", "/images/classic/feature-2.png", "/images/classic/feature-3.png", "/images/classic/hero.png", "/images/classic/icon-1.svg", "/images/classic/icon-2.svg", "/images/classic/icon-3.svg", "/images/classic/logo.svg", "/images/classic/post-1.png", "/images/classic/post-2.png", "/images/classic/post-3.png", "/images/classic/post-4.png", "/images/classic/post-5.png", "/images/desmond-eagle.jpg", "/images/dianne-ameter.jpg", "/images/diy-preview.png", "/images/eleanor-carr.png", "/images/gordon-norman.png", "/images/gustav-purpleson.jpg", "/images/hanson-deck.png", "/images/hero-background.jpg", "/images/hilary-ouse.jpg", "/images/hugh-saturation.jpg", "/images/logo-1.svg", "/images/logo-2.svg", "/images/logo-3.svg", "/images/logo-4.svg", "/images/logo-5.svg", "/images/logo-6.svg", "/images/logo-7.svg", "/images/logo-8.svg", "/images/miles-tone.png", "/images/noise.png", "/images/osia.png", "/images/russell-sprout.jpg", "/images/ursula-gurnmeister.jpg"]
+has_border = false
+id = "gsgsg rtgergerg"
+img_alt = "gallery photo"
+padding_bottom = "medium"
+padding_top = "medium"
+show_date = true
+subtitle = "fbgdfd"
+template = "gallery_section"
+title = "fgfgnfn"
+type = "gallery_section"
+[[sections.single_image]]
+caption = "random image from unsplash"
+image = ""
+img_alt = "random image from unsplash"
+url = "https://source.unsplash.com/random/?landscape"
+use_link = true
+use_rel_link = false
 
 +++

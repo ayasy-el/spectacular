@@ -7,7 +7,7 @@
 <section class="section {{ if $section.has_border }} has-border{{ end }}{{ if eq $padding_top "small" }} pt-4{{ end }}{{ if or (eq $padding_top "medium") (eq $padding_top "large") }} pt-6{{ end }}{{ if eq $padding_top "large" }} pt-md-7{{ end }}{{ if eq $padding_bottom "small" }} pb-4{{ end }}{{ if or (eq $padding_bottom "medium") (eq $padding_bottom "large") }} pb-6{{ end }}{{ if eq $padding_bottom "large" }} pb-md-7{{ end }}">
 	<div class="container container--medium{{ if or (eq $feature_padding_y "small") (eq $feature_padding_y "medium") }} mb-5{{ end }}{{ if eq $feature_padding_y "large" }} mb-4{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
 		{{ if $section.title }}
-		<h1 class="section__title"><a href="{{$section.link}}" class="highlight">{{ $section.title }}</a></h1>
+		<h1 class="section__title">{{if $section.link}}<a href="{{$section.link}}" class="link">{{end}}{{ $section.title }}{{if $section.link}}</a>{{end}}</h1>
 		{{ end }}
 
 		{{ if $section.subtitle }}
@@ -35,11 +35,7 @@
 	{{ if $section.single_image }}
 			{{ range $item := $section.single_image }}
 			<div class="grid">
-				{{ if $item.use_link}}
-				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img {{if $item.img_alt}}data-alt="{{$item.img_alt}}"{{end}} data-src="{{ if $item.use_rel_link }}{{ $item.url | relURL }}{{ else }}{{ $item.url | absURL }}{{ end }}" class="highlight lazy" ></a>
-				{{ else }}
-				<a data-fancybox="{{$section.id}}" href="{{ $item.image | relURL }}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img {{if $item.img_alt}}data-alt="{{$item.img_alt}}"{{end}} data-src="{{ $item.image | relURL }}" class="highlight lazy" ></a>
-				{{end}}
+				<a data-fancybox="{{ $section.id }}" href="{{ if $item.use_link}}{{ $item.url | relURL }}{{else}}{{ $item.image | relURL }}{{end}}" {{ if $item.caption }}data-caption="{{ $item.caption }}" {{ end }}><img {{if $item.img_alt}}data-alt="{{$item.img_alt}}" {{end}} data-src="{{ if $item.use_link}}{{ $item.url | relURL }}{{else}}{{ $item.image | relURL }}{{end}}" class="highlight lazy"></a>
 			</div>
 			{{ end }}
 		</div>

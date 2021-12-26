@@ -7,6 +7,14 @@
 		</header>
 		<div class="page__body text-block">
 			{{ .Content }}
+			<script>
+				$('p img').each(function () {
+					$(this).wrap($('<a />', {
+						href: $(this).attr('src'),
+						'data-fancybox': "1"
+					}));
+				});
+			</script>
 		</div>
 	</div>
 </article>

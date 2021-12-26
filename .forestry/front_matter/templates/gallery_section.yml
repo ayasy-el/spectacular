@@ -14,6 +14,10 @@ fields:
   label: Title
   description: The title of the section
 - type: text
+  name: link
+  label: Link
+  description: The link for title to the event page, e.g. "/events/event1"
+- type: text
   name: subtitle
   label: Subtitle
   description: The subtitle of the section displayed above the title
@@ -28,7 +32,7 @@ fields:
   description: Date of the images
   config:
     date_format: DD/MM/YYYY
-    time_format: h:mm A Z
+    time_format: ''
     display_utc: false
     export_format: YYYY-MM-DD
 - type: select
@@ -104,20 +108,8 @@ fields:
       maxSize: 64
     label: image
     showOnly:
+      value: false
       field: use_link
-  - type: text
-    name: img_alt
-    label: Item image alt text
-    description: The alt text of the item image
-  - name: use_rel_link
-    type: boolean
-    label: use relative link
-    showOnly:
-      field: use_link
-      value: true
-    description: 'turn on to use relative link, ex: <code>img/image1.jpg</code><br>turn
-      off to use absolute link, ex: <code>example.com/img/image1.jpg</code>'
-    default: false
   - name: url
     type: text
     config:
@@ -126,6 +118,10 @@ fields:
     showOnly:
       value: true
       field: use_link
+  - type: text
+    name: img_alt
+    label: Item image alt text
+    description: The alt text of the item image
   - name: caption
     type: textarea
     default: ''

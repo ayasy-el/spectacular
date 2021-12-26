@@ -9,7 +9,7 @@ gallery = ["/images/classic/feature-1.png", "/images/classic/feature-2.png", "/i
 layout = "event"
 subtitle = "Idemque diviserunt naturam hominis in animum et corpus. Si enim ad populum me   vocas, eum."
 thumb_image = "/images/about-5.jpg"
-title = "Event6"
+title = "Event5"
 title_background_image_position = "center center"
 [seo]
 description = ""

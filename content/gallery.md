@@ -69,7 +69,7 @@ sections:
   padding_top: large
   padding_bottom: small
   title: Event Name
-  link: "/events"
+  link: "/events/event5"
   subtitle: Event Description
   feature_padding_vert: small
   show_date: true
@@ -135,19 +135,16 @@ sections:
   single_image:
   - use_link: false
     image: "/images/gustav-purpleson.jpg"
-    use_rel_link: false
     url: ''
     caption: image from single image uploud
     img_alt: "image from single image uploud"
   - use_link: true
     image: ''
-    use_rel_link: false
     url: https://i.picsum.photos/id/9/1920/1080.jpg?hmac=U6DiXpOhZ60TGLvj08EBMO826ARC_wfdjzLbrZKJYYs
     caption: image from unsplash
     img_alt: image from unsplash
   - use_link: true
     image: ''
-    use_rel_link: true
     url: images/desmond-eagle.jpg
     caption: image with relative link
 - template: gallery_section

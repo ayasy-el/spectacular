@@ -47,6 +47,14 @@
 		<div class="post__body text-block">
 			<br />
 			{{ .Content }}
+			<script>
+				$('p img').each(function () {
+					$(this).wrap($('<a />', {
+						href: $(this).attr('src'),
+						'data-fancybox': "1"
+					}));
+				});
+			</script>
 		</div>
 	</div>
 </article>

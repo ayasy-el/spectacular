@@ -93,18 +93,18 @@
 						{{ $item.subtitle }}
 					</p>
 					{{ end }}
+					{{if and $section.modal_dialog $item.modal_id}}</a>{{end}}
 					{{ if $item.content }}
-					<div class="{{if and $section.modal_dialog $item.modal_id}}link{{end}} item__copy{{ if eq $content_align_x "center" }} text-center{{ end }}{{ if eq $content_align_x "right" }} text-right{{ end }}">
+					<div class="item__copy{{ if eq $content_align_x "center" }} text-center{{ end }}{{ if eq $content_align_x "right" }} text-right{{ end }}">
 						{{ partial "markdownify-block" $item.content }}
 					</div>
 					{{ end }}
 					{{ if $item.actions }}
-					<div class="{{if and $section.modal_dialog $item.modal_id}}link{{end}} item__actions btn-group{{ if eq $actions_width "full-width" }} btn-group--fill{{ end }}{{ if eq $actions_align_x "center" }} justify-center{{ end }}{{ if eq $actions_align_x "right" }} justify-end{{ end }}">
+					<div class="item__actions btn-group{{ if eq $actions_width "full-width" }} btn-group--fill{{ end }}{{ if eq $actions_align_x "center" }} justify-center{{ end }}{{ if eq $actions_align_x "right" }} justify-end{{ end }}">
 						{{ $include_dict := dict "actions" $item.actions }}
 						{{ partial "section_actions.html" $include_dict }}
 					</div>
 					{{ end }}
-					{{if and $section.modal_dialog $item.modal_id}}</a>{{end}}
 				</div>
 			</div>
 			{{ end }}
