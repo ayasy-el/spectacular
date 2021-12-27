@@ -8,6 +8,10 @@ fields:
   description: The title of the page
   config:
     required: true
+- type: boolean
+  name: show_comment
+  label: Show Comment
+  default: false
 - type: field_group
   name: seo
   label: Seo

@@ -1,5 +1,6 @@
 ---
 title: Style Guide
+show_comment: false
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta

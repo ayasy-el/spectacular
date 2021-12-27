@@ -89,6 +89,10 @@ fields:
     - left
     - right
     - top
+- type: boolean
+  name: show_comment
+  label: Show Comment
+  default: true
 - type: field_group
   name: seo
   label: Seo

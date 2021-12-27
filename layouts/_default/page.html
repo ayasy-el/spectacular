@@ -16,6 +16,13 @@
 				});
 			</script>
 		</div>
+		
+		{{ $comment := .Params.show_comment | default true }}
+		{{if $comment}}
+		<br><br>
+		<hr>
+		{{ template "_internal/disqus.html" . }}
+		{{end}}
 	</div>
 </article>
 

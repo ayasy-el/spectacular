@@ -1,6 +1,7 @@
 title = "Lorem Ipsum Web"
 baseURL = "/"
 disableKinds = [ "RSS" ]
+disqusShortname = 'spectacular-pages-dev'
 
 [params]
 layout_type = "boxed"

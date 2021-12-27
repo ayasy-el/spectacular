@@ -16,6 +16,7 @@ thumb_image_alt: Post 1 placeholder image
 image: images/classic/post-1.png
 image_alt: Post 1 placeholder image
 image_position: top
+show_comment: false
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
