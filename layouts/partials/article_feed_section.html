@@ -28,7 +28,7 @@
 	</div>
 	{{ end }}
 	
-	<div class="container">
+	<div class="container" container-grid>
 		<div class="grid">
 			{{ $section_author := false }}
 			{{ if $section.author }}
@@ -75,4 +75,19 @@
 	</div>
 	{{ end }}
 
+<script>
+	var element = document.querySelectorAll('[container-grid]');
+
+	function myFunction(x) {
+		if (x.matches) { // If media query matches
+			for (i = 0; i < element.length; i++) { element[i].classList.add("container--medium"); }
+			
+		} else {
+			for (i = 0; i < element.length; i++) { element[i].classList.remove("container--medium"); };
+		}
+	}
+	var x = window.matchMedia("(max-width: 800px)");
+	myFunction(x);
+	x.addListener(myFunction);
+</script>
 </section>

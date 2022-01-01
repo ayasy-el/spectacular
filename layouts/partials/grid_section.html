@@ -33,7 +33,7 @@
 	{{ end }}
 
 	{{ if $section.grid_items }}
-	<div class="container">
+	<div class="container" container-grid>
 		<div class="grid{{ if eq $grid_gap_x "small" }} grid-gap-small{{ end }}{{ if eq $grid_gap_x "large" }} grid-gap-large{{ end }}">
 			{{ range $item := $section.grid_items }}
 				{{ $include_dict := dict "section" $section "item" $item }}
@@ -52,4 +52,19 @@
 	</div>
 	{{ end }}
 
+<script>
+	var element = document.querySelectorAll('[container-grid]');
+
+	function myFunction(x) {
+		if (x.matches) { // If media query matches
+			for (i = 0; i < element.length; i++) { element[i].classList.add("container--medium"); }
+			
+		} else {
+			for (i = 0; i < element.length; i++) { element[i].classList.remove("container--medium"); };
+		}
+	}
+	var x = window.matchMedia("(max-width: 800px)");
+	myFunction(x);
+	x.addListener(myFunction);
+</script>
 </section>

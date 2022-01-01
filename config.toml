@@ -1,7 +1,11 @@
 title = "Lorem Ipsum Web"
 baseURL = "/"
-disableKinds = [ "RSS" ]
 disqusShortname = 'spectacular-pages-dev'
+copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+languageCode = 'id'
+
+[author]
+  name = 'Ayasy'
 
 [params]
 layout_type = "boxed"
@@ -153,7 +157,7 @@ favicon = ""
     type = "action"
     template = "action"
     label = "Berita Acara"
-    url = "/article/category/berita-acara"
+    url = "/categories/berita-acara"
     style = "link"
     has_icon = false
     icon = ""
@@ -165,7 +169,7 @@ favicon = ""
     type = "action"
     template = "action"
     label = "Kata Ustadz"
-    url = "/article/category/kata-ustadz"
+    url = "/categories/kata-ustadz"
     style = "link"
     has_icon = false
     icon = ""
@@ -177,7 +181,7 @@ favicon = ""
     type = "action"
     template = "action"
     label = "Pena Santri"
-    url = "/article/category/pena-santri"
+    url = "/categories/pena-santri"
     style = "link"
     has_icon = false
     icon = ""
@@ -196,6 +200,19 @@ favicon = ""
     icon_position = ""
     new_window = false
     no_follow = false
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
 
 [taxonomies]
 tag = "tags"

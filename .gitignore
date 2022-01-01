@@ -1,7 +1,9 @@
 /public/
 /resources/
+node_modules
 
 # Local Netlify folder
 .netlify
 .vscode
 hugo.exe
+.env

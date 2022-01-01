@@ -45,12 +45,12 @@
 		  	<span class="item__date"><time datetime="{{ $event.Date }}">{{ $event.Date | dateFormat "January, 2006" }}</time></span>
 		  </div>
 		  
-		  <div class="container pt-1">
+		  <div class="container pt-1" container-grid>
 		  	<div class="grid">
 		  		{{ range $item := $posts_sorted }}
 		  		{{ if eq ($item.Date | dateFormat "January, 2006") ($event.Date | dateFormat "January, 2006")}}
 		  		{{ $include_dict := dict "events_feed_section" $section "post_page" $item}}
-		  		{{ partial "events_post_feed_item.html" $include_dict }}
+		  		{{ partial "events_feed_item.html" $include_dict }}
 		  		{{ end }}
 		  		{{ end }}
 		  	</div>
@@ -59,13 +59,13 @@
 	  {{ end }}
 	{{ end }}
 	{{ else }}
-	<div class="container">
+	<div class="container" container-grid>
 		<div class="grid">
 		{{ range $post := $posts_sorted }}
 				{{ if lt $post_count $recent_count }}
 				{{ $post_count = add $post_count 1 }}
 				{{ $include_dict := dict "events_feed_section" $section "post_page" $post }}
-				{{ partial "events_post_feed_item.html" $include_dict }}
+				{{ partial "events_feed_item.html" $include_dict }}
 				{{ end }}
 		{{ end }}
 		</div>
@@ -81,4 +81,19 @@
 	</div>
 	{{ end }}
 
+<script>
+	var element = document.querySelectorAll('[container-grid]');
+
+	function myFunction(x) {
+		if (x.matches) { // If media query matches
+			for (i = 0; i < element.length; i++) { element[i].classList.add("container--medium"); }
+			
+		} else {
+			for (i = 0; i < element.length; i++) { element[i].classList.remove("container--medium"); };
+		}
+	}
+	var x = window.matchMedia("(max-width: 800px)");
+	myFunction(x);
+	x.addListener(myFunction);
+</script>
 </section>

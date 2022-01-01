@@ -1,0 +1,23 @@
+{
+  "name": "spectacular",
+  "version": "1.0.0",
+  "description": "<img src=\"https://themes.stackbit.com/images/diy-demo-1024x768.png\" width=\"600\">",
+  "main": "index.js",
+  "dependencies": {
+    "atomic-algolia": "^0.3.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "algolia": "atomic-algolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayasy-el/spectacular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayasy-el/spectacular/issues"
+  },
+  "homepage": "https://github.com/ayasy-el/spectacular#readme"
+}

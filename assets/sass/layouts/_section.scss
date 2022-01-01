@@ -62,6 +62,12 @@
 	}
 }
 
+.hero__media img{
+  @media screen and (max-width: 480px) {
+    width: 50%;
+  }
+}
+
 .section__subtitle {
 	font-size: 0.88889em;
 	margin-bottom: 0.25em;
@@ -104,6 +110,12 @@
 	margin-top: 1.66667em;
 }
 
+@media screen and (max-width: 480px) {
+  .feature__copy {
+    font-size: 0.79rem;
+  }
+}
+
 // Grid section
 .item__subtitle {
 	font-size: 0.88889em;
@@ -137,6 +149,24 @@
 	.item__title {
 		margin-bottom: 0.83333em;
 	}
+  .item__copy {
+    $line-height: 1.4;
+    $lines-to-show: 3;
+
+    p {
+      display: block;
+      /* Fallback for non-webkit */
+      display: -webkit-box;
+      max-width: 600px;
+      height: 100%*$line-height*$lines-to-show;
+      /* Fallback for non-webkit */
+      line-height: $line-height;
+      -webkit-line-clamp: $lines-to-show;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }
 
 .item__meta-sep {
@@ -145,11 +175,23 @@
 }
 
 // CTA section
+.cta__title{
+  font-size: 2.281rem;
+}
+@media screen and (max-width: 480px) {
+  .cta__title {
+    font-size: 1.953rem;
+  }
+  .cta__copy,
+  .cta__actions {
+    font-size: 1rem;
+  }
+}
 @include media-breakpoint-up(lg) {
 
 	.cta__copy,
 	.cta__actions {
-		font-size: 1.11111em;
+		font-size: 1.1em;
 	}
 }
 

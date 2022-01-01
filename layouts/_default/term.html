@@ -15,7 +15,7 @@
 </section>
 
 <section class="section article-feed has-border bg-none pt-4 pb-6 pb-md-7">
-<div class="container">
+<div class="container" container-grid>
 <div class="grid">
 {{ range .Data.Pages }}
 <article class="cell-12 cell-md-6 my-2 cell-lg-4">
@@ -26,7 +26,7 @@
                 <a href="{{ .URL }}"><img src="{{ .Params.thumb_image | relURL }}" alt="{{ .Params.thumb_image_alt }}" /></a>
             </div>
             {{ end }}
-            <div class="item__body px- pb-3{{ if not .Params.image }} pt-3{{ end }} px-sm-4 pb-sm-4{{ if not .Params.image }} pt-4{{ end }}">
+            <div class="item__body px-3 pb-3{{ if not .Params.image }} pt-3{{ end }} px-sm-4 pb-sm-4{{ if not .Params.image }} pt-4{{ end }}">
                 <div class="item__meta mb-1">
                     {{ $include_dict := dict "categories" .Params.categories "container_class" "item__cat" }}
                     {{ partial "article_post_categories.html" $include_dict }}
@@ -51,5 +51,23 @@
 </div>
 </div>
 </section>
+<script>
+    var element = document.querySelectorAll('[container-grid]');
 
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            for (i = 0; i < element.length; i++) {
+                element[i].classList.add("container--medium");
+            }
+
+        } else {
+            for (i = 0; i < element.length; i++) {
+                element[i].classList.remove("container--medium");
+            };
+        }
+    }
+    var x = window.matchMedia("(max-width: 800px)");
+    myFunction(x);
+    x.addListener(myFunction);
+</script>
 {{ end}}

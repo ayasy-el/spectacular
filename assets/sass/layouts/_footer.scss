@@ -7,7 +7,19 @@
 }
 
 .site-footer__menu {
-	max-width: 270px;
+	text-align: center;
+	max-width: 30%;
+	@media screen and (max-width: 480px) {
+		max-width: 125px;
+	}
+}
+
+.site-footer__logo{
+	@media screen and (max-width: 480px) {
+		img {
+			width: 50%;
+		}
+	}
 }
 
 .site-footer__copyright,
