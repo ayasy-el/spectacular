@@ -1,28 +1,26 @@
 ---
 label: Tag
 hide_body: true
+display_field: id
 fields:
 - type: text
   name: id
-  label: ID
-  description: A unique identifier used when filtering articles, e.g. "jamstack"
+  label: Id
+  description: A unique identifier used to differentiate from other tags<br><strong>WARNING!!!
+    change the space to "-", e.g. "my-tag" </strong>
   config:
     required: true
-- type: text
-  name: link
-  label: Link
-  description: The link to the tag page, e.g. "article/tag/jamstack"
 - type: text
   name: title
   label: Title
-  description: The title of the tag
+  description: Tag which will be displayed on the website
   config:
     required: true
 - type: text
-  name: type
-  label: Object Type
-  description: The type of the object
+  name: description
+  label: Description
+- type: text
+  name: layout
+  label: layout
   hidden: true
-  default: tag
-  config:
-    required: false
+  default: term

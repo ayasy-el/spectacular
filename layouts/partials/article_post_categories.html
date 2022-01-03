@@ -5,7 +5,7 @@
 	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
 	{{ range $category_idx, $category := $categories }}
 	{{range where $pages ".Params.id" $category}}{{$category_data := .Params}}
-			<a href="/article/categories{{ $category_data.id | relURL }}">{{$category_data.title}}</a>{{ if not (eq $category_idx (sub $category_len 1)) }}, {{ end }}
+			<a href="{{ .URL | relURL }}">{{$category_data.title}}</a>{{ if not (eq $category_idx (sub $category_len 1)) }}, {{ end }}
 	{{ end }}
 	{{ end }}
 </span>
