@@ -1,0 +1,63 @@
+{{ define "content" }}
+<ul>
+{{$mypath := "/content/tags/netlify.md"}}
+{{replace (path.Base $mypath) (path.Ext $mypath) ""}}
+<br>
+
+{{$section_tag := "pena-santri"}}
+{{$t := (.Site.GetPage (printf "/article/categories/%s.md" $section_tag)).Page.Params}}
+
+{{$t.id}}
+<br>
+
+{{$p := ""}}
+{{$tags := slice "netlify" "jamstack"}}
+{{range $tag := $tags}}
+{{$p = $tag}}
+{{end}}
+{{.Site.GetPage (printf "/article/tags/%s.md" $p)}}
+{{.Site.GetPage "/article/tags/jamstack.md"}}
+<br>
+
+
+{{range $ter := where (where .Site.Pages "Section" "article") ".Params.layout" "term"}}
+{{range $tag := $tags}}
+{{if eq $tag $ter.Params.id}}{{$tag_data := $ter.Params}}
+<a class="mr-1" href="/article/tags{{ $tag_data.id| relURL }}">{{ $tag_data.title }}</a>
+{{end}}
+{{end}}
+{{end}}
+
+<hr>
+<h3>Sini</h3>
+{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
+{{range $tag := $tags}}{{range where $pages ".File.BaseFileName" $tag}}{{.Params}}{{end}}{{end}}
+
+{{$id := "dianne-ameter"}}
+{{ $pg := where (where .Site.RegularPages "Section" "article") "Params.layout" "term" }}
+{{range where $pg "Params.id" "eq" $id}}
+{{.}}
+{{end}}
+
+
+
+<hr>
+{{ $posts_all := (.Site.GetPage "section" "article").Pages }}
+{{ $posts_sorted := $posts_all.ByDate.Reverse }}
+{{ range where $posts_sorted "Params.layout" "post" }}
+        <li>{{ . }}</li>
+{{ end }}
+</ul>
+{{in (slice "a" "b") "a"}}
+
+
+<hr>
+{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
+
+{{$Site := .Site}}
+{{range (slice "article/authors/hugh-saturation.md" "article/authors/dianne-ameter.md" "article/authors/hilary-ouse.md")}}
+{{ $post_author := ($Site.GetPage .).Page.Params }}
+{{$post_author}}<br><br>
+{{end}}
+
+{{end}}
