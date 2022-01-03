@@ -1,7 +1,8 @@
 /public/
 /resources/
 node_modules
-
+/static/admin/*
+config/*
 # Local Netlify folder
 .netlify
 .vscode

@@ -2,8 +2,10 @@
 {{ $container_class := .container_class }}
 <span class="{{ $container_class }}">
 	{{ $category_len := len $categories }}
+	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
 	{{ range $category_idx, $category := $categories }}
-		{{ $category_data := $category }}
-			<a href="/categories{{ $category_data | relURL }}">{{$category_data}}</a>{{ if not (eq $category_idx (sub $category_len 1)) }}, {{ end }}
+	{{range where $pages ".Params.id" $category}}{{$category_data := .Params}}
+			<a href="/article/categories{{ $category_data.id | relURL }}">{{$category_data.title}}</a>{{ if not (eq $category_idx (sub $category_len 1)) }}, {{ end }}
+	{{ end }}
 	{{ end }}
 </span>

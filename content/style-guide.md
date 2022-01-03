@@ -1,6 +1,7 @@
 ---
 title: Style Guide
 show_comment: false
+draft: true
 seo:
   type: stackbit_page_meta
   template: stackbit_page_meta
@@ -112,6 +113,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 Inline `code` with `back-ticks around` it.
 
 This is <mark>marked or highlighted</mark> text.
+This is <span style="background-color: #d2ffff">marked or highlighted</span> text.
 
 This is [an example](http://example.com) link.
 

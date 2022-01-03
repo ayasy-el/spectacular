@@ -7,32 +7,38 @@
 {{ if or (or $section_author $section_category) $section_tag }}
 {{ if $section_author }}
 	{{ if $post.Params.author }}
-		{{ $post_author := $post.Params.author }}
-		{{ if eq $post_author $section_author }}
-			{{ $include_dict := dict "article_feed_section" $section "post_page" $post }}
+		{{ $post_author := (.Site.GetPage (printf "/article/authors/%s.md" $post.Params.author)).Page.Params }}
+		{{ if eq $post_author.id $section_author.id }}
+			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
 	{{ end }}
 {{end}}
 {{ if $section_category }}
+	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
 	{{ range $category := $post.Params.categories }}
-		{{ $post_category := $category }}
-		{{ if eq $post_category $section_category }}
-			{{ $include_dict := dict "article_feed_section" $section "post_page" $post }}
+	{{range where $pages ".Params.id" $category}}
+		{{$post_category := .Params}}
+		{{ if eq $post_category.id $section_category.id }}
+			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
+	{{ end }}
 	{{ end }}
 {{end}}
 {{ if $section_tag }}
+	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
 	{{ range $tag := $post.Params.tags }}
-		{{ $post_tag := $tag }}
-		{{ if eq $post_tag $section_tag }}
-			{{ $include_dict := dict "article_feed_section" $section "post_page" $post }}
+	{{range where $pages ".Params.id" $tag}}
+		{{$post_tag := .Params}}
+		{{ if eq $post_tag.id $section_tag.id }}
+			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
 	{{ end }}
+	{{ end }}
 {{end}}
 {{ else }}
-	{{ $include_dict := dict "article_feed_section" $section "post_page" $post }}
+	{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
 	{{ partial "article_post_feed_item.html" $include_dict }}
 {{ end }}

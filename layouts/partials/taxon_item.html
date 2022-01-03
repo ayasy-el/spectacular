@@ -1,0 +1,30 @@
+{{$page := .page}}
+<article class="cell-12 cell-md-6 my-2 cell-lg-4">
+    <div class="item card card--highlight card--vert">
+        <div class="flex flex-column">
+            {{ if $page.Params.image }}
+            <div class="item__media mb-3 card__media card__media--fill card__media--top">
+                <a href="{{ $page.URL }}"><img src="{{ $page.Params.thumb_image | relURL }}" alt="{{ $page.Params.thumb_image_alt }}" /></a>
+            </div>
+            {{ end }}
+            <div class="item__body px-3 pb-3{{ if not $page.Params.image }} pt-3{{ end }} px-sm-4 pb-sm-4{{ if not $page.Params.image }} pt-4{{ end }}">
+                <div class="item__meta mb-1">
+                    {{ $include_dict := dict "categories" $page.Params.categories "container_class" "item__cat" "Site" .Site}}
+                    {{ partial "article_post_categories.html" $include_dict }}
+                    <span class="item__meta-sep"> &middot; </span>
+                    <span class="item__date"><time datetime="{{ $page.Date }}">{{ $page.Date.Format "January 02, 2006" }}</time></span>
+                </div>
+                <h3 class="item__title mt-0 h4"><a href="{{ $page.URL }}">{{ $page.Params.title }}</a></h3>
+                {{ if  $page.Params.excerpt }}
+                <div class="item__copy">
+                    <p>{{ $page.Params.excerpt }}</p>
+                </div>
+                {{ end }}
+                {{ if  $page.Params.author }}
+                {{ $include_dict := dict "author" $page.Params.author "container_class" "item__byline" "avatar_size" "small" "Site" .Site}}
+                {{ partial "article_post_author.html" $include_dict }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</article>

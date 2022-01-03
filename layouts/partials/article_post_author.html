@@ -2,11 +2,13 @@
 {{ $container_class := .container_class }}
 {{ $avatar_size := .avatar_size }}
 <div class="{{ $container_class }}">
-	{{ $author_data := $author }}
-	<a class="flex items-center" href="/author{{ $author_data| relURL }}">
+	{{ $author_data := (.Site.GetPage (printf "/article/authors/%s.md" $author)).Page.Params }}
+		<a class="flex items-center" href="/article/authors{{ $author_data.id| relURL }}">
+		{{ if $author_data.photo }}
 		<figure class="avatar mr-1{{ if eq $avatar_size "small" }} avatar--small{{ end }}">
-			<img class="avatar__img" src="/images{{ $author_data | relURL }}.jpg" alt="{{ $author_data }}" />
+			<img class="avatar__img" src="{{ $author_data.photo | relURL }}" alt="{{ $author_data.photo_alt }}" />
 		</figure>
-		<span>{{ $author_data }}<span>
+		{{ end }}
+		<span>{{ $author_data.title }}</span>
 	</a>
 </div>

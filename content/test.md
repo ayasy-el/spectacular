@@ -1,6 +1,7 @@
 +++
 layout = "advanced"
 title = "Test"
+draft = true
 [seo]
 description = ""
 extra = []
@@ -57,27 +58,27 @@ feature_padding_vert = "medium"
 has_border = false
 padding_bottom = "medium"
 padding_top = "medium"
-subtitle = "fgwfgw"
+subtitle = "Subtitle features_section"
 template = "features_section"
-title = "dfsff"
+title = "Title features_section"
 type = "features_section"
 [[sections.features]]
 align = ""
-content = "hrthrthrthrthr"
+content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 image = ""
 image_alt = ""
 media_position = ""
 media_width = ""
-subtitle = "fgrhrh"
-title = ""
+subtitle = "Subtitle Feature"
+title = "Title Feature"
 type = ""
-video_embed_html = ""
+video_embed_html = '<iframe width="560" height="315" src="https://www.youtube.com/embed/gwRJqtyGbrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 [[sections.features.actions]]
 costum_icon = false
 has_icon = false
 icon = ""
 icon_position = ""
-label = "gdgeg"
+label = "features.actions"
 new_window = false
 no_follow = false
 path_to_svg_icon = ""

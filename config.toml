@@ -1,8 +1,12 @@
-title = "Lorem Ipsum Web"
+title = "Website Name"
 baseURL = "/"
 disqusShortname = 'spectacular-pages-dev'
 copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 languageCode = 'id'
+disableKinds = ["taxonomy", "term"]
+
+[minify]
+  minifyOutput = true
 
 [author]
   name = 'Ayasy'
@@ -157,7 +161,7 @@ favicon = ""
     type = "action"
     template = "action"
     label = "Berita Acara"
-    url = "/categories/berita-acara"
+    url = "/article/categories/berita-acara"
     style = "link"
     has_icon = false
     icon = ""
@@ -169,7 +173,7 @@ favicon = ""
     type = "action"
     template = "action"
     label = "Kata Ustadz"
-    url = "/categories/kata-ustadz"
+    url = "/article/categories/kata-ustadz"
     style = "link"
     has_icon = false
     icon = ""
@@ -181,7 +185,7 @@ favicon = ""
     type = "action"
     template = "action"
     label = "Pena Santri"
-    url = "/categories/pena-santri"
+    url = "/article/categories/pena-santri"
     style = "link"
     has_icon = false
     icon = ""

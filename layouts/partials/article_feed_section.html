@@ -32,17 +32,17 @@
 		<div class="grid">
 			{{ $section_author := false }}
 			{{ if $section.author }}
-				{{ $section_author = $section.author }}
+				{{ $section_author = (.Site.GetPage (printf "/article/authors/%s.md" $section.author)).Page.Params }}
 			{{ end }}
 
 			{{ $section_category := false }}
 			{{ if $section.category }}
-				{{ $section_category = $section.category }}
+				{{ $section_category = (.Site.GetPage (printf "/article/categories/%s.md" $section.category)).Page.Params }}
 			{{ end }}
 
 			{{ $section_tag := false }}
 			{{ if $section.tag }}
-				{{ $section_tag = $section.tag }}
+				{{ $section_tag = (.Site.GetPage (printf "/article/tags/%s.md" $section.tag)).Page.Params }}
 			{{ end }}
 
 			{{ $posts_all := (.Site.GetPage "section" "/article").Pages }}
@@ -59,7 +59,7 @@
 				{{ end }}
 				{{ if and $is_post (or (eq $show_recent false) (lt $post_count $recent_count)) }}
 				{{ $post_count = add $post_count 1 }}
-				{{ $include_dict := dict "article_feed_section" $section "post_page" $post "section_author" $section_author "section_category" $section_category "section_tag" $section_tag }}
+				{{ $include_dict := dict "article_feed_section" $section "post_page" $post "section_author" $section_author "section_category" $section_category "section_tag" $section_tag "Site" .Site }}
 				{{ partial "article_feed_item_filter.html" $include_dict }}
 				{{ end }}
 			{{ end }}

@@ -38,7 +38,7 @@ sections:
   actions:
   - style: secondary
     label: Categories
-    url: "/categories"
+    url: "/article/categories"
     has_icon: false
     costum_icon: false
     icon: ''
@@ -49,7 +49,7 @@ sections:
     type: ''
   - style: secondary
     label: Tags
-    url: "/tags"
+    url: "/article/tags"
     has_icon: false
     costum_icon: false
     icon: ''
@@ -60,7 +60,7 @@ sections:
     type: ''
   - style: secondary
     label: Authors
-    url: "/author"
+    url: "/article/authors"
     has_icon: false
     costum_icon: false
     icon: ''

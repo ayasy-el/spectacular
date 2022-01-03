@@ -39,7 +39,7 @@
 				{{ if or $article_feed_section.show_date $show_categories }}
 				<div class="item__meta mb-1">
 					{{ if $show_categories }}
-						{{ $include_dict := dict "categories" $post.Params.categories "container_class" "item__cat" }}
+						{{ $include_dict := dict "categories" $post.Params.categories "container_class" "item__cat" "Site" .Site}}
 						{{ partial "article_post_categories.html" $include_dict }}
 						{{ if $article_feed_section.show_date }}
 							<span class="item__meta-sep"> &middot; </span>
@@ -61,7 +61,7 @@
 				</div>
 				{{ end }}
 				{{ if and $article_feed_section.show_author $post.Params.author }}
-					{{ $include_dict := dict "author" $post.Params.author "container_class" "item__byline" "avatar_size" "small" }}
+					{{ $include_dict := dict "author" $post.Params.author "container_class" "item__byline" "avatar_size" "small" "Site" .Site}}
 					{{ partial "article_post_author.html" $include_dict }}
 				{{ end }}
 			</div>

@@ -85,7 +85,7 @@ sections:
   - type: action
     template: action
     label: View All
-    url: "/article/category/pena-santri/"
+    url: "/article/categories/pena-santri/"
     style: primary
     has_icon: false
     icon: ''
