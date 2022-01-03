@@ -109,7 +109,7 @@ sections:
   has_border: true
   background_color: none
   author: ''
-  category: pena-santri
+  category: kata-ustadz
   tag: ''
   background_image: ''
   background_image_size: ''

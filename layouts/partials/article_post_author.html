@@ -1,14 +1,16 @@
-{{ $author := .author }}
+{{ $author := replace (path.Base .author) (path.Ext .author) "" }}
 {{ $container_class := .container_class }}
 {{ $avatar_size := .avatar_size }}
 <div class="{{ $container_class }}">
-	{{ $author_data := (.Site.GetPage (printf "/article/authors/%s.md" $author)).Page.Params }}
-		<a class="flex items-center" href="/article/authors{{ $author_data.id| relURL }}">
+	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
+	{{range where $pages ".Params.id" $author}}{{$author_data := .Params}}
+		<a class="flex items-center" href="{{.URL| relURL }}">
 		{{ if $author_data.photo }}
 		<figure class="avatar mr-1{{ if eq $avatar_size "small" }} avatar--small{{ end }}">
 			<img class="avatar__img" src="{{ $author_data.photo | relURL }}" alt="{{ $author_data.photo_alt }}" />
 		</figure>
 		{{ end }}
 		<span>{{ $author_data.title }}</span>
+	{{ end }}
 	</a>
 </div>

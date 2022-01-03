@@ -4,13 +4,13 @@ subtitle: >-
   Negat esse eam, inquit, propter se expetendam. Ergo, si semel tristior
   effectus est, hilara vita amissa est.
 date: '2020-05-30'
-author: dianne-ameter
+author: "article/authors/dianne-ameter.md"
 categories:
-  - pena-santri
-  - kata-ustadz
+  - "article/categories/pena-santri.md"
+  - "article/categories/kata-ustadz.md"
 tags:
-  - jamstack
-  - sourcebit
+  - "article/tags/ jamstack.md"
+  - "article/tags/sourcebit.md"
 excerpt: >-
   Itaque hoc frequenter dici solet a vobis, non intellegere nos, quam dicat
   Epicurus voluptatem. Sin kakan malitiam dixisses, ad aliud nos unum certum

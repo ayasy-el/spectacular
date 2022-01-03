@@ -18,18 +18,26 @@
 <h2 class="section__title"><a href="{{ $term.URL | relURL }}" class="link">{{with $term.Params.title}}{{.}}{{else}}{{$term.Params.first_name}} {{$term.Params.last_name}}{{end}}</a></h2>
 </div>
 <div class="grid">
-    {{ range $page := (where .Site.RegularPages "Params.layout" "post") }}
-    {{ if in $page.Params.categories $term.Params.id}}
-        {{ $include_dict := dict "page" $page "Site" .Site }}
+{{ range $page := (where .Site.RegularPages "Params.layout" "post") }}
+    {{ $include_dict := dict "page" $page "Site" .Site }}
+    {{ range $tag := $page.Params.tags }}
+    {{$tag := replace (path.Base $tag) (path.Ext $tag) ""}}
+        {{ if eq $tag $term.Params.id}}
         {{partial "taxon_item" $include_dict }}
-    {{ else if in $page.Params.author $term.Params.id}}
-        {{ $include_dict := dict "page" $page "Site" .Site }}
+        {{end}}
+    {{end}}
+    {{ range $category := $page.Params.categories }}
+    {{$category := replace (path.Base $category) (path.Ext $category) ""}}
+        {{ if eq $category $term.Params.id}}
         {{partial "taxon_item" $include_dict }}
-    {{ else if in $page.Params.tags $term.Params.id}}
-        {{ $include_dict := dict "page" $page "Site" .Site }}
+        {{end}}
+    {{end}}
+    {{ $author := $page.Params.author }}
+    {{$author := replace (path.Base $author) (path.Ext $author) ""}}
+        {{ if eq $author $term.Params.id}}
         {{partial "taxon_item" $include_dict }}
-    {{ end }}
-    {{ end }}
+        {{end}}
+{{ end }}
 </div>
 <br>
 <br>

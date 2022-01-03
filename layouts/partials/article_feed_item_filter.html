@@ -3,11 +3,12 @@
 {{ $section_category := .section_category }}
 {{ $section_tag := .section_tag }}
 {{ $post := .post_page }}
+{{$Site := .Site}}
 
 {{ if or (or $section_author $section_category) $section_tag }}
 {{ if $section_author }}
 	{{ if $post.Params.author }}
-		{{ $post_author := (.Site.GetPage (printf "/article/authors/%s.md" $post.Params.author)).Page.Params }}
+		{{ $post_author := (.Site.GetPage $post.Params.author).Page.Params }}
 		{{ if eq $post_author.id $section_author.id }}
 			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
 			{{ partial "article_post_feed_item.html" $include_dict }}
@@ -15,27 +16,25 @@
 	{{ end }}
 {{end}}
 {{ if $section_category }}
-	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
-	{{ range $category := $post.Params.categories }}
-	{{range where $pages ".Params.id" $category}}
+{{ range $category := $post.Params.categories }}
+	{{ $category = replace (path.Base $category) (path.Ext $category) "" }}
+	{{ $term := where $Site.RegularPages "Params.layout" "term" }}
+	{{range where $term ".Params.id" $category}}
 		{{$post_category := .Params}}
 		{{ if eq $post_category.id $section_category.id }}
-			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
+			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" $Site}}
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
 	{{ end }}
 	{{ end }}
 {{end}}
 {{ if $section_tag }}
-	{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
 	{{ range $tag := $post.Params.tags }}
-	{{range where $pages ".Params.id" $tag}}
-		{{$post_tag := .Params}}
+		{{ $post_tag := ($Site.GetPage $tag).Page.Params }}
 		{{ if eq $post_tag.id $section_tag.id }}
-			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" .Site }}
+			{{ $include_dict := dict "article_feed_section" $section "post_page" $post "Site" $Site}}
 			{{ partial "article_post_feed_item.html" $include_dict }}
 		{{ end }}
-	{{ end }}
 	{{ end }}
 {{end}}
 {{ else }}
