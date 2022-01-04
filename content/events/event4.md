@@ -3,12 +3,12 @@ title: Event4
 subtitle: Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique
   senectus.
 date: 2020-06-02
-author: gustav-purpleson
+author: "article/authors/gustav-purpleson.md"
 categories:
-- pena-santri
+- "article/categories/pena-santri.md"
 tags:
-- stackbit
-- netlify
+- "article/tags/stackbit.md"
+- "article/tags/netlify.md"
 excerpt: Estne, quaeso, inquam, sitienti in bibendo voluptas? Iam in altera philosophiae
   parte. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto.
 thumb_image: images/classic/post-5.png

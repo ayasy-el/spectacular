@@ -1,14 +1,15 @@
 {{ $author := .author }}
+{{$Site := .Site}}
 {{ $container_class := .container_class }}
 {{ $avatar_size := .avatar_size }}
 <div class="{{ $container_class }}">
-	{{ $author_data := (.Site.GetPage (printf "/article/authors/%s.md" $author)).Page.Params }}
-		<a class="flex items-center" href="/article/authors{{ $author_data.id| relURL }}">
-		{{ if $author_data.photo }}
+	{{ $author_data := ($Site.GetPage $author).Page }}
+	<a class="flex items-center" href="{{ $author_data.URL | relURL }}">
+		{{ if $author_data.Params.photo }}
 		<figure class="avatar mr-1{{ if eq $avatar_size "small" }} avatar--small{{ end }}">
-			<img class="avatar__img" src="{{ $author_data.photo | relURL }}" alt="{{ $author_data.photo_alt }}" />
+			<img class="avatar__img" src="{{ $author_data.Params.photo | relURL }}" alt="{{ $author_data.Params.photo_alt }}" />
 		</figure>
 		{{ end }}
-		<span>{{ $author_data.title }}</span>
+		<span>{{ $author_data.Params.title }}</span>
 	</a>
 </div>

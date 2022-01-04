@@ -1,0 +1,38 @@
+---
+label: Author
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: id
+  label: Id
+  description: A unique identifier used to differentiate from other author, e.g. 'john-doe'
+  config:
+    required: true
+- type: text
+  name: title
+  label: Name
+  description: Author name which will be displayed on the website
+  config:
+    required: true
+- name: shortBio
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Short Bio
+- type: file
+  name: photo
+  label: Photo
+- type: text
+  name: photo_alt
+  label: Photo Alt
+  description: used when image fails to load
+- type: text
+  name: layout
+  label: layout
+  default: term
+  hidden: true

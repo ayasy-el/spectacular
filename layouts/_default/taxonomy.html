@@ -1,4 +1,5 @@
 {{ define "content"}}
+{{$Site := .Site}}
 
 <section class="section hero bg-secondary pt-6 pt-md-7 pb-6 pb-md-7">
     <div class="container">
@@ -10,26 +11,38 @@
     </div>
 </section>
 
-
 <section class="section article-feed has-border bg-none pt-6 pt-md-7 pb-6 pb-md-7">
 <div class="container" container-grid>
     {{ range $term := .Data.Pages }}
 <div class="text-center">
-<h2 class="section__title"><a href="{{ $term.URL | relURL }}" class="link">{{with $term.Params.title}}{{.}}{{else}}{{$term.Params.first_name}} {{$term.Params.last_name}}{{end}}</a></h2>
+<h2 class="section__title"><a href="{{ $term.URL | relURL }}" class="link">{{with $term.Params.title}}{{. | title}}{{else}}{{$term.Params.first_name}} {{$term.Params.last_name}}{{end}}</a></h2>
 </div>
 <div class="grid">
-    {{ range $page := (where .Site.RegularPages "Params.layout" "post") }}
-    {{ if in $page.Params.categories $term.Params.id}}
-        {{ $include_dict := dict "page" $page "Site" .Site }}
+{{ range $post := (where .Site.RegularPages "Params.layout" "post") }}
+    {{ $include_dict := dict "page" $post "Site" $Site }}
+	{{if $post.Params.tags}}
+    {{ range $tag := $post.Params.tags }}
+	{{ $post_tag := ($Site.GetPage $tag).Page.Params }}
+		{{ if eq $post_tag.id $term.Params.id }}
         {{partial "taxon_item" $include_dict }}
-    {{ else if in $page.Params.author $term.Params.id}}
-        {{ $include_dict := dict "page" $page "Site" .Site }}
+		{{ end }}
+	{{ end }}
+	{{ end }}
+	{{if $post.Params.categories}}
+    {{ range $category := $post.Params.categories }}
+	{{ $post_category := ($Site.GetPage $category).Page.Params }}
+		{{ if eq $post_category.id $term.Params.id }}
         {{partial "taxon_item" $include_dict }}
-    {{ else if in $page.Params.tags $term.Params.id}}
-        {{ $include_dict := dict "page" $page "Site" .Site }}
+		{{ end }}
+	{{ end }}
+	{{ end }}
+	{{if $post.Params.author}}
+    {{ $author := ($Site.GetPage $post.Params.author).Page.Params }}
+        {{ if eq $author.id $term.Params.id}}
         {{partial "taxon_item" $include_dict }}
-    {{ end }}
-    {{ end }}
+        {{end}}
+    {{end}}
+{{ end }}
 </div>
 <br>
 <br>

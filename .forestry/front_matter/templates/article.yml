@@ -30,10 +30,10 @@ fields:
   description: The author of the article
   config:
     source:
-      type: documents
-      section: data
+      type: pages
+      section: authors
       file: data/data.json
-      path: Authors
+      path: ''
 - type: list
   name: categories
   label: Categories
@@ -41,10 +41,10 @@ fields:
   config:
     use_select: true
     source:
-      type: documents
-      section: data
+      type: pages
+      section: categories
       file: data/data.json
-      path: categories
+      path: ''
 - type: list
   name: tags
   label: Tags
@@ -52,10 +52,10 @@ fields:
   config:
     use_select: true
     source:
-      type: documents
-      section: data
+      type: pages
+      section: tags
       file: data/data.json
-      path: tags
+      path: ''
 - type: text
   name: excerpt
   label: Excerpt

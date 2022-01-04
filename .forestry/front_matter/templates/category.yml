@@ -1,28 +1,37 @@
 ---
 label: Category
 hide_body: true
+display_field: title
 fields:
 - type: text
   name: id
   label: ID
-  description: A unique identifier used when filtering articles, e.g. "kata-ustadz"
+  description: A unique identifier used to differentiate from other categories, e.g. "new-category"
   config:
     required: true
-- type: text
-  name: link
-  label: Link
-  description: The link to the category page, e.g. "article/category/kata-ustadz"
 - type: text
   name: title
   label: Title
-  description: The title of the category
+  description: Category to be displayed on the website
   config:
     required: true
+- name: description
+  type: text
+  config:
+    required: false
+  description: The description of the category
+  label: Description
 - type: text
-  name: type
+  name: layout
   label: Object Type
   description: The type of the object
   hidden: true
-  default: category
+  default: term
   config:
     required: false
+pages:
+- content/article/categories/ini-judul.md
+- content/article/categories/kategori-ku.md
+- content/article/categories/my-title.md
+- content/article/categories/title-1.md
+- content/article/categories/title.md

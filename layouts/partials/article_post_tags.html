@@ -1,7 +1,10 @@
 {{ $tags := .tags }}
-{{ $pages := where .Site.RegularPages "Params.layout" "term" }}
+{{ $Site := .Site }}
 {{ range $tag := $tags }}
-	{{range where $pages ".Params.id" $tag}}{{$tag_data := .Params}}
-		<a class="mr-1" href="/article/tags{{ $tag_data.id| relURL }}">{{ $tag_data.title }}</a>
-{{ end }}
+	{{ $tag_data := ($Site.GetPage $tag).Page }}
+	{{ if $tag_data.URL }}
+		<a class="mr-1" href="{{ $tag_data.URL | relURL }}">{{ $tag_data.Params.title }}</a>
+	{{ else }}
+		<span class="mr-1">{{ $tag_data.Params.title }}</span>
+	{{ end }}
 {{ end }}

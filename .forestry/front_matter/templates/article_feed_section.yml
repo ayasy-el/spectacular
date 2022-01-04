@@ -56,30 +56,30 @@ fields:
   description: Filter posts by a author
   config:
     source:
-      type: documents
-      section: data
+      type: pages
+      section: authors
       file: data/data.json
-      path: Authors
+      path: ''
 - type: select
   name: category
   label: Category filter
   description: Filter posts by a category
   config:
     source:
-      type: documents
-      section: data
+      type: pages
+      section: categories
       file: data/data.json
-      path: categories
+      path: ''
 - type: select
   name: tag
   label: Tag filter
   description: Filter posts by a tag
   config:
     source:
-      type: documents
-      section: data
+      type: pages
+      section: tags
       file: data/data.json
-      path: tags
+      path: ''
 - type: boolean
   name: show_date
   label: Show date

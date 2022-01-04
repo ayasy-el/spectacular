@@ -32,17 +32,17 @@
 		<div class="grid">
 			{{ $section_author := false }}
 			{{ if $section.author }}
-				{{ $section_author = (.Site.GetPage (printf "/article/authors/%s.md" $section.author)).Page.Params }}
+				{{ $section_author = (.Site.GetPage $section.author).Page.Params }}
 			{{ end }}
 
 			{{ $section_category := false }}
 			{{ if $section.category }}
-				{{ $section_category = (.Site.GetPage (printf "/article/categories/%s.md" $section.category)).Page.Params }}
+				{{ $section_category = (.Site.GetPage $section.category).Page.Params }}
 			{{ end }}
 
 			{{ $section_tag := false }}
 			{{ if $section.tag }}
-				{{ $section_tag = (.Site.GetPage (printf "/article/tags/%s.md" $section.tag)).Page.Params }}
+				{{ $section_tag = (.Site.GetPage $section.tag).Page.Params }}
 			{{ end }}
 
 			{{ $posts_all := (.Site.GetPage "section" "/article").Pages }}

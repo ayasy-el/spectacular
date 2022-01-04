@@ -4,10 +4,10 @@ subtitle: >-
   Atqui pugnantibus et contrariis studiis consiliisque semper utens nihil quieti
   videre, nihil tranquilli potest.
 date: '2020-04-16'
-author: hugh-saturation
+author: "article/authors/hugh-saturation.md"
 categories:
-  - pena-santri
-  - berita-acara
+  - "article/categories/pena-santri.md"
+  - "article/categories/berita-acara.md"
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ea mala virtuti
   magnitudine obruebantur. Duo Reges: constructio interrete.

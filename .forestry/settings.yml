@@ -55,9 +55,33 @@ sections:
   - advanced
 - type: heading
   label: Authors, Categories, & Tags
-- type: document
-  path: data/data.json
-  label: Data
+- type: directory
+  path: content/article/categories
+  label: Categories
+  create: documents
+  match: "*"
+  exclude: _index.md
+  new_doc_ext: md
+  templates:
+  - category
+- type: directory
+  path: content/article/authors
+  label: Authors
+  create: documents
+  match: "*"
+  exclude: _index.md
+  new_doc_ext: md
+  templates:
+  - authors
+- type: directory
+  path: content/article/tags
+  label: Tags
+  create: documents
+  match: "*"
+  exclude: _index.md
+  new_doc_ext: md
+  templates:
+  - tag
 - type: heading
   label: Header Footer & Config
 - type: document
