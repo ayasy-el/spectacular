@@ -1,7 +1,7 @@
 /public/
 /resources/
 node_modules
-/static/admin/*
+/static/admin/
 config/*
 # Local Netlify folder
 .netlify
