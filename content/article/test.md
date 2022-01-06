@@ -1,6 +1,6 @@
 +++
-author = "article/authors/hugh-saturation.md"
-categories = ["article/categories/kata-ustadz.md"]
+author = "data/authors/hugh-saturation.md"
+categories = ["data/categories/kata-ustadz.md"]
 date = 2021-12-08T17:00:00Z
 draft = true
 excerpt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec augue magna."
@@ -10,7 +10,7 @@ image_position = "left"
 layout = "post"
 show_comment = false
 subtitle = "Idemque diviserunt naturam hominis in animum et corpus. Si enim ad populum me   vocas, eum."
-tags = ["article/tags/jamstack.md"]
+tags = ["data/tags/jamstack.md"]
 thumb_image = "/images/hero-background.jpg"
 thumb_image_alt = ""
 title = "Test"

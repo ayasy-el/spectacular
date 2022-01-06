@@ -4,12 +4,12 @@ subtitle: >-
   Innumerabilia dici possunt in hanc sententiam, sed non necesse est. Putabam
   equidem satis, inquit, me dixisse.
 date: '2020-05-28'
-author: "article/authors/gustav-purpleson.md"
+author: "data/authors/gustav-purpleson.md"
 categories:
-  - "article/categories/berita-acara.md"
+  - "data/categories/berita-acara.md"
 tags:
-  - "article/tags/stackbit.md"
-  - "article/tags/ jamstack.md"
+  - "data/tags/stackbit.md"
+  - "data/tags/ jamstack.md"
 excerpt: >-
   Quis est, qui non oderit libidinosam, protervam adolescentiam? Innumerabilia
   dici possunt in hanc sententiam, sed non necesse est. Putabam equidem satis,

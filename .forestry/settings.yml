@@ -56,7 +56,7 @@ sections:
 - type: heading
   label: Authors, Categories, & Tags
 - type: directory
-  path: content/article/categories
+  path: content/data/categories
   label: Categories
   create: documents
   match: "*"
@@ -65,7 +65,7 @@ sections:
   templates:
   - category
 - type: directory
-  path: content/article/authors
+  path: content/data/authors
   label: Authors
   create: documents
   match: "*"
@@ -74,7 +74,7 @@ sections:
   templates:
   - authors
 - type: directory
-  path: content/article/tags
+  path: content/data/tags
   label: Tags
   create: documents
   match: "*"
@@ -95,9 +95,9 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.80.0
+  - HUGO_VERSION=0.83.1
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   instant_preview_command: hugo server -D -E -F --renderToDisk -d public
-version: 0.80.0
+version: 0.83.1

@@ -5,6 +5,9 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
 languageCode = 'id'
 disableKinds = ["taxonomy", "term"]
 
+[permalinks]
+  data = '/article/:sections[1:]/:slug'
+
 [minify]
   minifyOutput = true
 

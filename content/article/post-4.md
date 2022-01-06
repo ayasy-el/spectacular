@@ -3,13 +3,13 @@ title: Vos Autem Cum Perspicuis Dubia Debeatis Illustrare
 subtitle: Negat esse eam, inquit, propter se expetendam. Ergo, si semel tristior effectus
   est, hilara vita amissa est.
 date: 2020-05-30
-author: "article/authors/dianne-ameter.md"
+author: "data/authors/dianne-ameter.md"
 categories:
-- "article/categories/pena-santri.md"
-- "article/categories/kata-ustadz.md"
+- "data/categories/pena-santri.md"
+- "data/categories/kata-ustadz.md"
 tags:
-- "article/tags/jamstack.md"
-- "article/tags/sourcebit.md"
+- "data/tags/jamstack.md"
+- "data/tags/sourcebit.md"
 excerpt: Itaque hoc frequenter dici solet a vobis, non intellegere nos, quam dicat
   Epicurus voluptatem. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium
   consuetudo Latina traduceret.

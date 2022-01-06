@@ -4,12 +4,12 @@ subtitle: >-
   Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique
   senectus.
 date: '2020-06-02'
-author: "article/authors/dianne-ameter.md"
+author: "data/authors/dianne-ameter.md"
 categories:
-  - "article/categories/pena-santri.md"
+  - "data/categories/pena-santri.md"
 tags:
-  - "article/tags/stackbit.md"
-  - "article/tags/netlify.md"
+  - "data/tags/stackbit.md"
+  - "data/tags/netlify.md"
 excerpt: >-
   Estne, quaeso, inquam, sitienti in bibendo voluptas? Iam in altera
   philosophiae parte. Quem Tiberina descensio festo illo die tanto gaudio
