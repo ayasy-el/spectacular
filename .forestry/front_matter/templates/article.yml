@@ -31,7 +31,7 @@ fields:
   config:
     source:
       type: pages
-      section: authors
+      section: authors-10451a36-de49-46cc-93d9-25f293e8a680
       file: data/data.json
       path: ''
 - type: list
@@ -42,7 +42,7 @@ fields:
     use_select: true
     source:
       type: pages
-      section: categories
+      section: categories-9ace25b8-4c20-481c-96ee-9fc6d547aa3b
       file: data/data.json
       path: ''
 - type: list
@@ -53,7 +53,7 @@ fields:
     use_select: true
     source:
       type: pages
-      section: tags
+      section: tags-af8432b3-19cd-4d52-bffd-82387fcc6221
       file: data/data.json
       path: ''
 - type: text
