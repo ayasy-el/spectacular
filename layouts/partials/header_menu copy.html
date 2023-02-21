@@ -1,0 +1,28 @@
+{{ $page := .page }}
+{{ $type := .type }}
+{{ $menu := .header_menu }}
+<ul style="font-family: 'Nunito';" class="nav__list list-reset">
+	{{ range $item := $menu }}
+	{{ $page_url := trim $page.URL "/" }}
+	{{ $item_url := trim $item.url "/" }}
+	{{ $item_style := $item.style | default "link" }}
+	<li class="nav__item {{if $item.dropdown }}dropdown{{end}}">
+		{{if $item.dropdown }}<span class="nav__link dropdown-toggle">{{$item.label}} <i class="ion ion-ios-arrow-down arrow-down"></i></span>
+		{{else}}
+		{{if eq $type "secondary"}}
+		<a href="#" class="nav__link cta-button button button--small nav-left">{{$item.label}}</a>
+		{{else}}
+		<a href="{{$item.url | relURL}}" class="{{if eq ($page_url | relURL) ($item.url | relURL) }}active-link{{end}} nav__link">{{$item.label}}</a>
+		{{end}}
+		{{end}}
+	</li>
+	{{ end }}
+
+	<!-- <li class="nav__item dropdown">
+		<span class="nav__link dropdown-toggle">Pages <i class="ion ion-ios-arrow-down arrow-down"></i></span>
+		<div class="dropdown-menu">
+			<a href="/about/" class="nav__link ">About</a>
+			<a href="/elements/" class="nav__link ">Elements</a>
+		</div>
+	</li> -->
+</ul>

@@ -29,7 +29,7 @@
 	{{ $is_vert = true }}
 {{ end }}
 
-<div class="feature{{ if $is_vert }} maxw-medium{{ end }}{{ if $is_vert }} mx-auto{{ end }}{{ if eq $padding_y "small" }} py-0{{ end }}{{ if ne $padding_y "small" }} py-1{{ end }}{{ if eq $padding_y "large" }} py-sm-3{{ end }}">
+<div class="feature{{ if $is_vert }} maxw-large{{ end }}{{ if $is_vert }} mx-auto{{ end }}{{ if eq $padding_y "small" }} py-0{{ end }}{{ if ne $padding_y "small" }} py-1{{ end }}{{ if eq $padding_y "large" }} py-sm-3{{ end }}">
 	<div class="item__content grid items-center">
 		{{ if $has_media }}
 		<div class="feature__media my-2 cell-12{{ if and (and $is_horiz $has_text) (eq $media_width "thirty-three") }} cell-md-4{{ end }}{{ if and (and $is_horiz $has_text) (eq $media_width "fourty") }} cell-md-5{{ end }}{{ if and (and $is_horiz $has_text) (eq $media_width "fifty") }} cell-md-6{{ end }}{{ if and (and $is_horiz $has_text) (eq $media_width "sixty") }} cell-md-7{{ end }}">
@@ -41,7 +41,7 @@
 		</div>
 		{{ end }}
 		{{ if $has_text }}
-		<div class="feature__body my-2 cell-12{{ if and (and $is_horiz $has_media) (eq $media_width "thirty-three") }} cell-md-8{{ end }}{{ if and (and $is_horiz $has_media) (eq $media_width "fourty") }} cell-md-7{{ end }}{{ if and (and $is_horiz $has_media) (eq $media_width "fifty") }} cell-md-6{{ end }}{{ if and (and $is_horiz $has_media) (eq $media_width "sixty") }} cell-md-5{{ end }}{{ if and $has_media (eq $media_pos "right") }} order-md-first{{ end }}{{ if and $has_media (eq $media_pos "bottom") }} order-first{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
+		<div style="padding-left: 40px;" class="feature__body my-2 cell-12{{ if and (and $is_horiz $has_media) (eq $media_width "thirty-three") }} cell-md-8{{ end }}{{ if and (and $is_horiz $has_media) (eq $media_width "fourty") }} cell-md-7{{ end }}{{ if and (and $is_horiz $has_media) (eq $media_width "fifty") }} cell-md-6{{ end }}{{ if and (and $is_horiz $has_media) (eq $media_width "sixty") }} cell-md-5{{ end }}{{ if and $has_media (eq $media_pos "right") }} order-md-first{{ end }}{{ if and $has_media (eq $media_pos "bottom") }} order-first{{ end }}{{ if eq $align_x "center" }} text-center{{ end }}{{ if eq $align_x "right" }} text-right{{ end }}">
 			{{ if $feature.title }}
 				{{ if $section.title }}
 				<h3 class="feature__title h2">{{ $feature.title }}</h3>

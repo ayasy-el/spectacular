@@ -14,9 +14,9 @@ excerpt: >-
   Quis est, qui non oderit libidinosam, protervam adolescentiam? Innumerabilia
   dici possunt in hanc sententiam, sed non necesse est. Putabam equidem satis,
   inquit, me dixisse.
-thumb_image: images/classic/post-3.png
+thumb_image: images/classic/03.jpg
 thumb_image_alt: Post 3 placeholder image
-image: images/classic/post-3.png
+image: images/classic/03.jpg
 image_alt: Post 3 placeholder image
 image_position: top
 seo:
@@ -35,7 +35,7 @@ seo:
       value: 'Quis est, qui non oderit libidinosam, protervam adolescentiam'
       keyName: property
     - name: 'og:image'
-      value: images/classic/post-3.png
+      value: images/classic/03.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -45,7 +45,7 @@ seo:
     - name: 'twitter:description'
       value: 'Quis est, qui non oderit libidinosam, protervam adolescentiam'
     - name: 'twitter:image'
-      value: images/classic/post-3.png
+      value: images/classic/03.jpg
       relativeUrl: true
 layout: post
 ---

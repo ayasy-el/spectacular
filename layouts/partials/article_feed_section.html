@@ -29,7 +29,7 @@
 	{{ end }}
 	
 	<div class="container" container-grid>
-		<div class="grid">
+		<div class="avenco row">
 			{{ $section_author := false }}
 			{{ if $section.author }}
 				{{ $section_author = (.Site.GetPage $section.author).Page.Params }}
@@ -66,14 +66,14 @@
 		</div>
 	</div>
 
-	{{ if $section.actions }}
-	<div class="container container--medium mt-4">
-		<div class="section__actions btn-group{{ if eq $align_x "center" }} justify-center{{ end }}{{ if eq $align_x "right" }} justify-end{{ end }}">
-			{{ $include_dict := dict "actions" $section.actions }}
-			{{ partial "section_actions.html" $include_dict }}
-		</div>
-	</div>
-	{{ end }}
+	  {{ if $section.actions }}
+	  <div class="container container--medium pt-4">
+		  <div class="section__actions btn-group{{ if eq $align_x "center" }} justify-center{{ end }}{{ if eq $align_x "right" }} justify-end{{ end }}">
+			  {{ $include_dict := dict "actions" $section.actions }}
+			  {{ partial "section_actions.html" $include_dict }}
+		  </div>
+	  </div>
+	  {{ end }}
 
 <script>
 	var element = document.querySelectorAll('[container-grid]');

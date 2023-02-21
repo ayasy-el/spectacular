@@ -44,7 +44,7 @@
 	{{ end }}
 
 	{{ if $section.actions }}
-	<div class="container container--medium{{ if ne $grid_gap_y "large" }} mt-4{{ end }}{{ if eq $grid_gap_y "large" }} mt-3{{ end }}">
+	<div class="container pt-4 container--medium{{ if ne $grid_gap_y "large" }} mt-4{{ end }}{{ if eq $grid_gap_y "large" }} mt-3{{ end }}">
 		<div class="section__actions btn-group{{ if eq $align_x "center" }} justify-center{{ end }}{{ if eq $align_x "right" }} justify-end{{ end }}">
 			{{ $include_dict := dict "actions" $section.actions }}
 			{{ partial "section_actions.html" $include_dict }}

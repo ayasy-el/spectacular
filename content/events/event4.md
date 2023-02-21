@@ -11,9 +11,9 @@ tags:
 - "data/tags/netlify.md"
 excerpt: Estne, quaeso, inquam, sitienti in bibendo voluptas? Iam in altera philosophiae
   parte. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto.
-thumb_image: images/classic/post-5.png
+thumb_image: images/classic/05.jpg
 thumb_image_alt: Post 5 placeholder image
-image: images/classic/post-5.png
+image: images/classic/05.jpg
 image_alt: Post 5 placeholder image
 image_position: right
 seo:
@@ -32,7 +32,7 @@ seo:
     value: Estne, quaeso, inquam, sitienti in bibendo voluptas
     keyName: property
   - name: og:image
-    value: images/classic/post-5.png
+    value: images/classic/05.jpg
     keyName: property
     relativeUrl: true
   - name: twitter:card
@@ -45,7 +45,7 @@ seo:
     value: Estne, quaeso, inquam, sitienti in bibendo voluptas
     keyName: ''
   - name: twitter:image
-    value: images/classic/post-5.png
+    value: images/classic/05.jpg
     relativeUrl: true
     keyName: ''
 layout: post

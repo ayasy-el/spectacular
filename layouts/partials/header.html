@@ -1,59 +1,679 @@
-<header class="site-header py-2">
-	<div class="container">
-		<nav class="navbar flex items-center" aria-label="Main Navigation">
-			<a class="sr-only" href="#content">Skip to main content</a>
-			<div class="navbar__branding mr-2">
-				{{ if .Site.Params.header.logo }}
-				<a class="navbar__logo m-0" href="{{ "/" | relURL }}"><img
-						src="{{ $.Site.Params.header.logo | relURL }}" alt="{{ $.Site.Params.header.logo_alt }}" /></a>
-				{{ else }}
-				<a class="navbar__title h4 m-0" href='{{ "/" | relURL }}'>{{ $.Site.Params.header.title }}</a>
-				{{ end }}
-			</div>
-			{{ if or .Site.Params.header.has_primary_nav .Site.Params.header.has_secondary_nav }}
-			<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-			<div class="navbar__container flex-md-auto">
-				<div class="navbar__scroller">
-					<div class="navbar__inner">
-						<div class="flex" style="justify-content: space-between">
-						<a href="/" id="titleMenu" ><h3 class="link">{{ .Site.Title }}</h3></a>
-						<button aria-label="Close" class="btn btn--icon btn--clear navbar__close-btn js-nav-toggle">
-							{{ $include_dict := dict "icon" "close" }}
-							{{ partial "icon.html" $include_dict }}
-							<span class="sr-only">Close</span>
-						</button>
-						</div>
-						<div class="navbar__menu flex-md">
-							<div class="search" id="search-menu1">
-								<span i class="fa fa-search"></span>
-								<input type="search" size="60" class="search-input" placeholder="  Search..." autocomplete="off" style="border-radius: 20px;padding-left: 20px;">
-							</div>
-							{{ if and $.Site.Params.header.has_primary_nav $.Site.Params.header.primary_nav_links }}
-							{{ $include_dict = dict "header_menu" $.Site.Params.header.primary_nav_links "page" $ }}
-							{{ partial "header_menu.html" $include_dict }}
-							{{ end }}
-							<div class="menu flex-md items-md-center">
-								<div class="search" id="search-menu2">
-									<span i class="fa fa-search"></span>
-									<input type="search" size="60" class="search-input" placeholder="  Search..." autocomplete="off" style="border-radius: 20px;padding-left: 20px;">
-								</div>
-							{{ partial "autocomplete.html" . }}
-							{{ if and $.Site.Params.header.has_secondary_nav $.Site.Params.header.secondary_nav_links }}
-							{{ $include_dict = dict "header_menu" $.Site.Params.header.secondary_nav_links "page" $ }}
-							{{ partial "header_menu.html" $include_dict }}
-							{{ end }}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button aria-label="Menu" class="btn btn--icon btn--clear navbar__menu-btn js-nav-toggle ml-auto">
-				{{ $include_dict = dict "icon" "menu" }}
-				{{ partial "icon.html" $include_dict }}
-				<span class="sr-only">Menu</span>
-			</button>
-			{{ end }}
-		</nav>
-	</div>
+<header class="header sticky-top">
+    <div class="container">
+        <div class="row">
+            <div class="header__inner col col-12">
+
+                {{ if .Site.Params.header.logo }}
+                <a class="navbar__logo m-0" href='{{ "/" | relURL }}'><img
+                        src="{{ $.Site.Params.header.logo | relURL }}" alt="{{ $.Site.Params.header.logo_alt }}" /></a>
+                {{ else }}
+                <a class="navbar__title h4 m-0" href='{{ "/" | relURL }}'>{{ $.Site.Params.header.title }}</a>
+                {{ end }}
+
+                <nav id="main-nav" class="main-nav">
+                    {{ if or .Site.Params.header.has_primary_nav .Site.Params.header.has_secondary_nav }}
+                    <div class="main-nav__box">
+                        <div class="nav__icon-close">
+                            <i class="ion ion-md-close"></i>
+                        </div>
+                        <div class="nav__title">Menu</div>
+                        {{ partial "header_menu.html" . }}
+
+                        {{/*
+                        {{ if and $.Site.Params.header.has_primary_nav $.Site.Params.header.primary_nav_links }}
+                        {{ $include_dict := dict "header_menu" $.Site.Params.header.primary_nav_links "page" $ "type" "primer"}}
+                        {{ partial "header_menu.html" $include_dict }}
+                        {{ end }}
+                        {{ if and $.Site.Params.header.has_secondary_nav $.Site.Params.header.secondary_nav_links }}
+                        {{ $include_dict := dict "header_menu" $.Site.Params.header.secondary_nav_links "page" $ "type" "secondary"}}
+                        {{ partial "header_menu.html" $include_dict }}
+                        {{ end }}
+                        */}}
+                    </div>
+                    {{ end }}
+                </nav>
+
+                <div class="nav-button">
+                    <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </header>
+<style>
+    body {
+        font-family: 'Nunito';
+        font-size: 20px;
+    }
+
+    .sticky-top {
+        position: sticky;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background-color: #ffffffda;
+        top: 0;
+        z-index: 1020;
+    }
+
+    /*! CSS Used from: https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css */
+    .ion,
+    .ion-ios-arrow-down:before,
+    .ion-md-close:before,
+    .ion-md-menu:before {
+        display: inline-block;
+        font-family: "Ionicons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        text-rendering: auto;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .ion-ios-arrow-down:before {
+        content: "\f3d0";
+    }
+
+    .ion-md-close:before {
+        content: "\f2c0";
+    }
+
+    .ion-md-menu:before {
+        content: "\f32a";
+    }
+
+    /*! CSS Used from: Embedded */
+    .list-reset {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        background-color: transparent;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin-left: 16px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 1180px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .container {
+            max-width: 1100px;
+        }
+    }
+
+    @media only screen and (max-width: 1130px) {
+        .container {
+            max-width: 1000px;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .container {
+            max-width: 760px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            max-width: 560px;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .container {
+            max-width: 480px;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex: initial;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .col {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    header,
+    header::after,
+    header::before {
+        box-sizing: border-box;
+    }
+
+    header::selection {
+        color: #fff;
+        background-color: rgba(66, 53, 208, 0.8);
+    }
+    
+    header a {
+        text-decoration: none;
+        color: #120f3e;
+        transition: all 0.35s;
+    }
+
+    header a:hover {
+        color: #4235d0;
+    }
+
+    .header {
+        height: auto;
+        transition: all 0.35s;
+    }
+
+    .header__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 15px 16px;
+        min-height: 20px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .header__inner {
+            align-items: baseline;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .header__inner {
+            padding: 30px 16px;
+        }
+    }
+
+    .logo__link {
+        font-family: nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .logo__link:hover {
+        color: #4235d0;
+    }
+
+    .main-nav {
+        margin-left: auto;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0;
+            overflow: auto;
+            background: #fff;
+            transition: all 0.25s ease;
+        }
+
+        .main-nav.is-open {
+            z-index: 999;
+            opacity: 1;
+            transition: all 0.25s ease;
+        }
+
+        .main-nav .nav__list {
+            width: 100%;
+            max-width: 360px;
+            padding-left: 40px;
+        }
+
+        .main-nav .nav__list .nav__item {
+            display: block;
+            margin: 0;
+        }
+
+        .main-nav .nav__list .nav__item:last-child {
+            margin-right: 0;
+        }
+
+        .main-nav .nav__list .nav__item .dropdown-menu {
+            position: relative;
+            left: 0;
+            padding: 0;
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            box-shadow: none;
+        }
+
+        .main-nav .nav__list .nav__item .dropdown-menu .nav__link {
+            margin-left: 8px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .main-nav .nav__list .nav__item .dropdown-menu .nav__link::before {
+            content: "– ";
+        }
+
+        .main-nav .nav__list .nav__item .dropdown-menu .nav__link:last-child {
+            margin-bottom: 24px;
+        }
+
+        .main-nav .nav__list .nav__item .nav__link {
+            display: block;
+            padding: 0;
+            margin-bottom: 24px;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .main-nav .nav__list .nav__item .nav__link:hover {
+            background-color: inherit;
+        }
+
+        .main-nav .nav__list .nav__item .nav__link .arrow-down {
+            display: none;
+        }
+
+        .main-nav .nav__list .nav__item .nav__link.active-link {
+            color: #4235d0;
+        }
+
+        .main-nav .nav__list .nav__item .nav__link.active-link::after {
+            content: none;
+        }
+
+        .main-nav .nav__list .nav__item .nav__link.cta-button {
+            margin-left: -4px;
+            margin-bottom: 0;
+        }
+    }
+
+    .main-nav__box {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-nav__box .nav__icon-close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: rgba(66, 53, 208, 8%);
+    }
+
+    .main-nav__box .nav__icon-close:hover .ion-md-close {
+        transform: rotate(90deg);
+    }
+
+    .main-nav__box .nav__icon-close .ion-md-close {
+        color: #4235d0;
+        transition: all 0.35s;
+    }
+
+    .main-nav__box .nav__title {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .main-nav__box {
+            display: block;
+            margin: 24px 0;
+        }
+
+        .main-nav__box .nav__icon-close {
+            display: flex;
+        }
+
+        .main-nav__box .nav__title {
+            display: block;
+            padding: 0 0 24px 40px;
+            margin-bottom: 24px;
+            font-size: 32px;
+            line-height: 1;
+            font-weight: 900;
+            color: #120f3e;
+            border-bottom: 1px solid #ededf3;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .main-nav__box .nav__icon-close {
+            right: 30px;
+        }
+    }
+
+    .nav__list .nav__item {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .nav__list .nav__item:last-child {
+        margin-right: 0;
+    }
+
+    .nav__list .nav__item .nav__link {
+        position: relative;
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .nav__list .nav__item .nav__link:hover {
+        color: #4235d0;
+    }
+
+    .nav__list .nav__item .nav__link.active-link::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -6px;
+        transform: translateX(-50%);
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #4235d0;
+    }
+
+    .nav__list .nav__item .nav__link.cta-button {
+        display: inline-flex;
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+    .nav__list .nav__item.dropdown {
+        position: relative;
+    }
+
+    .nav__list .nav__item.dropdown .arrow-down {
+        vertical-align: middle;
+    }
+
+    .nav__list .nav__item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .nav__list .dropdown-menu {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: -32px;
+        transform: translateZ(0) scale(0.9);
+        backface-visibility: hidden;
+        z-index: 100;
+        min-width: 150px;
+        display: block;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s ease;
+        border-radius: 8px;
+        box-shadow: 0 20px 20px rgba(66, 53, 208, 7%);
+        background-color: #fff;
+    }
+
+    .nav__list .dropdown-menu .nav__link {
+        display: flex;
+        padding: 8px 12px;
+        font-size: 15px;
+        border-radius: 4px;
+        will-change: transform;
+    }
+
+    .nav__list .dropdown-menu .nav__link:hover {
+        background-color: rgba(66, 53, 208, 7%);
+    }
+
+    .nav-button {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: #120f3e;
+        cursor: pointer;
+    }
+
+    .nav-button .nav__icon {
+        transition: all 0.35s;
+    }
+
+    .nav-button .nav__icon:hover {
+        color: #4235d0;
+    }
+
+    .nav-button .nav__icon-menu {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .nav-button {
+            margin-left: auto;
+        }
+
+        .nav-button .nav__icon-menu {
+            display: block;
+        }
+    }
+
+    .button {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        justify-content: center;
+        line-height: 1;
+        font-weight: 800;
+        border-radius: 30px;
+        white-space: nowrap;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        overflow: hidden;
+        color: #fff;
+        background: linear-gradient(90deg, #4235d0 0%, #f969cd 167%);
+        transition: all 0.25s ease;
+    }
+
+    .button:hover {
+        color: #fff !important;
+    }
+
+    .button:hover:before {
+        opacity: 1;
+    }
+
+    .button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        will-change: transform;
+        transition: opacity 0.35s;
+        background: linear-gradient(90deg, #4235d0 0%, #f969cd 107%);
+    }
+
+    .button:active {
+        transform: translateY(2px) scale(0.98);
+    }
+
+    .button--small {
+        font-size: 15px;
+        padding: 16px 24px;
+    }
+
+    /*! CSS Used fontfaces */
+    @font-face {
+        font-family: "Ionicons";
+        src: url("https://unpkg.com/ionicons@4.5.0/dist/fonts/ionicons.eot?v=4.5.0-3");
+        src: url("https://unpkg.com/ionicons@4.5.0/dist/fonts/ionicons.eot?v=4.5.0-3#iefix") format("embedded-opentype"),
+            url("https://unpkg.com/ionicons@4.5.0/dist/fonts/ionicons.woff2?v=4.5.0-3") format("woff2"),
+            url("https://unpkg.com/ionicons@4.5.0/dist/fonts/ionicons.woff?v=4.5.0-3") format("woff"),
+            url("https://unpkg.com/ionicons@4.5.0/dist/fonts/ionicons.ttf?v=4.5.0-3") format("truetype"),
+            url("https://unpkg.com/ionicons@4.5.0/dist/fonts/ionicons.svg?v=4.5.0-3#Ionicons") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<script>
+    window.addEventListener("load", function () {
+  "use strict";
+  var p = document.querySelector("body"),
+    c = document.querySelector(".contact-modal"),
+    o = document.querySelector(".cta-button"),
+    n = document.querySelector(".contact-close"),
+    l = document.querySelector(".nav__icon-menu"),
+    j = document.querySelector(".nav__icon-close"),
+    d = document.querySelector(".main-nav"),
+    a,
+    q,
+    r;
+  l.addEventListener("click", () => {
+    h();
+  }),
+    j.addEventListener("click", () => {
+      i();
+    }),
+    c &&
+      o.addEventListener("click", (a) => {
+        a.preventDefault(), g();
+      }),
+    c &&
+      n.addEventListener("click", (a) => {
+        k();
+      });
+  function h() {
+    d.classList.add("is-open");
+  }
+  function i() {
+    d.classList.remove("is-open");
+  }
+  function g() {
+    c.classList.add("is-visible"), d.classList.remove("is-open");
+  }
+  function k() {
+    c.classList.remove("is-visible");
+  }
+  setTimeout(function () {
+    p.classList.add("is-in");
+  }, 150);
+  let f;
+  window.addEventListener("resize", () => {
+    document.body.classList.add("resize-animation-stopper"),
+      clearTimeout(f),
+      (f = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 300));
+  }),
+    reframe(
+      ".post__content iframe:not(.reframe-off), .page__content iframe:not(.reframe-off), .project-content iframe:not(.reframe-off)"
+    );
+  const m = document.querySelector(
+      ".page img, .post img, .project-content img"
+    ),
+    b = document.querySelectorAll(
+      ".page a img, .post a img, .project-content a img"
+    );
+  if (b) {
+    for (a = 0; a < b.length; a++) b[a].parentNode.classList.add("image-link");
+    for (a = 0; a < b.length; a++) b[a].classList.add("no-lightense");
+  }
+  m &&
+    Lightense(
+      ".page img:not(.no-lightense), .post img:not(.no-lightense), .project-content img:not(.no-lightense)",
+      {
+        padding: 60,
+        offset: 30
+      }
+    ),
+    document.querySelectorAll(".author__btn").forEach((a) => {
+      a.addEventListener("click", function (a) {
+        a.preventDefault(),
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+      });
+    }),
+    document.querySelector(".my-slider") &&
+      (r = tns({
+        container: ".my-slider",
+        items: 3,
+        slideBy: 1,
+        gutter: 32,
+        nav: !1,
+        mouseDrag: !0,
+        autoplay: !1,
+        controlsContainer: "#customize-controls",
+        responsive: {
+          1024: {
+            items: 3
+          },
+          768: {
+            items: 2
+          },
+          0: {
+            items: 1
+          }
+        }
+      }));
+  const e = document.querySelector(".top");
+  window.addEventListener("scroll", function () {
+    window.scrollY > window.innerHeight
+      ? e.classList.add("is-active")
+      : e.classList.remove("is-active");
+  }),
+    e.addEventListener("click", function () {
+      window.scrollY != 0 &&
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+    });
+});
+</script>

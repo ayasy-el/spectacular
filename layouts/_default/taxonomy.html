@@ -17,7 +17,7 @@
 <div class="text-center">
 <h2 class="section__title"><a href="{{ $term.URL | relURL }}" class="link">{{with $term.Params.title}}{{. | title}}{{else}}{{$term.Params.first_name}} {{$term.Params.last_name}}{{end}}</a></h2>
 </div>
-<div class="grid">
+<div class="avenco row">
 {{ range $post := (where .Site.RegularPages "Params.layout" "post") }}
     {{ $include_dict := dict "page" $post "Site" $Site }}
 	{{if $post.Params.tags}}

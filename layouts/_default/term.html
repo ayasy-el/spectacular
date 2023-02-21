@@ -20,7 +20,7 @@
 
 <section class="section article-feed has-border bg-none pt-4 pb-6 pb-md-7">
 <div class="container" container-grid>
-<div class="grid">
+<div class="avenco row">
 {{ range $post := (where .Site.RegularPages "Params.layout" "post") }}
     {{ $include_dict := dict "page" $post "Site" $Site }}
     {{if $post.Params.tags}}

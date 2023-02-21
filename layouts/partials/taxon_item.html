@@ -1,5 +1,43 @@
 {{$page := .page}}
-<article class="cell-12 cell-md-6 my-2 cell-lg-4">
+<div class="article col col-4 col-d-6 col-t-12">
+	<div class="article__inner">
+
+    {{ if $page.Params.image }}
+	  <div class="image-wrap">
+		<a class="article__image" href="{{ $page.URL }}">
+		  <img class="lazy loaded" alt="{{ $page.Params.thumb_image_alt }}" data-ll-status="loaded" src="{{ $page.Params.thumb_image | relURL }}">
+		</a>
+	  </div>
+	{{ end }}
+
+	  <div class="article__content">
+
+		{{if $page.Params.categories}}
+			{{ $include_dict := dict "categories" $page.Params.categories "container_class" "item__cat" "Site" .Site}}
+			{{ partial "article_post_categories.html" $include_dict }}
+		{{ end }}
+
+		<h2 class="article__title">
+		  <a href="{{ $page.URL }}">{{ $page.Params.title }}</a>
+		</h2>
+
+		{{ if  $page.Params.excerpt }}
+		<p class="article__excerpt">{{ $page.Params.excerpt }}</p>
+		{{ end }}
+
+		
+		{{ if  $page.Params.author }}
+		<div class="article__meta">
+			{{ $include_dict := dict "author" $page.Params.author  "Site" .Site "show_date" true "date" $page.Params.date}}
+			{{ partial "article_post_author.html" $include_dict }}
+		</div>
+		{{end}}
+
+	  </div>
+
+	</div>
+  </div>
+<!-- <article class="cell-12 cell-md-6 my-2 cell-lg-4">
     <div class="item card card--highlight card--vert">
         <div class="flex flex-column">
             {{ if $page.Params.image }}
@@ -33,4 +71,4 @@
             </div>
         </div>
     </div>
-</article>
+</article> -->

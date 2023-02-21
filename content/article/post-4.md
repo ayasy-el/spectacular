@@ -13,9 +13,9 @@ tags:
 excerpt: Itaque hoc frequenter dici solet a vobis, non intellegere nos, quam dicat
   Epicurus voluptatem. Sin kakan malitiam dixisses, ad aliud nos unum certum vitium
   consuetudo Latina traduceret.
-thumb_image: images/classic/post-4.png
+thumb_image: images/classic/04.jpg
 thumb_image_alt: Post 4 placeholder image
-image: images/classic/post-4.png
+image: images/classic/04.jpg
 image_alt: Post 4 placeholder image
 image_position: right
 seo:
@@ -34,7 +34,7 @@ seo:
     value: Itaque hoc frequenter dici solet a vobis, non intellegere nos
     keyName: property
   - name: og:image
-    value: images/classic/post-4.png
+    value: images/classic/04.jpg
     keyName: property
     relativeUrl: true
   - name: twitter:card
@@ -44,7 +44,7 @@ seo:
   - name: twitter:description
     value: Itaque hoc frequenter dici solet a vobis, non intellegere nos
   - name: twitter:image
-    value: images/classic/post-4.png
+    value: images/classic/04.jpg
     relativeUrl: true
 layout: post
 

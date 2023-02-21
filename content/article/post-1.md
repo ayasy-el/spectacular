@@ -11,9 +11,9 @@ categories:
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ea mala virtuti
   magnitudine obruebantur. Duo Reges: constructio interrete.
-thumb_image: images/classic/post-1.png
+thumb_image: images/classic/02.jpg
 thumb_image_alt: Post 1 placeholder image
-image: images/classic/post-1.png
+image: images/classic/02.jpg
 image_alt: Post 1 placeholder image
 image_position: top
 show_comment: false
@@ -33,7 +33,7 @@ seo:
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
       keyName: property
     - name: 'og:image'
-      value: images/classic/post-1.png
+      value: images/classic/02.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -43,7 +43,7 @@ seo:
     - name: 'twitter:description'
       value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     - name: 'twitter:image'
-      value: images/classic/post-1.png
+      value: images/classic/02.jpg
       relativeUrl: true
 layout: post
 ---

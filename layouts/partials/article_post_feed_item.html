@@ -27,44 +27,41 @@
 	{{ $show_categories = true }}
 {{ end }}
 
-<article class="cell-12 cell-md-6 my-2{{ if eq $columns "three" }} cell-lg-4{{ end }}">
-	<div class="item{{ if $is_card }} card{{ end }}{{ if $is_card }} card--highlight{{ end }}{{ if $is_card }} card--vert{{ end }}">
-		<div class="flex flex-column">
-			{{ if and $has_image $show_image }}
-			<div class="item__media mb-3{{ if $is_card }} card__media{{ end }}{{ if $is_card }} card__media--fill{{ end }}{{ if $is_card }} card__media--top{{ end }}">
-				<a href="{{ $post.URL }}"><img src="{{ $post.Params.thumb_image | relURL }}" alt="{{ $post.Params.thumb_image_alt }}" /></a>
-			</div>
-			{{ end }}
-			<div class="item__body{{ if $is_card }} px-3{{ end }}{{ if $is_card }} pb-3{{ end }}{{ if and $is_card $no_image }} pt-3{{ end }}{{ if $is_card }} px-sm-4{{ end }}{{ if $is_card }} pb-sm-4{{ end }}{{ if and $is_card $no_image }} pt-4{{ end }}">
-				{{ if or $article_feed_section.show_date $show_categories }}
-				<div class="item__meta mb-1">
-					{{ if $show_categories }}
-						{{ $include_dict := dict "categories" $post.Params.categories "container_class" "item__cat" "Site" .Site}}
-						{{ partial "article_post_categories.html" $include_dict }}
-						{{ if and $article_feed_section.show_date $post.Params.date }}
-							<span class="item__meta-sep"> &middot; </span>
-						{{ end }}
-					{{ end }}
-					{{ if and $article_feed_section.show_date $post.Params.date}}
-						<span class="item__date"><time datetime="{{ $post.Date | dateFormat "2006-01-02 15:04" }}">{{ $post.Date | dateFormat "January 02, 2006" }}</time></span>
-					{{ end }}
-				</div>
-				{{ end }}
-				{{ if $article_feed_section.title }}
-					<h3 class="item__title mt-0{{ if eq $columns "two" }} h3{{ end }}{{ if eq $columns "three" }} h4{{ end }}"><a href="{{ $post.URL }}">{{ $post.Params.title }}</a></h3>
-				{{ else }}
-					<h2 class="item__title mt-0{{ if eq $columns "two" }} h3{{ end }}{{ if eq $columns "three" }} h4{{ end }}"><a href="{{ $post.URL }}">{{ $post.Params.title }}</a></h2>
-				{{ end }}
-				{{ if and $article_feed_section.show_excerpt $post.Params.excerpt }}
-				<div class="item__copy">
-					<p>{{ $post.Params.excerpt }}</p>
-				</div>
-				{{ end }}
-				{{ if and $article_feed_section.show_author $post.Params.author }}
-					{{ $include_dict := dict "author" $post.Params.author "container_class" "item__byline" "avatar_size" "small" "Site" .Site}}
-					{{ partial "article_post_author.html" $include_dict }}
-				{{ end }}
-			</div>
+<div class="article col col-4 col-d-6 col-t-12">
+	<div class="article__inner">
+
+	{{ if and $has_image $show_image }}
+	  <div class="image-wrap">
+		<a class="article__image" href="{{ $post.URL }}">
+		  <img alt="{{ $post.Params.thumb_image_alt }}" src="{{ $post.Params.thumb_image | relURL }}">
+		</a>
+	  </div>
+	{{ end }}
+
+	  <div class="article__content">
+
+		{{ if $show_categories }}
+			{{ $include_dict := dict "categories" $post.Params.categories "container_class" "item__cat" "Site" .Site}}
+			{{ partial "article_post_categories.html" $include_dict }}
+		{{ end }}
+
+		<h2 class="article__title">
+		  <a href="{{ $post.URL }}">{{ $post.Params.title }}</a>
+		</h2>
+
+		{{ if and $article_feed_section.show_excerpt $post.Params.excerpt }}
+		<p class="article__excerpt">{{ $post.Params.excerpt }}</p>
+		{{ end }}
+
+		
+		{{ if or (and $article_feed_section.show_author $post.Params.author) (and $article_feed_section.show_date $post.Params.date) }}
+		<div class="article__meta">
+			{{ $include_dict := dict "author" $post.Params.author  "Site" .Site "show_date" $article_feed_section.show_date "date" $post.Params.date}}
+			{{ partial "article_post_author.html" $include_dict }}
 		</div>
+		{{end}}
+
+	  </div>
+
 	</div>
-</article>
+  </div>

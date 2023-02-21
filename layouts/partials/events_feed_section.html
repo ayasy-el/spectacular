@@ -73,7 +73,7 @@
 	{{ end }}
 
 	{{ if $section.actions }}
-	<div class="container container--medium mt-4">
+	<div class="container container--medium pt-4">
 		<div class="section__actions btn-group{{ if eq $align_x "center" }} justify-center{{ end }}{{ if eq $align_x "right" }} justify-end{{ end }}">
 			{{ $include_dict := dict "actions" $section.actions }}
 			{{ partial "section_actions.html" $include_dict }}

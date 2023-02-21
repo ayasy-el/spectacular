@@ -89,11 +89,11 @@ sections:
       type: ''
       costum_icon: false
       path_to_svg_icon: ''
-    image: ''
+    image: '/images/photo-1.jpg'
     image_alt: ''
     video_embed_html: ''
-    media_position: ''
-    media_width: ''
+    media_position: 'left'
+    media_width: 'thirty-three'
     align: ''
     type: ''
     title: Heading

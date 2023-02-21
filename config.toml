@@ -19,7 +19,7 @@ layout_type = "boxed"
 style = "classic"
 palette = "blue"
 mode = "light"
-base_font = "serif"
+base_font = "sans-serif"
 domain = "https://spectacular-1c297.netlify.app"
 favicon = ""
 
@@ -38,76 +38,58 @@ favicon = ""
   anncmnt_has_close = true
   anncmnt_id = "new-features"
 
-    [[params.header.primary_nav_links]]
-    type = "action"
-    template = "action"
-    label = "Events"
+  [menu]
+  [[menu.main]]
+    identifier = "events"
+    name = "Events"
     url = "/events"
-    style = "link"
-    has_icon = false
-    icon = ""
-    icon_position = ""
-    new_window = false
-    no_follow = false
-
-    [[params.header.primary_nav_links]]
-    type = "action"
-    template = "action"
-    label = "Article"
+    weight = 1
+  [[menu.main]]
+    identifier = "article"
+    name = "Article"
     url = "/article"
-    style = "link"
-    has_icon = false
-    icon = ""
-    icon_position = ""
-    new_window = false
-    no_follow = false
-
-    [[params.header.primary_nav_links]]
-    type = "action"
-    template = "action"
-    label = "Gallery"
+    weight = 2
+  [[menu.main]]
+    identifier = "quotes"
+    name = "Quotes"
+    url = "/article/categories/kata-ustadz/"
+    parent = "article"
+    weight = 1
+  [[menu.main]]
+    identifier = "penasantri"
+    name = "Pena Santri"
+    url = "/article/categories/pena-santri/"
+    parent = "article"
+    weight = 2
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Gallery"
+    weight = 3
+  [[menu.main]]
+    identifier = "photos"
+    name = "Photos"
     url = "/gallery"
-    style = "link"
-    has_icon = false
-    icon = ""
-    icon_position = ""
-    new_window = false
-    no_follow = false
-
-    [[params.header.primary_nav_links]]
-    type = "action"
-    template = "action"
-    label = "Graviti"
+    parent = "gallery"
+    weight = 1
+  [[menu.main]]
+    identifier = "graviti"
+    name = "Graviti"
     url = "/graviti"
-    style = "link"
-    has_icon = false
-    icon = ""
-    icon_position = ""
-    new_window = false
-    no_follow = false
-
-    [[params.header.secondary_nav_links]]
-    type = "action"
-    template = "action"
-    label = "About Us"
+    parent = "gallery"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
     url = "/about"
-    style = "link"
-    has_icon = false
-    icon = ""
-    icon_position = ""
-    new_window = false
-    no_follow = false
-
-    [[params.header.secondary_nav_links]]
-    style = "primary"
-    label = "Donate"
+    weight = 5
+  [[menu.main]]
+    identifier = "donate"
+    name = "Donate"
     url = "#"
-    has_icon = false
-    icon = ""
-    icon_position = ""
-    new_window = false
-    no_follow = false
-    type = ""
+    weight = 6
+    [menu.main.params]
+      button = true
+
 
   [params.footer]
   type = "footer"
@@ -208,18 +190,8 @@ favicon = ""
     new_window = false
     no_follow = false
 
-[outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
-
-[params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags"]
-
 [outputs]
-home = ["HTML", "RSS", "Algolia"]
+home = ["HTML", "RSS"]
 
 [taxonomies]
 tag = "tags"

@@ -1,13 +1,25 @@
-{{ $page := .page }}
-{{ $menu := .header_menu }}
-<ul class="menu flex-md items-md-center">
-{{ range $item := $menu }}
+{{ $page := $ }}
+<ul style="font-family: 'Nunito';" class="nav__list list-reset">
+	{{ range .Site.Menus.main }}
 	{{ $page_url := trim $page.URL "/" }}
-	{{ $item_url := trim $item.url "/" }}
-	{{ $item_style := $item.style | default "link" }}
-	<li class="menu__item ml-md-3{{ if and (eq $page_url $item_url) (eq $item_style "link") }} is-active{{ end }}{{ if ne $item_style "link" }} menu__item-btn{{ end }}">
-		{{ $include_dict := dict "action" $item }}
-		{{ partial "action.html" $include_dict }}
+	{{- if .HasChildren }}
+	<li class="nav__item dropdown">
+		<a href="{{.URL | relURL}}" class="nav__link dropdown-toggle">{{.Name}} <i class="ion ion-ios-arrow-down arrow-down"></i></a>
+		<div class="dropdown-menu">
+			{{ range .Children }}
+			<a href="{{.URL | relURL}}" class="nav__link ">{{.Name}}</a>
+			{{end}}
+		</div>
 	</li>
-{{ end }}
+	{{else}}
+	<li class="nav__item">
+		{{if .Params.button}}
+		<a href="{{.URL | relURL}}" class="nav__link cta-button button button--small nav-left">{{.Name}}</a>
+		{{else}}
+		<a href="{{.URL | relURL}}" class="{{if eq ($page_url | relURL) (.URL | relURL) }}active-link{{end}} nav__link">{{.Name}}</a>	
+		{{end}}
+	</li>		
+	{{end}}
+	{{ end }}
+
 </ul>
