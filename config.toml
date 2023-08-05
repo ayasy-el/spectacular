@@ -1,18 +1,19 @@
 title = "Website Name"
 baseURL = "/"
-disqusShortname = 'spectacular-pages-dev'
-copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
-languageCode = 'id'
-disableKinds = ["taxonomy", "term"]
+disqusShortname = "spectacular-pages-dev"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+languageCode = "id"
+disableKinds = [ "taxonomy", "term" ]
+_template = "config"
 
 [permalinks]
-  data = '/article/:sections[1:]/:slug'
+data = "/article/:sections[1:]/:slug"
 
 [minify]
-  minifyOutput = true
+minifyOutput = true
 
 [author]
-  name = 'Ayasy'
+name = "Ayasy"
 
 [params]
 layout_type = "boxed"
@@ -37,59 +38,6 @@ favicon = ""
   anncmnt_is_home_only = true
   anncmnt_has_close = true
   anncmnt_id = "new-features"
-
-  [menu]
-  [[menu.main]]
-    identifier = "events"
-    name = "Events"
-    url = "/events"
-    weight = 1
-  [[menu.main]]
-    identifier = "article"
-    name = "Article"
-    url = "/article"
-    weight = 2
-  [[menu.main]]
-    identifier = "quotes"
-    name = "Quotes"
-    url = "/article/categories/kata-ustadz/"
-    parent = "article"
-    weight = 1
-  [[menu.main]]
-    identifier = "penasantri"
-    name = "Pena Santri"
-    url = "/article/categories/pena-santri/"
-    parent = "article"
-    weight = 2
-  [[menu.main]]
-    identifier = "gallery"
-    name = "Gallery"
-    weight = 3
-  [[menu.main]]
-    identifier = "photos"
-    name = "Photos"
-    url = "/gallery"
-    parent = "gallery"
-    weight = 1
-  [[menu.main]]
-    identifier = "graviti"
-    name = "Graviti"
-    url = "/graviti"
-    parent = "gallery"
-    weight = 2
-  [[menu.main]]
-    identifier = "about"
-    name = "About Us"
-    url = "/about"
-    weight = 5
-  [[menu.main]]
-    identifier = "donate"
-    name = "Donate"
-    url = "#"
-    weight = 6
-    [menu.main.params]
-      button = true
-
 
   [params.footer]
   type = "footer"
@@ -190,8 +138,68 @@ favicon = ""
     new_window = false
     no_follow = false
 
+[[menu.main]]
+identifier = "events"
+name = "Events"
+url = "/events"
+weight = 1
+
+[[menu.main]]
+identifier = "article"
+name = "Article"
+url = "/article"
+weight = 2
+
+[[menu.main]]
+identifier = "quotes"
+name = "Quotes"
+url = "/article/categories/kata-ustadz/"
+parent = "article"
+weight = 1
+
+[[menu.main]]
+identifier = "penasantri"
+name = "Pena Santri"
+url = "/article/categories/pena-santri/"
+parent = "article"
+weight = 2
+
+[[menu.main]]
+identifier = "gallery"
+name = "Gallery"
+weight = 3
+
+[[menu.main]]
+identifier = "photos"
+name = "Photos"
+url = "/gallery"
+parent = "gallery"
+weight = 1
+
+[[menu.main]]
+identifier = "graviti"
+name = "Graviti"
+url = "/graviti"
+parent = "gallery"
+weight = 2
+
+[[menu.main]]
+identifier = "about"
+name = "About Us"
+url = "/about"
+weight = 5
+
+[[menu.main]]
+identifier = "donate"
+name = "Donate"
+url = "#"
+weight = 6
+
+  [menu.main.params]
+  button = true
+
 [outputs]
-home = ["HTML", "RSS"]
+home = [ "HTML", "RSS" ]
 
 [taxonomies]
 tag = "tags"

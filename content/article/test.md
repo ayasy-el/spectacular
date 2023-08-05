@@ -1,3 +1,9 @@
+---
+_template: article
+---
+
+
+
 +++
 author = "data/authors/hugh-saturation.md"
 categories = ["data/categories/kata-ustadz.md"]

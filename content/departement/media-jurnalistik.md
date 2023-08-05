@@ -1,3 +1,9 @@
+---
+_template: departement
+---
+
+
+
 +++
 layout = "advanced"
 title = "Media & Jurnalistik"

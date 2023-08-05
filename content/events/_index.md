@@ -6,8 +6,6 @@ sections:
   title: Events
   subtitle: The optional subtitle
   align: left
-  padding_top: medium
-  padding_bottom: none
   background_color: primary
   padding_top: large
   padding_bottom: large

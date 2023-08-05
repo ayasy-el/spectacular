@@ -1,3 +1,9 @@
+---
+_template: events
+---
+
+
+
 +++
 background_color = ""
 background_image = ""

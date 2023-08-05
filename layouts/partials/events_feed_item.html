@@ -22,7 +22,7 @@
 	{{ $no_image = true }}
 {{ end }}
 
-<events class="cell-12 cell-md-6 my-2{{ if eq $columns "three" }} cell-lg-4{{ end }}">
+<events class="carousel-cell cell-12 cell-md-6 my-2{{ if eq $columns "three" }} cell-lg-4{{ end }}">
 	<div class="item{{ if $is_card }} card{{ end }}{{ if $is_card }} card--highlight{{ end }}{{ if $is_card }} card--vert{{ end }}">
 		<div class="flex flex-column">
 			{{ if and $has_image $show_image }}

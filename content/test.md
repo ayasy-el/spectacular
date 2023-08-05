@@ -1,3 +1,9 @@
+---
+_template: advanced
+---
+
+
+
 +++
 layout = "advanced"
 title = "Test"

@@ -16,6 +16,7 @@ fields:
   - hero_section
   - departement_feed_section
   - features_section
+  - events_feed_section
   - grid_section
   - article_feed_section
   - cta_section
