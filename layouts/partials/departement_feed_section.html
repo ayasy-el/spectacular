@@ -11,7 +11,7 @@
     </div>
     {{ end }}
 
-    <div class="container" container-grid><div class="grid">
+    <div class="c container" container-grid><div class="slide">
         {{ $departements := (.Site.GetPage "section" "/departement").Pages }}
         {{ range  $departement := $departements}}
             {{range $section := .Params.sections}}

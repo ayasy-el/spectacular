@@ -51,6 +51,22 @@
         <script src="/js/jquery.min.js"></script>
         <link rel="stylesheet" href="/css/fancybox.css" />
         <script src="/js/fancybox.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/phucbm/flickity-responsive@2.0.6/flickity-responsive.min.js"></script>
+        <style>
+                .flickity-page-dots {
+                    bottom: -22px;
+                }
+              
+                /* dots are lines */
+                .flickity-page-dots .dot {
+                    height: 4px;
+                    width: 40px;
+                    margin: 0;
+                    border-radius: 0;
+                }
+      </style>
     </head>
     <body class="layout-{{ .Site.Params.layout_type }} style-{{ .Site.Params.style }} palette-{{ .Site.Params.palette }} mode-{{ .Site.Params.mode }} font-{{ .Site.Params.base_font }}">
         
@@ -83,5 +99,51 @@
         {{ end }}
         <script src="{{ "js/init.js" | relURL }}"></script>
         <script src="{{ "js/page-load.js" | relURL }}"></script>
+        <style>  
+          @media (max-width: 768px) {
+            .carousel-cell {
+              width: 420px;
+              height: auto;
+            }
+        
+            .avenco {
+              scale: 0.95;
+            }
+          }
+        </style>
+        <script>
+          function check() {
+            var width = $(window).width();
+            if (width <= 768) {
+              $(".slide").removeClass("grid");
+              $(".c").removeClass("container");
+              $(".carousel-cell").removeClass("col-4");
+              $(".carousel-cell").removeClass("col-d-6");
+              $(".carousel-cell").removeClass("col-t-12");
+            }
+            else {
+              $(".slide").addClass("grid");
+              $(".c").addClass("container");
+              $(".carousel-cell").addClass("col-4");
+              $(".carousel-cell").addClass("col-d-6");
+              $(".carousel-cell").addClass("col-t-12");
+            }
+          }
+          check();
+          $(window).resize(check);
+          $('.slide').flickityResponsive({
+            destroy: true,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  destroy: false,
+                  prevNextButtons: false,
+                  setGallerySize: true,
+                }
+              }
+            ]
+          });
+        </script>
     </body> 
 </html>
